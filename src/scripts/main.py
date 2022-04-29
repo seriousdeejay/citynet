@@ -6,11 +6,13 @@ import requests
 import pathlib
 import wikipediaapi
 
-## print(os.getcwd())
 
-file_location = os.path.realpath(__file__)
-cwd = os.path.dirname(file_location)
-os.chdir(cwd)
+def correct_cwd():
+    file_location = os.path.realpath(__file__)
+    cwd = os.path.dirname(file_location)
+    os.chdir(cwd)
+
+correct_cwd()
 
 european_capitals = '../input/city_pages.txt'
 CAPITAL_PAGES_OUTPUT_FOLDER = '../input/european-capital-pages/'
