@@ -1,0 +1,152 @@
+id_MUA;Mua;Mua_Eng;SizeMUA1k;EU15;Code_Country;NUTS_1;NUTS_2;NUTS_3;X_COORD_first;Y_COORD_first;CountryCode_numeric;id_fua;Fua;id_PUR;PUR;Supra_poly_fua;PIA;Name_supra_poly_fua;Poly_fua;id_poly_fua;Name_poly_fua;SizeHinterland1k;GDP_per_capita;Dummy_Capital
+FR00810;Paris;Paris;9591;1;FR;FR1;FR10;FR101;-923451;-49178;12;FR10544;Paris; ; ;0;PIA_Paris;99;0; ; ;1201;44;1
+UK01886;London;London;8256;1;UK;UKI;UKI1;UKI11;-1039874;273202;29;UK11208;London; ; ;0;PIA_London;99;0; ; ;2752;45;1
+ES00540;Madrid;Madrid;4955;1;ES;ES3;ES30;ES300;-1573058;-867634;10;ES10378;Madrid; ; ;0;PIA_Madrid;99;0; ; ;308;29;1
+DE00219;Berlin;Berlin;3776;1;DE;DE3;DE30;DE300;-108502;279433;7;DE10144;Berlin; ; ;0;PIA_Berlin;99;0; ; ;240;22;1
+IT01156;Milano;Milan;3698;1;IT;ITC;ITC4;ITC45;-455713;-486054;16;IT10767;Milano - Busto Arsizio - Como;IT113;Milano;0;PIA_Milano;99;1;IT03;Milano metropolitan area;604;35;0
+ES00466;Barcelona;Barcelona;3659;1;ES;ES5;ES51;ES511;-1071654;-865671;10;ES10335;Barcelona; ; ;0;PIA_Barcelona;99;1;ES04;Barcelona metropolitan area;182;31;0
+GR00868;Athinia;Athens;3331;1;GR;GR3;GR30;GR300;769408;-1289524;13;GR10586;Athinai; ; ;0;PIA_Athinia;99;0; ; ;365;26;1
+IT01228;Roma;Rome;2532;1;IT;ITE;ITE4;ITE43;-194226;-904825;16;IT10812;Roma; ; ;0;PIA_Roma;99;0; ; ;293;36;1
+UK01783;Birmingham;Birmingham;2363;1;UK;UKD;UKD5;UKD51;-1134914;406610;29;UK11166;Birmingham; ; ;0;PIA_Birmingham;99;0; ; ;747;29;0
+PT01566;Lisboa;Lisbon;2315;1;PT;PT1;PT17;PT171;-206910403151;-92715049504;24;PT11038;Lisboa; ; ;0;PIA_Lisboa;99;0; ; ;201;20;1
+IT01172;Napoli;Naples;2308;1;IT;ITF;ITF3;ITF33;-64226;-1014948;16;IT10778;Napoli - Castellamare di Stabia - Torre Annunziata - Nola;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;17;0
+PL01475;Katowice;Katowice;2279;0;PL;PL2;PL22;PL22A;286978;31939;23;PL10967;Katowice;PL106;Silesian-Moravian;0;PIA_Katowice;99;1;PL01;Silesian-Moravian metropolitan area;1269;8;0
+UK01895;Manchester;Manchester;2207;1;UK;UKD;UKD2;UKD21;-1133134;516807;29;UK11212;Manchester; ; ;0;PIA_Manchester;99;0; ; ;290;31;0
+DE00277;Hamburg;Hamburg;2123;1;DE;DE6;DE60;DE600;-330329;405830;7;DE10191;Hamburg; ; ;0;PIA_Hamburg;99;0; ; ;860;38;0
+HU00896;Budapest;Budapest;2123;0;HU;HU1;HU10;HU101;310058;-271574;14;HU10610;Budapest; ; ;0;PIA_Budapest;99;0; ; ;291;15;1
+RO01596;Bucuresti;Bucharest;2064;0;RO;RO3;RO32;RO322;876920;-540444;25;RO11057;Bucuresti; ; ;0;PIA_Bucuresti;99;0; ; ;0;8;1
+PL01541;Warszawa;Warsaw;2004;0;PL;PL1;PL12;PL129;426852;272262;23;PL11023;Warszawa; ; ;0; ;99;0; ; ;673;16;1
+DE00381;Stuttgart;Stuttgart;1735;1;DE;DE1;DE11;DE111;-427853;-119662;7;DE10275;Stuttgart; ; ;0;PIA_Stuttgart;99;1;DE01;Stuttgart metropolitan area;554;36;0
+AT00019;Wien;Vienna;1674;1;AT;AT1;AT13;AT130;102409;-198305;1;AT10017;Wien; ; ;0;PIA_Wien;99;1;AT01;Wien - Bratislava;847;34;1
+DE00332;München;Munich;1647;1;DE;DE2;DE21;DE212;-256809;-199518;7;DE10235;München; ; ;0;PIA_München;99;1;DE09;München-Ausburg;976;45;0
+BE00027;Brussels;Brussels;1498;1;BE;BE1;BE10;BE100;-745840;146217;2;BE10021;Brussels;BE101;Flemisch Diamond;0;PIA_Bruxelles;99;1;BE01;Flemisch Diamond;1955;40;1
+SE01710;Stockholm;Stockholm;1479;1;SE;SE1;SE11;SE110;170988;1039894;26;SE11119;Stockholm; ; ;0; ;99;0; ; ;369;45;1
+DE00256;Frankfurt am Main;Frankfurt am Main;1462;1;DE;DE7;DE71;DE712;-453932;32311;7;DE10175;Frankfurt am Main;DE108;Rhein - Main;0;PIA_Frankfurt-am-Main;99;1;DE07;Rhein - Main;1542;41;0
+DE00305;Köln;Cologne;1398;1;DE;DEA;DEA2;DEA23;-562833;135460;7;DE10217;Köln;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE03;Rhein - Ruhr - Sud;2466;32;0
+DK00419;Kobenhavn;Copenhagen;1360;1;DK;DK0;DK01;DK012;-161693;640569;8;DK10303;Kobenhavn;DK103;Öresund;0;PIA_Kobenhavn;99;1;SE01;Öresund metropolitan area;848;48;1
+ES00617;Valencia;Valencia;1318;1;ES;ES5;ES52;ES523;-1318180;-1043833;10;ES10414;Valencia; ; ;0;PIA_Valencia;99;1;ES01;Valencia - Sagunto;80;29;0
+IT01278;Torino;Turin;1309;1;IT;ITC;ITC1;ITC11;-576049;-519720;16;IT10839;Torino; ; ;0;PIA_Torino;99;1;IT06;Torino metropolitan area;200;32;0
+UK01846;Glasgow;Glasgow;1228;1;UK;UKD;UKD1;UKD12;-1190856;809245;29;UK11190;Glasgow; ; ;0;PIA_Glasgow;99;0; ; ;40;31;0
+CZ00181;Praha;Prague;1175;0;CZ;CZ0;CZ01;CZ010;-38090;7674;6;CZ10120;Praha; ; ;0;PIA_Praha;99;0; ; ;423;19;1
+FR00779;Lyon;Lyon;1175;1;FR;FR7;FR71;FR717;-788431;-419014;12;FR10520;Lyon; ; ;0;PIA_Lyon;99;1;FR03;Lyon metropolitan area;394;33;0
+BG00075;Sofia;Sofia;1174;0;BG;BG4;BG41;BG411;687580;-776610;3;BG10067;Sofia; ; ;0;PIA_Sofia;99;0; ; ;0;7;1
+UK01884;Liverpool;Liverpool;1170;1;UK;UKD;UKD2;UKD22;-1178631;521396;29;UK11207;Liverpool - Birkenhead;UK107;Liverpool - Birkenhead;0;PIA_Manchester;99;0; ; ;411;26;0
+PT01572;Porto;Porto;1163;1;PT;PT1;PT11;PT114;-194875383428;-68123046745;24;PT11041;Porto;PT101;Porto-Braga-Guimmaraes;0;PIA_Porto;99;1;PT01;Porto's region;532;13;0
+ES00596;Sevilla;Seville;1082;1;ES;ES6;ES61;ES618;-1841018;-1150322;10;ES10407;Sevilla; ; ;0;PIA_Sevilla;99;1;ES02;Sevilla;98;24;0
+IE00953;Dublin;Dublin;1070;1;IE;IE0;IE01;IE013;-1390455;582312;15;IE10650;Dublin; ; ;0; ;99;0; ; ;407;52;1
+FI00641;Helsinki;Helsinki;1065;1;FI;FI1;FI18;FI181;554744;1173612;11;FI10426;Helsinki; ; ;0;PIA_Helsinki;99;0; ; ;220;44;1
+NL01331;Amsterdam;Amsterdam;1052;1;NL;NL3;NL32;NL326;-685183;310274;21;NL10878;Amsterdam;NL106;Randstad;1;PIA_Amsterdam;99;1;NL04;Randstad Holland Noord;760;48;1
+NL01403;Rotterdam;Rotterdam;1025;1;NL;NL3;NL33;NL335;-729364;266590;21;NL10914;Rotterdam;NL106;Randstad;1;PIA_Amsterdam;99;1;NL01;Randstad Holland Zuid;760;36;0
+DE00246;Düsseldorf;Düsseldorf;1016;1;DE;DEA;DEA1;DEA11;-570674;168795;7;DE10168;Düsseldorf;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE04;Rhein - Ruhr - North;2466;45;0
+DE00253;Essen-Oberhausen;Essen-Oberhausen;986;1;DE;DEA;DEA1;DEA17;-553945;189170;7;DE10172;Essen-Oberhausen;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;30;0
+FR00771;Lille;Lille;953;1;FR;FR3;FR30;FR301;-841368;137653;12;FR10516;Lille;FR105;Lille;0;PIA_Lille;99;1;FR04;Lille metropolitan area;818;23;0
+PL01488;Lodz;Lodz;919;0;PL;PL1;PL11;PL114;309063;205778;23;PL10978;Lodz; ; ;0;PIA_Lodz;99;0; ; ;246;8;0
+FR00782;Marseille;Marseille;862;1;FR;FR8;FR82;FR825;-776208;-696847;12;FR10522;Marseille-Aix-en-Provence;FR106;Marseille-Aix-en-Provence;0;PIA_Marseille-Aix-en-Provence;99;0; ; ;278;27;0
+BE00023;Antwerp;Antwerp;830;1;BE;BE2;BE21;BE211;-738642;192383;2;BE10019;Antwerp;BE101;Flemisch Diamond;0;PIA_Bruxelles;99;1;BE01;Flemisch Diamond;1955;37;0
+ES00470;Bilbao;Bilbao;822;1;ES;ES2;ES21;ES213;-1448323;-576955;10;ES10337;Bilbao; ; ;0;PIA_Bilbao;99;0; ; ;125;30;0
+UK01902;Newcastle;Newcastle;814;1;UK;UKC;UKC2;UKC21;-1274910;328087;29;UK11245;Tyneside metropolitan area;UK113;Tyneside;0;PIA_Tyneside;99;0; ; ;344;28;0
+PL01482;Krakow;Krakow;807;0;PL;PL2;PL21;PL213;357121;18007;23;PL10973;Krakow; ; ;0; ;99;0; ; ;399;9;0
+DE00222;Bochum-Herne;Bochum-Herne;804;1;DE;DEA;DEA5;DEA51;-539186;191648;7;DE10147;Bochum-Herne;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;25;0
+GR00888;Thessaloniki;Thessaloniki;777;1;GR;GR1;GR12;GR122;673913;-1006186;13;GR10603;Thessaloniki; ; ;0;PIA_Thessaloniki;99;0; ; ;275;18;0
+DE00341;Nürnberg;Nuremberg;769;1;DE;DE2;DE25;DE254;-283969;-55262;7;DE10245;Nürnberg-Fürth; ; ;0;PIA_Nürnberg;99;1;DE08;Nürnberg-Fürth metropolitan area;560;32;0
+LV01322;Riga;Riga;764;0;LV;LV0;LV00;LV006;554479;810711;19;LV10871;Riga; ; ;0;PIA_Riga;99;0; ; ;354;12;1
+DE00244;Duisburg;Duisburg;758;1;DE;DEA;DEA1;DEA12;-573373;191965;7;DE10166;Duisburg;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE04;Rhein - Ruhr - North;2466;24;0
+DE00242;Dortmund;Dortmund;750;1;DE;DEA;DEA5;DEA52;-521352;194963;7;DE10164;Dortmund;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;27;0
+DE00280;Hannover;Hanover;747;1;DE;DE9;DE92;DE929;-355877;277168;7;DE10194;Hannover; ; ;0;PIA_Hannover;99;0; ; ;250;32;0
+CH00135;Zürich;Zürich;718;1;CH;CH0;CH04;CH040;-487843;-270258;4;CH10097;Zürich;CH106;Zürich;0;PIA_Zürich;99;0; ; ;523;49;0
+NO01438;Oslo;Oslo;712;1;NO;NO0;NO03;NO03;-238247;1116884;22;NO10934;Oslo; ; ;0;PIA_Oslo;99;0; ; ;325;54;1
+DE00226;Bremen;Bremen;709;1;DE;DE5;DE50;DE501;-416013;364558;7;DE10151;Bremen; ; ;0;PIA_Bremen;99;0; ; ;368;29;0
+DE00243;Dresden;Dresden;697;1;DE;DED;DED2;DED21;-85292;119350;7;DE10165;Dresden; ; ;0;PIA_Dresden;99;0; ; ;185;24;0
+UK01933;Sheffield;Sheffield;693;1;UK;UKE;UKE3;UKE31;-1090415;501379;29;UK11232;Sheffield;UK111;Sheffield;0;PIA_Sheffield;99;0; ; ;444;24;0
+IT01192;Palermo;Palermo;680;1;IT;ITG;ITG1;ITG12;-147173;-1314799;16;IT10787;Palermo; ; ;0;PIA_Palermo;99;0; ; ;54;17;0
+PL01510;Poznan;Poznan;679;0;PL;PL4;PL41;PL418;130886;269201;23;PL10995;Poznan; ; ;0; ;99;0; ; ;240;11;0
+DE00263;Gelsenkirchen-Bottrop;Gelsenkirchen-Bottrop;666;1;DE;DEA;DEA3;DEA32;-558957;205170;7;DE10180;Gelsenkirchen-Bottrop;DE110;Rhein - Ruhr;1; ;99;1;DE05;Rhein - Ruhr;2466;21;0
+FR00695;Bordeaux;Bordeaux;652;1;FR;FR6;FR61;FR612;-1222096;-446300;12;FR10471;Bordeaux; ; ;0;PIA_Bordeaux;99;0; ; ;266;28;0
+PL01544;Wroclaw;Wroclaw;634;0;PL;PL5;PL51;PL518;139716,9479;127360,6921;23;PL11025;Wroclaw; ; ;0; ;99;0; ; ;195;9;0
+SE01688;Göteborg;Gothenburg;627;1;SE;SE2;SE23;SE232;-181985;864099;26;SE11100;Göteborg; ; ;0;PIA_Göteborg;99;0; ; ;276;35;0
+ES00638;Zaragoza;Zaragoza;615;1;ES;ES2;ES24;ES243;-1317140;-787450;10;ES10424;Zaragoza; ; ;0; ;99;0; ; ;24;27;0
+IT01100;Genova;Genoa;611;1;IT;ITC;ITC3;ITC33;-485682;-598670;16;IT10734;Genova; ; ;0;PIA_Genova;99;1;IT04;Genova metropolitan area;83;26;0
+IT01035;Catania;Catania;602;1;IT;ITG;ITG1;ITG17;3311;-1392795;16;IT10699;Catania; ; ;0;PIA_Cantania;99;0; ; ;0;18;0
+NL01346;Den Haag;The Hague;589;1;NL;NL3;NL33;NL332;-722125;284290;21;NL10886;Den Haag;NL106;Randstad;1;PIA_Amsterdam;99;1;NL02;Randstad Holland West;760;38;0
+FR00851;Toulouse;Toulouse;588;1;FR;FR6;FR62;FR623;-1090447;-614799;12;FR10575;Toulouse; ; ;0;PIA_Toulouse;99;0; ; ;244;29;0
+UK01797;Bristol;Bristol;568;1;UK;UKK;UKK1;UKK11;-1209096;306019;29;UK11172;Bristol; ; ;0;PIA_Bristol;99;0; ; ;313;38;0
+LT01312;Vilnius;Vilnius;554;0;LT;LT0;LT00;LT00A;661113;568485;17;LT10865;Vilnius; ; ;0; ;99;0; ; ;126;10;1
+DE00366;Saarbrücken;Saarbrücken;552;1;DE;DEC;DEC0;DEC01;-580739;-53753;7;DE10264;Saarbrücken-Forbach; ; ;0;PIA_Saarbrücken;99;0; ; ;331;27;0
+ES00542;Malaga;Malaga;543;1;ES;ES6;ES61;ES617;-1725091;-1252577;10;ES10379;Malaga; ; ;0;PIA_Malaga;99;1;ES06;Malaga;227;38;0
+FR00801;Nantes;Nantes;536;1;FR;FR5;FR51;FR511;-1241703;-171172;12;FR10536;Nantes; ; ;0; ;99;0; ; ;172;27;0
+UK01879;Leeds;Leeds;534;1;UK;UKE;UKE4;UKE42;-1076866;546588;29;UK11204;Leeds - Bradford;UK105;Leeds - Bradford;0;PIA_Manchester;99;0; ; ;744;29;0
+UK01907;Nottingham;Nottingham;532;1;UK;UKE;UKE2;UKE22;-1077221;447545;29;UK11218;Nottingham-Derby;UK109;Nottingham-Derby;0;PIA_Sheffield;99;0; ; ;499;30;0
+IT01084;Firenze;Florence;525;1;IT;ITE;ITE1;ITE14;-302319;-683586;16;IT10725;Firenze;IT106;Firenze;0;PIA_Firenze;99;1;IT05;Firenze metropolitan area;156;32;0
+PL01463;Gdansk;Gdansk;519;0;PL;PL6;PL63;PL633;229832;499286;23;PL10956;Gdansk;PL102;Gdansk;0; ;99;0; ; ;174;9;0
+DE00310;Leipzig;Leipzig;516;1;DE;DED;DED5;DED51;-183032;152516;7;DE10220;Leipzig;DE106;Leipzig-Halle;0;PIA_Leipzig;99;1;DE10;Leipzig-Halle;418;22;0
+DE00321;Mannheim;Mannheim;508;1;DE;DE1;DE12;DE126;-470129;-35320;7;DE10229;Mannheim;DE109;Rhein - Neckar;0;PIA_Frankfurt-am-Main;99;1;DE06;Rhein - Neckar;1180;35;0
+UK01782;Belfast;Belfast;501;1;UK;UKN;UKN0;UKN01;-1332866;703361;29;UK11165;Belfast; ; ;0;PIA_Belfast;99;0; ; ;283;30;0
+UK01919;Portsmouth;Portsmouth;500;1;UK;UKD;UKD1;UKD11;-1122730;212787;29;UK11226;Portsmouth/Southampton;UK110;Portsmouth-Southampton;0;PIA_Southampton;99;0; ; ;523;32;0
+IT01291;Venezia;Venice;483;1;IT;ITD;ITD3;ITD35;-210665;-497941;16;IT10849;Venezia;IT118;Venezia - Padova;0;PIA_Venezia;99;1;IT01;Venezia - Padova metropolitan area;468;46;0
+UK01840;Edinburgh;Edinburgh;478;1;UK;UKM;UKM2;UKM23;-1130773;801312;29;UK11186;Edinburgh; ; ;0;PIA_Glasgow;99;0; ; ;258;45;0
+ES00559;Murcia;Murcia;476;1;ES;ES6;ES62;ES620;-1412264;-1193605;10;ES10388;Murcia; ; ;0;PIA_Murcia;99;1;ES07;Murcia - Orihuela;147;19;0
+FR00804;Nice;Nice;472;1;FR;FR8;FR82;FR823;-625345;-667053;12;FR10539;Nice;FR108;Nice-Côte d'Azur-San Remo;0;PIA_Nice;99;1;FR02;Nice-Côte d'Azur-San Remo;122;31;0
+BE00036;Liège;Liège;451;1;BE;BE3;BE33;BE332;-663770;112094;2;BE10029;Liège;BE102;Euroregio MAHL;0;PIA_Liège;99;1;BE02;Euroregio MAHL;1403;23;0
+SK01732;Bratislava;Bratislava;444;0;SK;SK0;SK01;SK010;161714;-203601;28;SK11255;Bratislava; ; ;0; ;99;1;AT01;Wien - Bratislava;267;18;1
+UK01880;Leicester;Leicester;442;1;UK;UKC;UKC2;UKC23;-1082003;411708;29;UK11205;Leicester; ; ;0;PIA_Leicester;99;0; ; ;191;32;0
+DE00295;Karlsruhe;Karlsruhe;440;1;DE;DE1;DE12;DE122;-481171;-88856;7;DE10207;Karlsruhe;DE109;Rhein - Neckar;0;PIA_Frankfurt-am-Main;99;1;DE06;Rhein - Neckar;1180;36;0
+IT01001;Bergamo;Bergamo;438;1;IT;ITC;ITC4;ITC46;-415717;-463488;16;IT10680;Bergamo;IT113;Milano;0;PIA_Milano;99;1;IT03;Milano metropolitan area;604;31;0
+ES00569;Palma de Mallorca;Palma de Mallorca;433;1;ES;ES5;ES53;ES532;-1054878;-1075733;10;ES10394;Palma de Mallorca; ; ;0; ;99;0; ; ;135,506;24;0
+IT01005;Bologna;Bologna;432;1;IT;ITD;ITD5;ITD55;-291863;-604728;16;IT10683;Bologna; ; ;0;PIA_Bologna;99;0; ; ;237;35;0
+DE00220;Bielefeld;Bielefeld;419;1;DE;DEA;DEA4;DEA41;-442921;242929;7;DE10145;Bielefeld;DE102;Bielefeld - Detmold;0;PIA_Bielefeld;99;1;DE13;Bielefeld - Detmold;503;31;0
+FR00824;Rouen;Rouen;419;1;FR;FR2;FR23;FR232;-1001301;30960;12;FR10555;Rouen - Elboeuf; ; ;0;PIA_Rouen;99;0; ; ;180;27;0
+FR00845;Strasbourg;Strasbourg;417;1;FR;FR4;FR42;FR421;-532815;-133390;12;FR10569;Strasbourg - Kehl;FR111;Strasbourg-Baden-Offenburg-Haguenau;0;PIA_Strasbourg;99;1;FR01;Strasburg - Offenburg;407;29;0
+EE00436;Tallinn;Tallinn;416;0;EE;EE0;EE00;EE001;552923;1085366;9;EE10319;Tallinn; ; ;0; ;99;0; ; ;85;15;1
+PL01534;Szczecin;Szczecin;416;0;PL;PL4;PL42;PL424;-25528;381667;23;PL11016;Szczecin; ; ;0; ;99;0; ; ;151;9;0
+FR00753;Grenoble;Grenoble;415;1;FR;FR7;FR71;FR714;-727768;-491313;12;FR10507;Grenoble; ; ;0;PIA_Grenoble;99;0; ; ;258,911;28;0
+IT00994;Bari;Bari;411;1;IT;ITF;ITF4;ITF42;154896;-985644;16;IT10675;Bari;IT104;Bari;0;PIA_Bari;99;0; ; ;0;18;0
+FR00850;Toulon;Toulon;410;1;FR;FR8;FR82;FR825;-736906;-719129;12;FR10574;Toulon; ; ;0;PIA_Marseille-Aix-en-Provence;99;0; ; ;144,228;25;0
+UK01796;Brighton;Brighton;410;1;UK;UKI;UKI2;UKI21;0;0;29;UK11171;Brighton/Worthing/Littlehampton; ; ;0;PIA_Brighton;99;0; ; ;245;31;0
+DE00236;Darmstadt;Darmstadt;407;1;DE;DE7;DE71;DE711;-454659;6063;7;DE10158;Darmstadt;DE108;Rhein - Main;0;PIA_Frankfurt-am-Main;99;1;DE07;Rhein - Main;1542;30;0
+DE00402;Wüppertal;Wuppertal;395;1;DE;DEA;DEA1;DEA1A;-545613;167798;7;DE10290;Wüppertal;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;27;0
+NL01410;Utrecht;Utrecht;390;1;NL;NL3;NL31;NL310;-677907;278068;21;NL10917;Utrecht;NL106;Randstad;1;PIA_Amsterdam;99;1;NL03;Randstad Holland Oost;760;39;0
+UK01790;Bournemouth;Bournemouth;390;1;UK;UKD;UKD4;UKD43;-1178074;216247;29;UK11169;Bournemouth; ; ;0;PIA_Southampton;99;0; ; ;141;29;0
+UK01898;Middlesbrough;Middlesbrough;389;1;UK;UKI;UKI1;UKI11;-1040744;620509;29;UK11213;Middlesborough; ; ;0;PIA_Tyneside;99;0; ; ;156;25;0
+CH00100;Genève;Geneva;388;1;CH;CH0;CH01;CH013;-682186;-382019;4;CH10081;Genève;CH103;Genève-Annemasse-Annecy-Cluses;0;PIA_Genève;99;0; ; ;585;38;0
+PL01452;Bydgoszcz;Bydgoszcz;383;0;PL;PL6;PL61;PL613;204474;352680;23;PL10947;Bydgoszcz;PL101;Bydgoszcz - Torun;0;PIA_Bydgoszcz;99;0; ; ;133;8;0
+CH00087;Basel;Basel;381;1;CH;CH0;CH03;CH031;-556549;-244398;4;CH10076;Basel;CH101;Basel-Mulhouse;0;PIA_Basel;99;1;CH01;Basel-Mulhouse metropolitan area;191;42;0
+LT01307;Kaunas;Kaunas;379;0;LT;LT0;LT00;LT002;572494;579904;17;LT10861;Kaunas; ; ;0;PIA_Kaunas;99;0; ; ;356,149;7;0
+CZ00142;Brno;Brno;376;0;CZ;CZ0;CZ06;CZ064;115864;-86958;6;CZ10102;Brno; ; ;0; ;99;0; ; ;159;10;0
+UK01938;Southampton;Southampton;376;1;UK;UKH;UKH2;UKH23;-1142289;228149;29;UK11226;Portsmouth/Southampton;UK110;Portsmouth-Southampton;0;PIA_Southampton;99;0; ; ;523;32;0
+FR00768;Lens;Lens;374;1;FR;FR3;FR30;FR301;-860822;118991;12;FR10516;Douai-Lens;FR105;Lille;0; ;99;1;FR04;Lille metropolitan area;818;23;0
+DE00208;Augsburg;Augsburg;371;1;DE;DE2;DE27;DE271;-304846;-175680;7;DE10136;Augsburg; ; ;0; ;99;0; ; ;235;30;0
+IT01190;Padova;Padova;370;1;IT;ITD;ITD3;ITD36;-244035;-506028;16;IT10786;Padova;IT118;Venezia - Padova;0;PIA_Venezia;99;1;IT01;Venezia - Padova metropolitan area;468;30;0
+CZ00177;Ostrava;Ostrava;365;0;CZ;CZ0;CZ08;CZ080;233748;-15677;6;CZ10117;Ostrava;PL106;Silesian-Moravian;0;PIA_Ostrava;99;1;PL01;Silesian-Moravian metropolitan area;1269;10;0
+ES00529;Las Palmas de Gran Canarias;Las Palmas;365;1;ES;ES7;ES70;ES705;-2966913;-1852242;10;ES10370;Las Palmas de Gran Canarias; ; ;0;PIA_Las Palmas de Gran Canarias;99;0; ; ;220;21;0
+RO01613;Constanta;Constanta;364;0;RO;RO2;RO22;RO223;1083309;-548137;25;RO11061;Constanta; ; ;0; ;99;0; ; ;0;7;0
+IT01032;Castellamare di Stabia-Torre Annunziata;Castellamare di Stabia-Torre Annunziata;362;1;IT;ITF;ITF3;ITF33;-46483;-1026659;16;IT10778;Napoli - Castellamare di Stabia - Torre Annunziata - Nola;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;17;0
+UK01947;Stoke;Stoke;359;1;UK;UKG;UKG2;UKG23;0;0;29;UK11238;Stoke; ; ;0;PIA_Manchester;99;0; ; ;144,35;24;0
+ES00591;Santa Cruz de Tenerife;Santa Cruz de Tenerife;357;1;ES;ES7;ES70;ES709;-3023096;-1778673;10;ES10402;Santa Cruz de Tenerife; ; ;0;PIA_Santa Cruz de Tenerife;99;0; ; ;108,398;19;0
+PL01491;Lublin;Lublin;354;0;PL;PL3;PL31;PL314;526935;163054;23;PL10981;Lublin; ; ;0; ;99;0; ; ;97;6;0
+UK01807;Cardiff;Cardiff;353;1;UK;UKL;UKL2;UKL22;-1248840;321442;29;UK11176;Cardiff and South Wale;UK102;Cardiff and South Wales;0; ;99;0; ; ;417;27;0
+RO01634;Iasi;Iasi;349;0;RO;RO2;RO21;RO213;950335;-236210;25;RO11069;Iasi; ; ;0; ;99;0; ; ;0;4;0
+BG00069;Plovdiv;Plovdiv;341;0;BG;BG4;BG42;BG421;804604;-821807;3;BG10061;Plovdiv;BG103;Plovdiv-Pazardzhik-Asenovgrad;0;PIA_Plovdiv;99;0; ; ;74;3;0
+UK01792;Bradford;Bradford;341;1;UK;UKE;UKE4;UKE41;-1098647;553809;29;UK11204;Leeds - Bradford;UK105;Leeds - Bradford;0;PIA_Manchester;99;0; ; ;744;29;0
+ES00448;Alicanta;Alicante;339;1;ES;ES5;ES52;ES521;-1353969;-1153762;10;ES10325;Alicanta;ES102;Alicanta-Elche;0;PIA_Alicanta;99;1;ES05;Alicanta-Elche;175;35;0
+RO01609;Cluj-Napoca;Cluj-Napoca;332;0;RO;RO1;RO11;RO113;656434;-320481;25;RO11060;Cluj-Napoca; ; ;0; ;99;0; ; ;0;6;0
+ES00508;Granada;Granada;330;1;ES;ES6;ES61;ES614;-1642975;-1225262;10;ES10360;Granada; ; ;0; ;99;0; ; ;200,853;16;0
+RO01671;Timisoara;Timisoara;328;0;RO;RO4;RO42;RO424;482171;-451264;25;RO11087;Timisoara; ; ;0; ;99;0; ; ;0;7;0
+IT01009;Brescia;Brescia;327;1;IT;ITC;ITC4;ITC47;-372577;-484521;16;IT10687;Brescia; ; ;0;PIA_Verona;99;0; ; ;225,846;31;0
+RO01628;Galati;Galati;325;0;RO;RO2;RO22;RO224;1017024;-413627;25;RO11066;Galati;RO101;Galati-Braila;0;PIA_Galati;99;0; ; ;0;6;0
+FR00796;Montpellier;Montpellier;323;1;FR;FR8;FR81;FR813;-896099;-644479;12;FR10531;Montpellier; ; ;0;PIA_Montpellier;99;0; ; ;137;23;0
+BG00078;Varna;Varna;322;0;BG;BG3;BG33;BG331;1044624;-666308;3;BG10070;Varna; ; ;0;PIA_Varna;99;0; ; ;40;4;0
+IT01294;Verona;Verona;320;1;IT;ITD;ITD3;ITD31;-312778;-497519;16;IT10852;Verona; ; ;0;PIA_Verona;99;0; ; ;189;31;0
+IT01011;Busto Arsizio;Busto Arsizio;320;1;IT;ITC;ITC4;ITC41;-480178;-469271;16;IT10767;Milano - Busto Arsizio - Como;IT113;Milano;0;PIA_Milano;99;1;IT03;Milano metropolitan area;604;35;0
+ES00618;Valladolid;Valladolid;318;1;ES;ES4;ES41;ES418;-1630402;-715637;10;ES10415;Valladolid; ; ;0; ;99;0; ; ;157,332;25;0
+NL01354;Eindhoven;Eindhoven;316;1;NL;NL4;NL41;NL414;-661110;203950;21;NL10891;Eindhoven;NL105;Noord-Brabant;0; ;99;1;NL05;Noord-Brabant metropolitan area;671;33;0
+BE00028;Charleroi;Charleroi;314;1;BE;BE3;BE32;BE322;-748020;99804;2;BE10022;Charleroi; ; ;0;PIA_Bruxelles;99;1;BE03;Charleroi-Centre;400;21;0
+ES00487;Cordoba;Cordoba;314;1;ES;ES6;ES61;ES613;-1722210;-1129568;10;ES10347;Cordoba; ; ;0; ;99;0; ; ;39,988;15;0
+ES00525;La Coruna;A Coruna;311;1;ES;ES1;ES11;ES111;-1867721;-450809;10;ES10367;La Coruna; ; ;0;PIA_La Coruna;99;0; ; ;183,204;19;0
+RO01615;Craiova;Craiova;311;0;RO;RO4;RO41;RO411;699897;-590516;25;RO11062;Craiova; ; ;0;PIA_Craiova;99;0; ; ;0;5;0
+IT01027;Caserta;Caserta;308;1;IT;ITF;ITF3;ITF31;-53862;-989053;16;IT10697;Caserta;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;19;0
+UK01823;Coventry;Coventry;308;1;UK;UKC;UKC2;UKC22;0;0;29;UK11166;Birmingham; ; ;0;PIA_Birmingham;99;0; ; ;747;29;0
+RO01595;Brasov;Brasov;307;0;RO;RO1;RO12;RO122;821121;-427860;25;RO11056;Brasov; ; ;0;PIA_Brasov;99;0; ; ;0;7;0
+DE00223;Bonn;Bonn;306;1;DE;DEA;DEA2;DEA22;-556165;107879;7;DE10148;Bonn;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE03;Rhein - Ruhr - Sud;2466;28;0
+MT01325;Valletta;Valletta;301;0;MT;MT0;MT00;MT001;-44377,68526;-1562606,13078;20;MT10873;Valletta; ; ;0; ;99;0; ; ;54;13;1
+BE00029;Gent;Ghent;300;1;BE;BE2;BE23;BE234;-786620;179009;2;BE10023;Gent;BE101;Flemisch Diamond;0;PIA_Lille;99;1;BE01;Flemisch Diamond;1955;32;0
+PL01464;Gdynia;Brasov;300;0;PL;PL6;PL63;PL633;225402;506632;23;PL10956;Gdansk;PL102;Gdansk;0; ;99;0; ; ;174;9;0
