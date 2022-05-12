@@ -21,7 +21,7 @@ AT00019;Wien;Vienna;1674;1;AT;AT1;AT13;AT130;102409;-198305;1;AT10017;Wien; ; ;0
 DE00332;München;Munich;1647;1;DE;DE2;DE21;DE212;-256809;-199518;7;DE10235;München; ; ;0;PIA_München;99;1;DE09;München-Ausburg;976;45;0
 BE00027;Brussels;Brussels;1498;1;BE;BE1;BE10;BE100;-745840;146217;2;BE10021;Brussels;BE101;Flemisch Diamond;0;PIA_Bruxelles;99;1;BE01;Flemisch Diamond;1955;40;1
 SE01710;Stockholm;Stockholm;1479;1;SE;SE1;SE11;SE110;170988;1039894;26;SE11119;Stockholm; ; ;0; ;99;0; ; ;369;45;1
-DE00256;Frankfurt am Main;Frankfurt am Main;1462;1;DE;DE7;DE71;DE712;-453932;32311;7;DE10175;Frankfurt am Main;DE108;Rhein - Main;0;PIA_Frankfurt-am-Main;99;1;DE07;Rhein - Main;1542;41;0
+DE00256;Frankfurt am Main;Frankfurt;1462;1;DE;DE7;DE71;DE712;-453932;32311;7;DE10175;Frankfurt am Main;DE108;Rhein - Main;0;PIA_Frankfurt-am-Main;99;1;DE07;Rhein - Main;1542;41;0
 DE00305;Köln;Cologne;1398;1;DE;DEA;DEA2;DEA23;-562833;135460;7;DE10217;Köln;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE03;Rhein - Ruhr - Sud;2466;32;0
 DK00419;Kobenhavn;Copenhagen;1360;1;DK;DK0;DK01;DK012;-161693;640569;8;DK10303;Kobenhavn;DK103;Öresund;0;PIA_Kobenhavn;99;1;SE01;Öresund metropolitan area;848;48;1
 ES00617;Valencia;Valencia;1318;1;ES;ES5;ES52;ES523;-1318180;-1043833;10;ES10414;Valencia; ; ;0;PIA_Valencia;99;1;ES01;Valencia - Sagunto;80;29;0
