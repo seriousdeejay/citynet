@@ -1,4 +1,4 @@
-id_MUA;Mua;Mua_Eng;Mua_Fr;SizeMUA1k;EU15;Code_Country;NUTS_1;NUTS_2;NUTS_3;X_COORD_first;Y_COORD_first;CountryCode_numeric;id_fua;Fua;id_PUR;PUR;Supra_poly_fua;PIA;Name_supra_poly_fua;Poly_fua;id_poly_fua;Name_poly_fua;SizeHinterland1k;GDP_per_capita;Dummy_Capital
+id_MUA;Mua;Mua_en;Mua_fr;SizeMUA1k;EU15;Code_Country;NUTS_1;NUTS_2;NUTS_3;X_COORD_first;Y_COORD_first;CountryCode_numeric;id_fua;Fua;id_PUR;PUR;Supra_poly_fua;PIA;Name_supra_poly_fua;Poly_fua;id_poly_fua;Name_poly_fua;SizeHinterland1k;GDP_per_capita;Dummy_Capital
 FR00810;Paris;Paris;Paris;9591;1;FR;FR1;FR10;FR101;-923451;-49178;12;FR10544;Paris; ; ;0;PIA_Paris;99;0; ; ;1201;44;1
 UK01886;London;London;Londres;8256;1;UK;UKI;UKI1;UKI11;-1039874;273202;29;UK11208;London; ; ;0;PIA_London;99;0; ; ;2752;45;1
 ES00540;Madrid;Madrid;Madrid;4955;1;ES;ES3;ES30;ES300;-1573058;-867634;10;ES10378;Madrid; ; ;0;PIA_Madrid;99;0; ; ;308;29;1
