@@ -5,6 +5,39 @@ import time
 from tqdm.notebook import tqdm
 import unidecode
 
+# function to read all files from a directory
+def read_stream(indir):
+    """
+    Function to read all the files in a directory (or nested directories)
+    containing wikidump extracts.
+    Returns a list of strings each element representing the entire contents
+    of a single file
+
+        Parameters:
+        -----------
+        indir (str): path to a directory containing text files
+                     or directories with text files
+
+    """
+    wikidump = []
+    t0 = time.time()
+
+    for root, dirs, files in os.walk(indir):
+
+        for filename in files:
+            if not filename.startswith("."):
+                fp = os.path.join(root, filename)
+
+                with open(fp, 'r') as f:
+                    wikidump.append(f.read())
+
+    t1 = time.time()
+
+    total = t1-t0
+    print(f"It took {total}s to read {indir}.")
+
+    return wikidump
+
 # define functions for extracting metadata
 def find_title(input_string):
     """function that returns the title of an article"""
@@ -80,7 +113,7 @@ def split_dump(input_dump, split_pattern = "c>"):
 
     article_list = [
         article for dump
-        in tqdm(input_dump, total = len(input_dump), desc = "Progress `split_dump()`")
+        in tqdm(input_dump, total = len(input_dump), desc = "Progress split_dump()")
         for article in dump.split(split_pattern)]
 
     return article_list
@@ -113,7 +146,7 @@ def process_dump2(dump, key_words, message = True):
     """extracts titles and ids from articles containing key words and returns as a list"""
 
     articles = []
-    for article in tqdm(dump, total = len(dump), desc = "Progress `process_dump()`:"):
+    for article in tqdm(dump, total = len(dump), desc = "Progress process_dump()"):
         article = unidecode.unidecode(article)
         if (list_in_corpus(key_words, article)):
             try:
@@ -134,37 +167,6 @@ def process_dump2(dump, key_words, message = True):
               # f"of the total number of articles ({len(dump)}) in this dump."
     return articles
 
-def read_stream(indir):
-    """
-    Function to read all the files in a directory (or nested directories)
-    containing wikidump extracts.
-    Returns a list of strings each element representing the entire contents
-    of a single file
-
-        Parameters:
-        -----------
-        indir (str): path to a directory containing text files
-                     or directories with text files
-
-    """
-    wikidump = []
-    t0 = time.time()
-
-    for root, dirs, files in os.walk(indir):
-
-        for filename in files:
-            if not filename.startswith("."):
-                fp = os.path.join(root, filename)
-
-                with open(fp, 'r') as f:
-                    wikidump.append(f.read())
-
-    t1 = time.time()
-
-    total = t1-t0
-    print(f"It took {total}s to read {indir}.")
-
-    return wikidump
 
 # def write_outputcsv(df, outputfp, overwrite_protection = True):
 #     """
@@ -238,8 +240,23 @@ def write_outputcsv(df, outputfp, overwrite_protection = True):
 ##############
 # function integrating the other functions
 def preprocess(base_dir, outdir, language, key_words, remove_referral=True, overwrite_protection=True):
+    """
+        params:
+            base_dir:             str;
+                path to directory where extracted wikidump files can be found
+            outdir:               str;
+                path where processed files will be saved to (one file per multistream)
+            language:             str;
+                one of the following ['en', 'fr']
+            key_words:            str, list;
+                list of strings which must be included in article
+            remove_referral:      bool, optional; default is True.
+                if True referral pages will be removed
+            overwrite_protection: bool, optional; default is True.
+                if True confirmation will be asked before overwriting files
+    """
 
-    # establish that a valid language was chosen:
+    # establish that a valid language was chosen, if not abort function:
     lang_list = ['fr', 'en']
     if language not in lang_list:
         print(f"Invalid language was chosen. \n Please choose one of the following: {lang_list}")
@@ -263,36 +280,41 @@ def preprocess(base_dir, outdir, language, key_words, remove_referral=True, over
 
 
 #     for directory in dir_list:
-    for directory in tqdm(dir_list, total = len(dir_list), desc = "Progress Total:"):
+    for directory in tqdm(dir_list, total = len(dir_list), desc = "Progress Total"):
         dir_fp = os.path.join(base_dir, directory)
-        print(f"Starting preprocessing on: {dir_fp}")
-        wikidump = read_stream(dir_fp) # read the files in the directory
+        if not directory.startswith("."):
+            print(f"\nStarting preprocessing on: {dir_fp}")
+            wikidump = read_stream(dir_fp) # read the files in the directory
 
-        wikidump = split_dump(wikidump) # split the files
-        wikidump = process_dump2(wikidump, key_words) # extract id, title, article
+            wikidump = split_dump(wikidump) # split the files
+            wikidump = process_dump2(wikidump, key_words) # extract id, title, article
 
-        df = pd.DataFrame(wikidump, columns = ['article_id', 'title', 'text'])
+            df = pd.DataFrame(wikidump, columns = ['article_id', 'title', 'text'])
 
-        if remove_referral:
-            try:
-                df['length'] = [len(text.split()) for text in df.text]
-                df['length_title'] = [len(title.split()) for title in df.title]
-                n_referral = len(df[df.length == df.length_title])
+            if remove_referral:
+                try:
+                    df['length'] = [len(text.split()) for text in df.text]
+                    df['length_title'] = [len(title.split()) for title in df.title]
+                    n_referral = len(df[df.length == df.length_title])
 
-                df = df[['article_id', 'title', 'text']][df.length != df.length_title]
-                print(f"Removing {n_referral} referral pages")
+                    df = df[['article_id', 'title', 'text']][df.length != df.length_title]
+                    print(f"Removing {n_referral} referral pages")
 
-            except:
-                print(f"Referral pages were not removed from multistream {directory}")
-                pass
+                except:
+                    print(f"Referral pages were not removed from multistream {directory}")
+                    pass
 
 
-        # saving the output
+            # saving the output
 
-        outfile = f'{language}wikidump_{directory}.csv'
-        outputfp = os.path.join(outdir, outfile)
+            outfile = f'{language}wikidump_{directory}.csv'
+            outputfp = os.path.join(outdir, outfile)
 
-        # call write_outputcsv function
-        write_outputcsv(df, outputfp, overwrite_protection = overwrite_protection)
+            # call write_outputcsv function
+            write_outputcsv(df, outputfp, overwrite_protection = overwrite_protection)
+        else:
+            print(f"Skipping: {dir_fp}")
+
+    print(f"----------\nFiles in {base_dir} have been processed\n----------")
 
     return
