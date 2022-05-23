@@ -79,8 +79,8 @@ def list_in_corpus(list_of_words, text_corpus, n = 2):
             list_of_words: (list, str) contains the key words to be matched
             text_corpus:   (str)
             n:             (int, optional)
-                minimum number of words from list_of_words that must appear in text_corpus.
-                default is 2.
+                minimum number of words from list_of_words that must appear in
+                text_corpus. default is 2.
     """
     inclusion = False
     count = 0
@@ -411,7 +411,7 @@ def process_corpus(corpus, city_list):
     matrix = city_matrix(city_list)
 
     # loop over each article in the corpus and update the matrix
-    for article in corpus:
+    for article in tqdm(corpus, total = len(corpus), desc = "Articles processed"):
         process_article(article, dictionary, matrix)
 
     return matrix
@@ -436,14 +436,14 @@ def write_matrix(matrix, outdir, filename):
         print("Are you sure you want to continue and overwrite the file?")
         decision = input('Continue? [y/n]')
         if decision == 'y':
-            df.to_csv(outputfp, index = True)
+            matrix.to_csv(outfp, index = True)
             print(f"Matrix has been written to: {outfp}")
         elif decision == 'n':
             print("The process has been halted.")
         else:
             print("You did not enter a valid option.\nThe process has halted.")
     else:
-        df.to_csv(outputfp, index = True)
+        matrix.to_csv(outfp, index = True)
         print(f"Matrix has been written to: {outfp}")
 
     return
