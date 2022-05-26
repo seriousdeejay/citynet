@@ -4,6 +4,7 @@ import os
 import time
 from tqdm.notebook import tqdm
 import unidecode
+import numpy as np
 
 # function to read all files from a directory
 def read_stream(indir):
@@ -78,8 +79,8 @@ def list_in_corpus(list_of_words, text_corpus, n = 2):
             list_of_words: (list, str) contains the key words to be matched
             text_corpus:   (str)
             n:             (int, optional)
-                minimum number of words from list_of_words that must appear in text_corpus.
-                default is 2.
+                minimum number of words from list_of_words that must appear in
+                text_corpus. default is 2.
     """
     inclusion = False
     count = 0
@@ -224,9 +225,8 @@ def write_outputcsv(df, outputfp, overwrite_protection = True):
                 print(f"file has been written to: {outputfp}")
             elif decision == 'n':
                 print("The process has been halted.")
-                return False
             else:
-                print("You did not enter a valid option.")
+                print("You did not enter a valid option.\nThe process has halted.")
         else:
             df.to_csv(outputfp, index = False)
             print(f"file has been written to: {outputfp}")
@@ -316,5 +316,134 @@ def preprocess(base_dir, outdir, language, key_words, remove_referral=True, over
             print(f"Skipping: {dir_fp}")
 
     print(f"----------\nFiles in {base_dir} have been processed\n----------")
+
+    return
+
+# ---------------------
+# matrix generation related functions
+def create_city_dict(city_list):
+    """
+    function that creates a dictionary of name variants to the standard form
+    output: a dictionary where the keys are variant names and the values are
+    standard names.
+    """
+
+    # instantiate dictionary
+    city_dict = dict()
+
+    # split up the city names in the city list where a '-' occurs
+    # (the symbol used to split separate placenames)
+    for city in city_list:
+        keys = city.split('-')
+        for key in keys:
+            city_dict[key] = city
+
+    return city_dict
+
+def city_matrix(city_list):
+    """generates an empty matrix with the index/columns consisting of the city names"""
+
+    # create zero matrix with the correct dimensions
+    matrix = np.zeros((len(city_list), len(city_list)))
+
+    # transform into dataframe with the columns and index set to the list of cities
+    matrix = pd.DataFrame(matrix, columns = city_list)
+    matrix['index'] = city_list
+    matrix.set_index('index', inplace = True)
+
+    return matrix
+
+
+def city_appearance(text, dictionary):
+    """function to check which placenames appear in the input text per paragraph"""
+
+    # instantiate empty list of standardised city names and city name variations
+    cities_variants = []
+    cities_standard = []
+
+    # for each word in the text check if the word is a key word in the dictionary(one of the variants)
+    for word in dictionary:
+        pattern = r"\b" + word + r"\b" #add word boundaries to dictionary word
+        match = re.search(pattern, text)
+        if match:
+            cities_variants.append(word)
+
+    # for each word in the variant replace name with the standard form
+    for city in cities_variants:
+        city_standard = city.replace(city, dictionary[city])
+        cities_standard.append(city_standard)
+
+    return cities_variants, cities_standard
+
+def process_article(article, dictionary, matrix):
+    """IMPROVE DOC string
+    function that processes each article in order to update the co-occurence values
+    in a co-occurence matrix"""
+
+    # split article into paragraphs (by using '\n' as end of paragraph)
+    paragraphs = article.splitlines()
+    for paragraph in paragraphs:
+        # if paragraph empty skip
+        if not paragraph:
+            continue
+
+        # generate list of cities that appear in the paragraph
+        cities_variants, cities_standard = city_appearance(paragraph, dictionary)
+
+        # skip if fewer than 2 cities appear
+        if len(set(cities_standard)) < 2:
+            continue
+
+        else:
+            # create the co-occurences that appear
+            for city_i in cities_standard:
+                for city_j in cities_standard:
+                    if city_i != city_j: # make sure cities don't co-occure with themselves
+                        matrix.at[city_i, city_j] += 1 # update value in matrix
+
+    return matrix
+
+def process_corpus(corpus, city_list):
+    """function that processes the entire corpus and creates co-occurence matrix"""
+
+    # generate dictionary and matrix
+    dictionary = create_city_dict(city_list)
+    matrix = city_matrix(city_list)
+
+    # loop over each article in the corpus and update the matrix
+    for article in tqdm(corpus, total = len(corpus), desc = "Articles processed"):
+        process_article(article, dictionary, matrix)
+
+    return matrix
+
+
+def create_citylink(matrix):
+    """function that creates a dictionary of city pairs and their co-occurence value
+    based on code by Tongjing Wang"""
+
+    city_link = {}
+    for i in range(len(matrix)-1):
+        for j in range(i+1, len(matrix)-1):
+            city_link[(matrix.index[i], matrix.columns[j])] = matrix.iloc[i,j]
+    return city_link
+
+def write_matrix(matrix, outdir, filename):
+    """function to write matrix to csv"""
+    outfp = os.path.join(outdir, filename)
+
+    if os.path.exists(outfp):
+        print(f"File {outfp} already exists.")
+        print("Are you sure you want to continue and overwrite the file?")
+        decision = input('Continue? [y/n]')
+        if decision == 'y':
+            matrix.to_csv(outfp, index = True)
+            print(f"Matrix has been written to: {outfp}")
+        elif decision == 'n':
+            print("The process has been halted.")
+        else:
+            print("You did not enter a valid option.\nThe process has halted.")
+    else:
+        matrix.to_csv(outfp, index = True)
+        print(f"Matrix has been written to: {outfp}")
 
     return
