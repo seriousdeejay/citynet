@@ -5,7 +5,7 @@ ES00540;Madrid;Madrid;Madrid;4955;1;ES;ES3;ES30;ES300;-1573058;-867634;10;ES1037
 DE00219;Berlin;Berlin;Berlin;3776;1;DE;DE3;DE30;DE300;-108502;279433;7;DE10144;Berlin; ; ;0;PIA_Berlin;99;0; ; ;240;22;1
 IT01156;Milano;Milan;Milan;3698;1;IT;ITC;ITC4;ITC45;-455713;-486054;16;IT10767;Milano - Busto Arsizio - Como;IT113;Milano;0;PIA_Milano;99;1;IT03;Milano metropolitan area;604;35;0
 ES00466;Barcelona;Barcelona;Barcelone;3659;1;ES;ES5;ES51;ES511;-1071654;-865671;10;ES10335;Barcelona; ; ;0;PIA_Barcelona;99;1;ES04;Barcelona metropolitan area;182;31;0
-GR00868;Athinia;Athens;Athènes;3331;1;GR;GR3;GR30;GR300;769408;-1289524;13;GR10586;Athinai; ; ;0;PIA_Athinia;99;0; ; ;365;26;1
+GR00868;Athinai;Athens;Athènes;3331;1;GR;GR3;GR30;GR300;769408;-1289524;13;GR10586;Athinai; ; ;0;PIA_Athinia;99;0; ; ;365;26;1
 IT01228;Roma;Rome;Rome;2532;1;IT;ITE;ITE4;ITE43;-194226;-904825;16;IT10812;Roma; ; ;0;PIA_Roma;99;0; ; ;293;36;1
 UK01783;Birmingham;Birmingham;Birmingham;2363;1;UK;UKD;UKD5;UKD51;-1134914;406610;29;UK11166;Birmingham; ; ;0;PIA_Birmingham;99;0; ; ;747;29;0
 PT01566;Lisboa;Lisbon;Lisbonne;2315;1;PT;PT1;PT17;PT171;-206910403151;-92715049504;24;PT11038;Lisboa; ; ;0;PIA_Lisboa;99;0; ; ;201;20;1
@@ -117,7 +117,7 @@ FR00768;Lens;Lens;Lens;374;1;FR;FR3;FR30;FR301;-860822;118991;12;FR10516;Douai-L
 DE00208;Augsburg;Augsburg;Augsbourg;371;1;DE;DE2;DE27;DE271;-304846;-175680;7;DE10136;Augsburg; ; ;0; ;99;0; ; ;235;30;0
 IT01190;Padova;Padua;Padoue;370;1;IT;ITD;ITD3;ITD36;-244035;-506028;16;IT10786;Padova;IT118;Venezia - Padova;0;PIA_Venezia;99;1;IT01;Venezia - Padova metropolitan area;468;30;0
 CZ00177;Ostrava;Ostrava;Ostrava;365;0;CZ;CZ0;CZ08;CZ080;233748;-15677;6;CZ10117;Ostrava;PL106;Silesian-Moravian;0;PIA_Ostrava;99;1;PL01;Silesian-Moravian metropolitan area;1269;10;0
-ES00529;Las Palmas de Gran Canarias;Las Palmas;Las Palmas de Grande Canarie;365;1;ES;ES7;ES70;ES705;-2966913;-1852242;10;ES10370;Las Palmas de Gran Canarias; ; ;0;PIA_Las Palmas de Gran Canarias;99;0; ; ;220;21;0
+ES00529;Las Palmas de Gran Canaria;Las Palmas;Las Palmas de Grande Canarie;365;1;ES;ES7;ES70;ES705;-2966913;-1852242;10;ES10370;Las Palmas de Gran Canarias; ; ;0;PIA_Las Palmas de Gran Canarias;99;0; ; ;220;21;0
 RO01613;Constanta;Constanta;Constanta;364;0;RO;RO2;RO22;RO223;1083309;-548137;25;RO11061;Constanta; ; ;0; ;99;0; ; ;0;7;0
 IT01032;Castellamare di Stabia-Torre Annunziata;Castellamare di Stabia-Torre Annunziata;Castellamare di Stabia-Torre Annunziata;362;1;IT;ITF;ITF3;ITF33;-46483;-1026659;16;IT10778;Napoli - Castellamare di Stabia - Torre Annunziata - Nola;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;17;0
 UK01947;Stoke;Stoke;Stoke;359;1;UK;UKG;UKG2;UKG23;0;0;29;UK11238;Stoke; ; ;0;PIA_Manchester;99;0; ; ;144,35;24;0
