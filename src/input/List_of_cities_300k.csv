@@ -44,7 +44,7 @@ PL01488;Lodz;Lodz;Lodz;919;0;PL;PL1;PL11;PL114;309063;205778;23;PL10978;Lodz; ; 
 FR00782;Marseille;Marseille;Marseille;862;1;FR;FR8;FR82;FR825;-776208;-696847;12;FR10522;Marseille-Aix-en-Provence;FR106;Marseille-Aix-en-Provence;0;PIA_Marseille-Aix-en-Provence;99;0; ; ;278;27;0
 BE00023;Antwerp;Antwerp;Anvers;830;1;BE;BE2;BE21;BE211;-738642;192383;2;BE10019;Antwerp;BE101;Flemisch Diamond;0;PIA_Bruxelles;99;1;BE01;Flemisch Diamond;1955;37;0
 ES00470;Bilbao;Bilbao;Bilbao;822;1;ES;ES2;ES21;ES213;-1448323;-576955;10;ES10337;Bilbao; ; ;0;PIA_Bilbao;99;0; ; ;125;30;0
-UK01902;Newcastle;Newcastle;Newcastle;814;1;UK;UKC;UKC2;UKC21;-1274910;328087;29;UK11245;Tyneside metropolitan area;UK113;Tyneside;0;PIA_Tyneside;99;0; ; ;344;28;0
+UK01902;Newcastle upon Tyne;Newcastle;Newcastle;814;1;UK;UKC;UKC2;UKC21;-1274910;328087;29;UK11245;Tyneside metropolitan area;UK113;Tyneside;0;PIA_Tyneside;99;0; ; ;344;28;0
 PL01482;Krakow;Krakow;Cracovie;807;0;PL;PL2;PL21;PL213;357121;18007;23;PL10973;Krakow; ; ;0; ;99;0; ; ;399;9;0
 DE00222;Bochum-Herne;Bochum-Herne;Bochum-Herne;804;1;DE;DEA;DEA5;DEA51;-539186;191648;7;DE10147;Bochum-Herne;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;25;0
 GR00888;Thessaloniki;Thessaloniki;Thessalonique;777;1;GR;GR1;GR12;GR122;673913;-1006186;13;GR10603;Thessaloniki; ; ;0;PIA_Thessaloniki;99;0; ; ;275;18;0
@@ -103,7 +103,7 @@ IT00994;Bari;Bari;Bari;411;1;IT;ITF;ITF4;ITF42;154896;-985644;16;IT10675;Bari;IT
 FR00850;Toulon;Toulon;Toulon;410;1;FR;FR8;FR82;FR825;-736906;-719129;12;FR10574;Toulon; ; ;0;PIA_Marseille-Aix-en-Provence;99;0; ; ;144,228;25;0
 UK01796;Brighton;Brighton;Brighton;410;1;UK;UKI;UKI2;UKI21;0;0;29;UK11171;Brighton/Worthing/Littlehampton; ; ;0;PIA_Brighton;99;0; ; ;245;31;0
 DE00236;Darmstadt;Darmstadt;Darmstadt;407;1;DE;DE7;DE71;DE711;-454659;6063;7;DE10158;Darmstadt;DE108;Rhein - Main;0;PIA_Frankfurt-am-Main;99;1;DE07;Rhein - Main;1542;30;0
-DE00402;Wüppertal;Wuppertal;Wuppertal;395;1;DE;DEA;DEA1;DEA1A;-545613;167798;7;DE10290;Wüppertal;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;27;0
+DE00402;Wuppertal;Wuppertal;Wuppertal;395;1;DE;DEA;DEA1;DEA1A;-545613;167798;7;DE10290;Wüppertal;DE110;Rhein - Ruhr;1;PIA_Köln;99;1;DE05;Rhein - Ruhr;2466;27;0
 NL01410;Utrecht;Utrecht;Utrecht;390;1;NL;NL3;NL31;NL310;-677907;278068;21;NL10917;Utrecht;NL106;Randstad;1;PIA_Amsterdam;99;1;NL03;Randstad Holland Oost;760;39;0
 UK01790;Bournemouth;Bournemouth;Bournemouth;390;1;UK;UKD;UKD4;UKD43;-1178074;216247;29;UK11169;Bournemouth; ; ;0;PIA_Southampton;99;0; ; ;141;29;0
 UK01898;Middlesbrough;Middlesbrough;Middlesbrough;389;1;UK;UKI;UKI1;UKI11;-1040744;620509;29;UK11213;Middlesborough; ; ;0;PIA_Tyneside;99;0; ; ;156;25;0
@@ -119,8 +119,8 @@ IT01190;Padova;Padua;Padoue;370;1;IT;ITD;ITD3;ITD36;-244035;-506028;16;IT10786;P
 CZ00177;Ostrava;Ostrava;Ostrava;365;0;CZ;CZ0;CZ08;CZ080;233748;-15677;6;CZ10117;Ostrava;PL106;Silesian-Moravian;0;PIA_Ostrava;99;1;PL01;Silesian-Moravian metropolitan area;1269;10;0
 ES00529;Las Palmas de Gran Canaria;Las Palmas;Las Palmas de Grande Canarie;365;1;ES;ES7;ES70;ES705;-2966913;-1852242;10;ES10370;Las Palmas de Gran Canarias; ; ;0;PIA_Las Palmas de Gran Canarias;99;0; ; ;220;21;0
 RO01613;Constanta;Constanta;Constanta;364;0;RO;RO2;RO22;RO223;1083309;-548137;25;RO11061;Constanta; ; ;0; ;99;0; ; ;0;7;0
-IT01032;Castellamare di Stabia-Torre Annunziata;Castellamare di Stabia-Torre Annunziata;Castellamare di Stabia-Torre Annunziata;362;1;IT;ITF;ITF3;ITF33;-46483;-1026659;16;IT10778;Napoli - Castellamare di Stabia - Torre Annunziata - Nola;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;17;0
-UK01947;Stoke;Stoke;Stoke;359;1;UK;UKG;UKG2;UKG23;0;0;29;UK11238;Stoke; ; ;0;PIA_Manchester;99;0; ; ;144,35;24;0
+IT01032;Castellammare di Stabia-Torre Annunziata;Castellammare di Stabia-Torre Annunziata;Castellammare di Stabia-Torre Annunziata;362;1;IT;ITF;ITF3;ITF33;-46483;-1026659;16;IT10778;Napoli - Castellamare di Stabia - Torre Annunziata - Nola;IT114;Napoli;0;PIA_Napoli;99;1;IT02;Napoli metropolitan area;38;17;0
+UK01947;Stoke-on-Trent;Stoke;Stoke;359;1;UK;UKG;UKG2;UKG23;0;0;29;UK11238;Stoke; ; ;0;PIA_Manchester;99;0; ; ;144,35;24;0
 ES00591;Santa Cruz de Tenerife;Santa Cruz de Tenerife;Santa Cruz de Tenerife;357;1;ES;ES7;ES70;ES709;-3023096;-1778673;10;ES10402;Santa Cruz de Tenerife; ; ;0;PIA_Santa Cruz de Tenerife;99;0; ; ;108,398;19;0
 PL01491;Lublin;Lublin;Lublin;354;0;PL;PL3;PL31;PL314;526935;163054;23;PL10981;Lublin; ; ;0; ;99;0; ; ;97;6;0
 UK01807;Cardiff;Cardiff;Cardiff;353;1;UK;UKL;UKL2;UKL22;-1248840;321442;29;UK11176;Cardiff and South Wale;UK102;Cardiff and South Wales;0; ;99;0; ; ;417;27;0
