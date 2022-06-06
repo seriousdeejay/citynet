@@ -117,7 +117,7 @@
 ('Paris', 'Ostrava'): 14.0
 ('Paris', 'Las Palmas'): 33.0
 ('Paris', 'Constanta'): 32.0
-('Paris', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Paris', 'Castellammare di Stabia-Torre Annunziata'): 2.0
 ('Paris', 'Stoke'): 35.0
 ('Paris', 'Santa Cruz de Tenerife'): 8.0
 ('Paris', 'Lublin'): 72.0
@@ -126,7 +126,7 @@
 ('Paris', 'Plovdiv'): 40.0
 ('Paris', 'Bradford'): 104.0
 ('Paris', 'Alicante'): 48.0
-('Paris', 'Cluj-Napoca'): 86.0
+('Paris', 'Cluj-Napoca'): 112.0
 ('Paris', 'Granada'): 177.0
 ('Paris', 'Timisoara'): 40.0
 ('Paris', 'Brescia'): 80.0
@@ -265,7 +265,7 @@
 ('London', 'Ostrava'): 31.0
 ('London', 'Las Palmas'): 51.0
 ('London', 'Constanta'): 13.0
-('London', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('London', 'Castellammare di Stabia-Torre Annunziata'): 3.0
 ('London', 'Stoke'): 1216.0
 ('London', 'Santa Cruz de Tenerife'): 14.0
 ('London', 'Lublin'): 50.0
@@ -274,7 +274,7 @@
 ('London', 'Plovdiv'): 24.0
 ('London', 'Bradford'): 1532.0
 ('London', 'Alicante'): 62.0
-('London', 'Cluj-Napoca'): 64.0
+('London', 'Cluj-Napoca'): 89.0
 ('London', 'Granada'): 494.0
 ('London', 'Timisoara'): 23.0
 ('London', 'Brescia'): 64.0
@@ -412,7 +412,7 @@
 ('Madrid', 'Ostrava'): 11.0
 ('Madrid', 'Las Palmas'): 231.0
 ('Madrid', 'Constanta'): 5.0
-('Madrid', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Madrid', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Madrid', 'Stoke'): 39.0
 ('Madrid', 'Santa Cruz de Tenerife'): 69.0
 ('Madrid', 'Lublin'): 4.0
@@ -421,7 +421,7 @@
 ('Madrid', 'Plovdiv'): 10.0
 ('Madrid', 'Bradford'): 14.0
 ('Madrid', 'Alicante'): 321.0
-('Madrid', 'Cluj-Napoca'): 30.0
+('Madrid', 'Cluj-Napoca'): 38.0
 ('Madrid', 'Granada'): 660.0
 ('Madrid', 'Timisoara'): 15.0
 ('Madrid', 'Brescia'): 24.0
@@ -558,7 +558,7 @@
 ('Berlin', 'Ostrava'): 29.0
 ('Berlin', 'Las Palmas'): 29.0
 ('Berlin', 'Constanta'): 14.0
-('Berlin', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Berlin', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Berlin', 'Stoke'): 13.0
 ('Berlin', 'Santa Cruz de Tenerife'): 6.0
 ('Berlin', 'Lublin'): 89.0
@@ -567,7 +567,7 @@
 ('Berlin', 'Plovdiv'): 30.0
 ('Berlin', 'Bradford'): 40.0
 ('Berlin', 'Alicante'): 22.0
-('Berlin', 'Cluj-Napoca'): 59.0
+('Berlin', 'Cluj-Napoca'): 78.0
 ('Berlin', 'Granada'): 65.0
 ('Berlin', 'Timisoara'): 24.0
 ('Berlin', 'Brescia'): 17.0
@@ -703,7 +703,7 @@
 ('Milan', 'Ostrava'): 23.0
 ('Milan', 'Las Palmas'): 15.0
 ('Milan', 'Constanta'): 5.0
-('Milan', 'Castellamare di Stabia-Torre Annunziata'): 3.0
+('Milan', 'Castellammare di Stabia-Torre Annunziata'): 8.0
 ('Milan', 'Stoke'): 25.0
 ('Milan', 'Santa Cruz de Tenerife'): 1.0
 ('Milan', 'Lublin'): 5.0
@@ -712,7 +712,7 @@
 ('Milan', 'Plovdiv'): 18.0
 ('Milan', 'Bradford'): 23.0
 ('Milan', 'Alicante'): 13.0
-('Milan', 'Cluj-Napoca'): 22.0
+('Milan', 'Cluj-Napoca'): 29.0
 ('Milan', 'Granada'): 36.0
 ('Milan', 'Timisoara'): 21.0
 ('Milan', 'Brescia'): 643.0
@@ -847,7 +847,7 @@
 ('Barcelona', 'Ostrava'): 15.0
 ('Barcelona', 'Las Palmas'): 170.0
 ('Barcelona', 'Constanta'): 8.0
-('Barcelona', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Barcelona', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Barcelona', 'Stoke'): 49.0
 ('Barcelona', 'Santa Cruz de Tenerife'): 51.0
 ('Barcelona', 'Lublin'): 3.0
@@ -856,7 +856,7 @@
 ('Barcelona', 'Plovdiv'): 6.0
 ('Barcelona', 'Bradford'): 15.0
 ('Barcelona', 'Alicante'): 233.0
-('Barcelona', 'Cluj-Napoca'): 9.0
+('Barcelona', 'Cluj-Napoca'): 11.0
 ('Barcelona', 'Granada'): 344.0
 ('Barcelona', 'Timisoara'): 9.0
 ('Barcelona', 'Brescia'): 25.0
@@ -990,7 +990,7 @@
 ('Athens', 'Ostrava'): 10.0
 ('Athens', 'Las Palmas'): 6.0
 ('Athens', 'Constanta'): 12.0
-('Athens', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Athens', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Athens', 'Stoke'): 11.0
 ('Athens', 'Santa Cruz de Tenerife'): 1.0
 ('Athens', 'Lublin'): 5.0
@@ -999,7 +999,7 @@
 ('Athens', 'Plovdiv'): 30.0
 ('Athens', 'Bradford'): 50.0
 ('Athens', 'Alicante'): 15.0
-('Athens', 'Cluj-Napoca'): 17.0
+('Athens', 'Cluj-Napoca'): 23.0
 ('Athens', 'Granada'): 15.0
 ('Athens', 'Timisoara'): 2.0
 ('Athens', 'Brescia'): 11.0
@@ -1132,7 +1132,7 @@
 ('Rome', 'Ostrava'): 17.0
 ('Rome', 'Las Palmas'): 11.0
 ('Rome', 'Constanta'): 12.0
-('Rome', 'Castellamare di Stabia-Torre Annunziata'): 7.0
+('Rome', 'Castellammare di Stabia-Torre Annunziata'): 11.0
 ('Rome', 'Stoke'): 46.0
 ('Rome', 'Santa Cruz de Tenerife'): 2.0
 ('Rome', 'Lublin'): 42.0
@@ -1141,7 +1141,7 @@
 ('Rome', 'Plovdiv'): 20.0
 ('Rome', 'Bradford'): 45.0
 ('Rome', 'Alicante'): 28.0
-('Rome', 'Cluj-Napoca'): 60.0
+('Rome', 'Cluj-Napoca'): 77.0
 ('Rome', 'Granada'): 84.0
 ('Rome', 'Timisoara'): 21.0
 ('Rome', 'Brescia'): 299.0
@@ -1273,7 +1273,7 @@
 ('Birmingham', 'Ostrava'): 4.0
 ('Birmingham', 'Las Palmas'): 12.0
 ('Birmingham', 'Constanta'): 1.0
-('Birmingham', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Birmingham', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Birmingham', 'Stoke'): 673.0
 ('Birmingham', 'Santa Cruz de Tenerife'): 0.0
 ('Birmingham', 'Lublin'): 4.0
@@ -1282,7 +1282,7 @@
 ('Birmingham', 'Plovdiv'): 3.0
 ('Birmingham', 'Bradford'): 505.0
 ('Birmingham', 'Alicante'): 8.0
-('Birmingham', 'Cluj-Napoca'): 2.0
+('Birmingham', 'Cluj-Napoca'): 3.0
 ('Birmingham', 'Granada'): 43.0
 ('Birmingham', 'Timisoara'): 2.0
 ('Birmingham', 'Brescia'): 4.0
@@ -1413,7 +1413,7 @@
 ('Lisbon', 'Ostrava'): 1.0
 ('Lisbon', 'Las Palmas'): 34.0
 ('Lisbon', 'Constanta'): 4.0
-('Lisbon', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Lisbon', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Lisbon', 'Stoke'): 6.0
 ('Lisbon', 'Santa Cruz de Tenerife'): 3.0
 ('Lisbon', 'Lublin'): 1.0
@@ -1422,7 +1422,7 @@
 ('Lisbon', 'Plovdiv'): 2.0
 ('Lisbon', 'Bradford'): 11.0
 ('Lisbon', 'Alicante'): 32.0
-('Lisbon', 'Cluj-Napoca'): 7.0
+('Lisbon', 'Cluj-Napoca'): 8.0
 ('Lisbon', 'Granada'): 40.0
 ('Lisbon', 'Timisoara'): 5.0
 ('Lisbon', 'Brescia'): 6.0
@@ -1552,7 +1552,7 @@
 ('Naples', 'Ostrava'): 2.0
 ('Naples', 'Las Palmas'): 6.0
 ('Naples', 'Constanta'): 6.0
-('Naples', 'Castellamare di Stabia-Torre Annunziata'): 50.0
+('Naples', 'Castellammare di Stabia-Torre Annunziata'): 114.0
 ('Naples', 'Stoke'): 0.0
 ('Naples', 'Santa Cruz de Tenerife'): 2.0
 ('Naples', 'Lublin'): 5.0
@@ -1561,7 +1561,7 @@
 ('Naples', 'Plovdiv'): 2.0
 ('Naples', 'Bradford'): 2.0
 ('Naples', 'Alicante'): 11.0
-('Naples', 'Cluj-Napoca'): 2.0
+('Naples', 'Cluj-Napoca'): 3.0
 ('Naples', 'Granada'): 48.0
 ('Naples', 'Timisoara'): 0.0
 ('Naples', 'Brescia'): 66.0
@@ -1690,7 +1690,7 @@
 ('Katowice', 'Ostrava'): 21.0
 ('Katowice', 'Las Palmas'): 2.0
 ('Katowice', 'Constanta'): 1.0
-('Katowice', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Katowice', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Katowice', 'Stoke'): 0.0
 ('Katowice', 'Santa Cruz de Tenerife'): 0.0
 ('Katowice', 'Lublin'): 62.0
@@ -1699,7 +1699,7 @@
 ('Katowice', 'Plovdiv'): 1.0
 ('Katowice', 'Bradford'): 1.0
 ('Katowice', 'Alicante'): 1.0
-('Katowice', 'Cluj-Napoca'): 11.0
+('Katowice', 'Cluj-Napoca'): 16.0
 ('Katowice', 'Granada'): 0.0
 ('Katowice', 'Timisoara'): 1.0
 ('Katowice', 'Brescia'): 0.0
@@ -1827,7 +1827,7 @@
 ('Manchester', 'Ostrava'): 7.0
 ('Manchester', 'Las Palmas'): 6.0
 ('Manchester', 'Constanta'): 2.0
-('Manchester', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Manchester', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Manchester', 'Stoke'): 1218.0
 ('Manchester', 'Santa Cruz de Tenerife'): 0.0
 ('Manchester', 'Lublin'): 9.0
@@ -1963,7 +1963,7 @@
 ('Hamburg', 'Ostrava'): 6.0
 ('Hamburg', 'Las Palmas'): 10.0
 ('Hamburg', 'Constanta'): 3.0
-('Hamburg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Hamburg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Hamburg', 'Stoke'): 8.0
 ('Hamburg', 'Santa Cruz de Tenerife'): 4.0
 ('Hamburg', 'Lublin'): 9.0
@@ -1972,7 +1972,7 @@
 ('Hamburg', 'Plovdiv'): 4.0
 ('Hamburg', 'Bradford'): 15.0
 ('Hamburg', 'Alicante'): 5.0
-('Hamburg', 'Cluj-Napoca'): 7.0
+('Hamburg', 'Cluj-Napoca'): 9.0
 ('Hamburg', 'Granada'): 20.0
 ('Hamburg', 'Timisoara'): 7.0
 ('Hamburg', 'Brescia'): 2.0
@@ -2098,7 +2098,7 @@
 ('Budapest', 'Ostrava'): 16.0
 ('Budapest', 'Las Palmas'): 6.0
 ('Budapest', 'Constanta'): 10.0
-('Budapest', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Budapest', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Budapest', 'Stoke'): 4.0
 ('Budapest', 'Santa Cruz de Tenerife'): 1.0
 ('Budapest', 'Lublin'): 10.0
@@ -2107,7 +2107,7 @@
 ('Budapest', 'Plovdiv'): 25.0
 ('Budapest', 'Bradford'): 3.0
 ('Budapest', 'Alicante'): 13.0
-('Budapest', 'Cluj-Napoca'): 249.0
+('Budapest', 'Cluj-Napoca'): 331.0
 ('Budapest', 'Granada'): 19.0
 ('Budapest', 'Timisoara'): 96.0
 ('Budapest', 'Brescia'): 12.0
@@ -2232,7 +2232,7 @@
 ('Bucharest', 'Ostrava'): 3.0
 ('Bucharest', 'Las Palmas'): 3.0
 ('Bucharest', 'Constanta'): 335.0
-('Bucharest', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bucharest', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bucharest', 'Stoke'): 0.0
 ('Bucharest', 'Santa Cruz de Tenerife'): 0.0
 ('Bucharest', 'Lublin'): 8.0
@@ -2241,7 +2241,7 @@
 ('Bucharest', 'Plovdiv'): 23.0
 ('Bucharest', 'Bradford'): 1.0
 ('Bucharest', 'Alicante'): 8.0
-('Bucharest', 'Cluj-Napoca'): 842.0
+('Bucharest', 'Cluj-Napoca'): 1112.0
 ('Bucharest', 'Granada'): 5.0
 ('Bucharest', 'Timisoara'): 422.0
 ('Bucharest', 'Brescia'): 2.0
@@ -2365,7 +2365,7 @@
 ('Warsaw', 'Ostrava'): 29.0
 ('Warsaw', 'Las Palmas'): 4.0
 ('Warsaw', 'Constanta'): 4.0
-('Warsaw', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Warsaw', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Warsaw', 'Stoke'): 1.0
 ('Warsaw', 'Santa Cruz de Tenerife'): 0.0
 ('Warsaw', 'Lublin'): 781.0
@@ -2374,7 +2374,7 @@
 ('Warsaw', 'Plovdiv'): 12.0
 ('Warsaw', 'Bradford'): 7.0
 ('Warsaw', 'Alicante'): 10.0
-('Warsaw', 'Cluj-Napoca'): 25.0
+('Warsaw', 'Cluj-Napoca'): 33.0
 ('Warsaw', 'Granada'): 11.0
 ('Warsaw', 'Timisoara'): 13.0
 ('Warsaw', 'Brescia'): 11.0
@@ -2497,7 +2497,7 @@
 ('Stuttgart', 'Ostrava'): 15.0
 ('Stuttgart', 'Las Palmas'): 2.0
 ('Stuttgart', 'Constanta'): 1.0
-('Stuttgart', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Stuttgart', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Stuttgart', 'Stoke'): 11.0
 ('Stuttgart', 'Santa Cruz de Tenerife'): 0.0
 ('Stuttgart', 'Lublin'): 5.0
@@ -2506,7 +2506,7 @@
 ('Stuttgart', 'Plovdiv'): 13.0
 ('Stuttgart', 'Bradford'): 8.0
 ('Stuttgart', 'Alicante'): 5.0
-('Stuttgart', 'Cluj-Napoca'): 13.0
+('Stuttgart', 'Cluj-Napoca'): 17.0
 ('Stuttgart', 'Granada'): 11.0
 ('Stuttgart', 'Timisoara'): 10.0
 ('Stuttgart', 'Brescia'): 6.0
@@ -2628,7 +2628,7 @@
 ('Vienna', 'Ostrava'): 61.0
 ('Vienna', 'Las Palmas'): 14.0
 ('Vienna', 'Constanta'): 12.0
-('Vienna', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Vienna', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Vienna', 'Stoke'): 6.0
 ('Vienna', 'Santa Cruz de Tenerife'): 3.0
 ('Vienna', 'Lublin'): 56.0
@@ -2637,7 +2637,7 @@
 ('Vienna', 'Plovdiv'): 46.0
 ('Vienna', 'Bradford'): 21.0
 ('Vienna', 'Alicante'): 9.0
-('Vienna', 'Cluj-Napoca'): 172.0
+('Vienna', 'Cluj-Napoca'): 210.0
 ('Vienna', 'Granada'): 31.0
 ('Vienna', 'Timisoara'): 116.0
 ('Vienna', 'Brescia'): 29.0
@@ -2758,7 +2758,7 @@
 ('Munich', 'Ostrava'): 11.0
 ('Munich', 'Las Palmas'): 12.0
 ('Munich', 'Constanta'): 6.0
-('Munich', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Munich', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Munich', 'Stoke'): 18.0
 ('Munich', 'Santa Cruz de Tenerife'): 2.0
 ('Munich', 'Lublin'): 25.0
@@ -2767,7 +2767,7 @@
 ('Munich', 'Plovdiv'): 20.0
 ('Munich', 'Bradford'): 23.0
 ('Munich', 'Alicante'): 12.0
-('Munich', 'Cluj-Napoca'): 45.0
+('Munich', 'Cluj-Napoca'): 61.0
 ('Munich', 'Granada'): 23.0
 ('Munich', 'Timisoara'): 20.0
 ('Munich', 'Brescia'): 19.0
@@ -2887,7 +2887,7 @@
 ('Brussels', 'Ostrava'): 12.0
 ('Brussels', 'Las Palmas'): 6.0
 ('Brussels', 'Constanta'): 3.0
-('Brussels', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Brussels', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Brussels', 'Stoke'): 5.0
 ('Brussels', 'Santa Cruz de Tenerife'): 1.0
 ('Brussels', 'Lublin'): 12.0
@@ -2896,7 +2896,7 @@
 ('Brussels', 'Plovdiv'): 6.0
 ('Brussels', 'Bradford'): 24.0
 ('Brussels', 'Alicante'): 21.0
-('Brussels', 'Cluj-Napoca'): 12.0
+('Brussels', 'Cluj-Napoca'): 17.0
 ('Brussels', 'Granada'): 19.0
 ('Brussels', 'Timisoara'): 9.0
 ('Brussels', 'Brescia'): 7.0
@@ -3015,7 +3015,7 @@
 ('Stockholm', 'Ostrava'): 14.0
 ('Stockholm', 'Las Palmas'): 6.0
 ('Stockholm', 'Constanta'): 1.0
-('Stockholm', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Stockholm', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Stockholm', 'Stoke'): 1.0
 ('Stockholm', 'Santa Cruz de Tenerife'): 0.0
 ('Stockholm', 'Lublin'): 9.0
@@ -3024,7 +3024,7 @@
 ('Stockholm', 'Plovdiv'): 1.0
 ('Stockholm', 'Bradford'): 9.0
 ('Stockholm', 'Alicante'): 12.0
-('Stockholm', 'Cluj-Napoca'): 19.0
+('Stockholm', 'Cluj-Napoca'): 26.0
 ('Stockholm', 'Granada'): 8.0
 ('Stockholm', 'Timisoara'): 5.0
 ('Stockholm', 'Brescia'): 3.0
@@ -3142,7 +3142,7 @@
 ('Frankfurt', 'Ostrava'): 5.0
 ('Frankfurt', 'Las Palmas'): 6.0
 ('Frankfurt', 'Constanta'): 4.0
-('Frankfurt', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Frankfurt', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Frankfurt', 'Stoke'): 7.0
 ('Frankfurt', 'Santa Cruz de Tenerife'): 0.0
 ('Frankfurt', 'Lublin'): 15.0
@@ -3151,7 +3151,7 @@
 ('Frankfurt', 'Plovdiv'): 6.0
 ('Frankfurt', 'Bradford'): 10.0
 ('Frankfurt', 'Alicante'): 6.0
-('Frankfurt', 'Cluj-Napoca'): 15.0
+('Frankfurt', 'Cluj-Napoca'): 19.0
 ('Frankfurt', 'Granada'): 15.0
 ('Frankfurt', 'Timisoara'): 11.0
 ('Frankfurt', 'Brescia'): 12.0
@@ -3268,7 +3268,7 @@
 ('Cologne', 'Ostrava'): 4.0
 ('Cologne', 'Las Palmas'): 4.0
 ('Cologne', 'Constanta'): 0.0
-('Cologne', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Cologne', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Cologne', 'Stoke'): 4.0
 ('Cologne', 'Santa Cruz de Tenerife'): 1.0
 ('Cologne', 'Lublin'): 3.0
@@ -3277,7 +3277,7 @@
 ('Cologne', 'Plovdiv'): 3.0
 ('Cologne', 'Bradford'): 6.0
 ('Cologne', 'Alicante'): 3.0
-('Cologne', 'Cluj-Napoca'): 32.0
+('Cologne', 'Cluj-Napoca'): 46.0
 ('Cologne', 'Granada'): 28.0
 ('Cologne', 'Timisoara'): 3.0
 ('Cologne', 'Brescia'): 13.0
@@ -3393,7 +3393,7 @@
 ('Copenhagen', 'Ostrava'): 2.0
 ('Copenhagen', 'Las Palmas'): 7.0
 ('Copenhagen', 'Constanta'): 4.0
-('Copenhagen', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Copenhagen', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Copenhagen', 'Stoke'): 3.0
 ('Copenhagen', 'Santa Cruz de Tenerife'): 0.0
 ('Copenhagen', 'Lublin'): 5.0
@@ -3402,7 +3402,7 @@
 ('Copenhagen', 'Plovdiv'): 5.0
 ('Copenhagen', 'Bradford'): 6.0
 ('Copenhagen', 'Alicante'): 13.0
-('Copenhagen', 'Cluj-Napoca'): 15.0
+('Copenhagen', 'Cluj-Napoca'): 20.0
 ('Copenhagen', 'Granada'): 8.0
 ('Copenhagen', 'Timisoara'): 3.0
 ('Copenhagen', 'Brescia'): 6.0
@@ -3517,7 +3517,7 @@
 ('Valencia', 'Ostrava'): 5.0
 ('Valencia', 'Las Palmas'): 78.0
 ('Valencia', 'Constanta'): 6.0
-('Valencia', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Valencia', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Valencia', 'Stoke'): 30.0
 ('Valencia', 'Santa Cruz de Tenerife'): 34.0
 ('Valencia', 'Lublin'): 1.0
@@ -3526,7 +3526,7 @@
 ('Valencia', 'Plovdiv'): 3.0
 ('Valencia', 'Bradford'): 9.0
 ('Valencia', 'Alicante'): 486.0
-('Valencia', 'Cluj-Napoca'): 5.0
+('Valencia', 'Cluj-Napoca'): 6.0
 ('Valencia', 'Granada'): 328.0
 ('Valencia', 'Timisoara'): 2.0
 ('Valencia', 'Brescia'): 5.0
@@ -3640,7 +3640,7 @@
 ('Turin', 'Ostrava'): 3.0
 ('Turin', 'Las Palmas'): 0.0
 ('Turin', 'Constanta'): 3.0
-('Turin', 'Castellamare di Stabia-Torre Annunziata'): 2.0
+('Turin', 'Castellammare di Stabia-Torre Annunziata'): 5.0
 ('Turin', 'Stoke'): 8.0
 ('Turin', 'Santa Cruz de Tenerife'): 0.0
 ('Turin', 'Lublin'): 2.0
@@ -3649,7 +3649,7 @@
 ('Turin', 'Plovdiv'): 3.0
 ('Turin', 'Bradford'): 4.0
 ('Turin', 'Alicante'): 0.0
-('Turin', 'Cluj-Napoca'): 9.0
+('Turin', 'Cluj-Napoca'): 11.0
 ('Turin', 'Granada'): 10.0
 ('Turin', 'Timisoara'): 3.0
 ('Turin', 'Brescia'): 141.0
@@ -3762,7 +3762,7 @@
 ('Glasgow', 'Ostrava'): 2.0
 ('Glasgow', 'Las Palmas'): 9.0
 ('Glasgow', 'Constanta'): 1.0
-('Glasgow', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Glasgow', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Glasgow', 'Stoke'): 96.0
 ('Glasgow', 'Santa Cruz de Tenerife'): 0.0
 ('Glasgow', 'Lublin'): 1.0
@@ -3771,7 +3771,7 @@
 ('Glasgow', 'Plovdiv'): 3.0
 ('Glasgow', 'Bradford'): 178.0
 ('Glasgow', 'Alicante'): 8.0
-('Glasgow', 'Cluj-Napoca'): 4.0
+('Glasgow', 'Cluj-Napoca'): 5.0
 ('Glasgow', 'Granada'): 23.0
 ('Glasgow', 'Timisoara'): 1.0
 ('Glasgow', 'Brescia'): 0.0
@@ -3883,7 +3883,7 @@
 ('Prague', 'Ostrava'): 353.0
 ('Prague', 'Las Palmas'): 8.0
 ('Prague', 'Constanta'): 4.0
-('Prague', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Prague', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Prague', 'Stoke'): 6.0
 ('Prague', 'Santa Cruz de Tenerife'): 1.0
 ('Prague', 'Lublin'): 32.0
@@ -3892,7 +3892,7 @@
 ('Prague', 'Plovdiv'): 25.0
 ('Prague', 'Bradford'): 3.0
 ('Prague', 'Alicante'): 9.0
-('Prague', 'Cluj-Napoca'): 45.0
+('Prague', 'Cluj-Napoca'): 58.0
 ('Prague', 'Granada'): 17.0
 ('Prague', 'Timisoara'): 24.0
 ('Prague', 'Brescia'): 10.0
@@ -4003,7 +4003,7 @@
 ('Lyon', 'Ostrava'): 3.0
 ('Lyon', 'Las Palmas'): 5.0
 ('Lyon', 'Constanta'): 1.0
-('Lyon', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Lyon', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Lyon', 'Stoke'): 5.0
 ('Lyon', 'Santa Cruz de Tenerife'): 1.0
 ('Lyon', 'Lublin'): 1.0
@@ -4122,7 +4122,7 @@
 ('Sofia', 'Ostrava'): 27.0
 ('Sofia', 'Las Palmas'): 3.0
 ('Sofia', 'Constanta'): 20.0
-('Sofia', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Sofia', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Sofia', 'Stoke'): 2.0
 ('Sofia', 'Santa Cruz de Tenerife'): 4.0
 ('Sofia', 'Lublin'): 10.0
@@ -4131,7 +4131,7 @@
 ('Sofia', 'Plovdiv'): 900.0
 ('Sofia', 'Bradford'): 12.0
 ('Sofia', 'Alicante'): 4.0
-('Sofia', 'Cluj-Napoca'): 68.0
+('Sofia', 'Cluj-Napoca'): 92.0
 ('Sofia', 'Granada'): 12.0
 ('Sofia', 'Timisoara'): 18.0
 ('Sofia', 'Brescia'): 5.0
@@ -4240,7 +4240,7 @@
 ('Liverpool', 'Ostrava'): 4.0
 ('Liverpool', 'Las Palmas'): 17.0
 ('Liverpool', 'Constanta'): 0.0
-('Liverpool', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Liverpool', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Liverpool', 'Stoke'): 735.0
 ('Liverpool', 'Santa Cruz de Tenerife'): 0.0
 ('Liverpool', 'Lublin'): 2.0
@@ -4249,7 +4249,7 @@
 ('Liverpool', 'Plovdiv'): 8.0
 ('Liverpool', 'Bradford'): 489.0
 ('Liverpool', 'Alicante'): 3.0
-('Liverpool', 'Cluj-Napoca'): 8.0
+('Liverpool', 'Cluj-Napoca'): 10.0
 ('Liverpool', 'Granada'): 92.0
 ('Liverpool', 'Timisoara'): 4.0
 ('Liverpool', 'Brescia'): 6.0
@@ -4357,7 +4357,7 @@
 ('Porto', 'Ostrava'): 1.0
 ('Porto', 'Las Palmas'): 9.0
 ('Porto', 'Constanta'): 2.0
-('Porto', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Porto', 'Castellammare di Stabia-Torre Annunziata'): 2.0
 ('Porto', 'Stoke'): 17.0
 ('Porto', 'Santa Cruz de Tenerife'): 4.0
 ('Porto', 'Lublin'): 3.0
@@ -4366,7 +4366,7 @@
 ('Porto', 'Plovdiv'): 0.0
 ('Porto', 'Bradford'): 4.0
 ('Porto', 'Alicante'): 9.0
-('Porto', 'Cluj-Napoca'): 11.0
+('Porto', 'Cluj-Napoca'): 12.0
 ('Porto', 'Granada'): 16.0
 ('Porto', 'Timisoara'): 5.0
 ('Porto', 'Brescia'): 5.0
@@ -4473,7 +4473,7 @@
 ('Seville', 'Ostrava'): 1.0
 ('Seville', 'Las Palmas'): 49.0
 ('Seville', 'Constanta'): 0.0
-('Seville', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Seville', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Seville', 'Stoke'): 0.0
 ('Seville', 'Santa Cruz de Tenerife'): 30.0
 ('Seville', 'Lublin'): 1.0
@@ -4482,7 +4482,7 @@
 ('Seville', 'Plovdiv'): 0.0
 ('Seville', 'Bradford'): 0.0
 ('Seville', 'Alicante'): 81.0
-('Seville', 'Cluj-Napoca'): 3.0
+('Seville', 'Cluj-Napoca'): 4.0
 ('Seville', 'Granada'): 542.0
 ('Seville', 'Timisoara'): 2.0
 ('Seville', 'Brescia'): 5.0
@@ -4588,7 +4588,7 @@
 ('Dublin', 'Ostrava'): 4.0
 ('Dublin', 'Las Palmas'): 3.0
 ('Dublin', 'Constanta'): 1.0
-('Dublin', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Dublin', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Dublin', 'Stoke'): 51.0
 ('Dublin', 'Santa Cruz de Tenerife'): 3.0
 ('Dublin', 'Lublin'): 4.0
@@ -4597,7 +4597,7 @@
 ('Dublin', 'Plovdiv'): 1.0
 ('Dublin', 'Bradford'): 78.0
 ('Dublin', 'Alicante'): 15.0
-('Dublin', 'Cluj-Napoca'): 28.0
+('Dublin', 'Cluj-Napoca'): 41.0
 ('Dublin', 'Granada'): 15.0
 ('Dublin', 'Timisoara'): 3.0
 ('Dublin', 'Brescia'): 3.0
@@ -4702,7 +4702,7 @@
 ('Helsinki', 'Ostrava'): 40.0
 ('Helsinki', 'Las Palmas'): 6.0
 ('Helsinki', 'Constanta'): 0.0
-('Helsinki', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Helsinki', 'Castellammare di Stabia-Torre Annunziata'): 2.0
 ('Helsinki', 'Stoke'): 2.0
 ('Helsinki', 'Santa Cruz de Tenerife'): 0.0
 ('Helsinki', 'Lublin'): 5.0
@@ -4711,7 +4711,7 @@
 ('Helsinki', 'Plovdiv'): 3.0
 ('Helsinki', 'Bradford'): 9.0
 ('Helsinki', 'Alicante'): 8.0
-('Helsinki', 'Cluj-Napoca'): 6.0
+('Helsinki', 'Cluj-Napoca'): 8.0
 ('Helsinki', 'Granada'): 4.0
 ('Helsinki', 'Timisoara'): 3.0
 ('Helsinki', 'Brescia'): 1.0
@@ -4815,7 +4815,7 @@
 ('Amsterdam', 'Ostrava'): 9.0
 ('Amsterdam', 'Las Palmas'): 16.0
 ('Amsterdam', 'Constanta'): 2.0
-('Amsterdam', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Amsterdam', 'Castellammare di Stabia-Torre Annunziata'): 5.0
 ('Amsterdam', 'Stoke'): 7.0
 ('Amsterdam', 'Santa Cruz de Tenerife'): 3.0
 ('Amsterdam', 'Lublin'): 10.0
@@ -4824,7 +4824,7 @@
 ('Amsterdam', 'Plovdiv'): 9.0
 ('Amsterdam', 'Bradford'): 37.0
 ('Amsterdam', 'Alicante'): 26.0
-('Amsterdam', 'Cluj-Napoca'): 20.0
+('Amsterdam', 'Cluj-Napoca'): 28.0
 ('Amsterdam', 'Granada'): 33.0
 ('Amsterdam', 'Timisoara'): 2.0
 ('Amsterdam', 'Brescia'): 11.0
@@ -4927,7 +4927,7 @@
 ('Rotterdam', 'Ostrava'): 4.0
 ('Rotterdam', 'Las Palmas'): 12.0
 ('Rotterdam', 'Constanta'): 6.0
-('Rotterdam', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Rotterdam', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Rotterdam', 'Stoke'): 9.0
 ('Rotterdam', 'Santa Cruz de Tenerife'): 0.0
 ('Rotterdam', 'Lublin'): 0.0
@@ -4936,7 +4936,7 @@
 ('Rotterdam', 'Plovdiv'): 16.0
 ('Rotterdam', 'Bradford'): 11.0
 ('Rotterdam', 'Alicante'): 1.0
-('Rotterdam', 'Cluj-Napoca'): 3.0
+('Rotterdam', 'Cluj-Napoca'): 4.0
 ('Rotterdam', 'Granada'): 3.0
 ('Rotterdam', 'Timisoara'): 3.0
 ('Rotterdam', 'Brescia'): 4.0
@@ -5038,7 +5038,7 @@
 ('Dusseldorf', 'Ostrava'): 7.0
 ('Dusseldorf', 'Las Palmas'): 1.0
 ('Dusseldorf', 'Constanta'): 1.0
-('Dusseldorf', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Dusseldorf', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Dusseldorf', 'Stoke'): 1.0
 ('Dusseldorf', 'Santa Cruz de Tenerife'): 0.0
 ('Dusseldorf', 'Lublin'): 2.0
@@ -5047,7 +5047,7 @@
 ('Dusseldorf', 'Plovdiv'): 1.0
 ('Dusseldorf', 'Bradford'): 4.0
 ('Dusseldorf', 'Alicante'): 4.0
-('Dusseldorf', 'Cluj-Napoca'): 5.0
+('Dusseldorf', 'Cluj-Napoca'): 7.0
 ('Dusseldorf', 'Granada'): 5.0
 ('Dusseldorf', 'Timisoara'): 5.0
 ('Dusseldorf', 'Brescia'): 3.0
@@ -5075,7 +5075,7 @@
 ('Essen-Oberhausen', 'Bilbao'): 5.0
 ('Essen-Oberhausen', 'Newcastle'): 9.0
 ('Essen-Oberhausen', 'Krakow'): 10.0
-('Essen-Oberhausen', 'Bochum-Herne'): 324.0
+('Essen-Oberhausen', 'Bochum-Herne'): 325.0
 ('Essen-Oberhausen', 'Thessaloniki'): 5.0
 ('Essen-Oberhausen', 'Nuremberg'): 66.0
 ('Essen-Oberhausen', 'Riga'): 13.0
@@ -5148,7 +5148,7 @@
 ('Essen-Oberhausen', 'Ostrava'): 0.0
 ('Essen-Oberhausen', 'Las Palmas'): 3.0
 ('Essen-Oberhausen', 'Constanta'): 2.0
-('Essen-Oberhausen', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Essen-Oberhausen', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Essen-Oberhausen', 'Stoke'): 0.0
 ('Essen-Oberhausen', 'Santa Cruz de Tenerife'): 0.0
 ('Essen-Oberhausen', 'Lublin'): 2.0
@@ -5157,7 +5157,7 @@
 ('Essen-Oberhausen', 'Plovdiv'): 0.0
 ('Essen-Oberhausen', 'Bradford'): 0.0
 ('Essen-Oberhausen', 'Alicante'): 1.0
-('Essen-Oberhausen', 'Cluj-Napoca'): 2.0
+('Essen-Oberhausen', 'Cluj-Napoca'): 3.0
 ('Essen-Oberhausen', 'Granada'): 2.0
 ('Essen-Oberhausen', 'Timisoara'): 3.0
 ('Essen-Oberhausen', 'Brescia'): 4.0
@@ -5257,7 +5257,7 @@
 ('Lille', 'Ostrava'): 3.0
 ('Lille', 'Las Palmas'): 0.0
 ('Lille', 'Constanta'): 1.0
-('Lille', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Lille', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Lille', 'Stoke'): 2.0
 ('Lille', 'Santa Cruz de Tenerife'): 0.0
 ('Lille', 'Lublin'): 1.0
@@ -5365,7 +5365,7 @@
 ('Lodz', 'Ostrava'): 4.0
 ('Lodz', 'Las Palmas'): 1.0
 ('Lodz', 'Constanta'): 0.0
-('Lodz', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Lodz', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Lodz', 'Stoke'): 1.0
 ('Lodz', 'Santa Cruz de Tenerife'): 0.0
 ('Lodz', 'Lublin'): 189.0
@@ -5472,7 +5472,7 @@
 ('Marseille', 'Ostrava'): 10.0
 ('Marseille', 'Las Palmas'): 12.0
 ('Marseille', 'Constanta'): 2.0
-('Marseille', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Marseille', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Marseille', 'Stoke'): 12.0
 ('Marseille', 'Santa Cruz de Tenerife'): 2.0
 ('Marseille', 'Lublin'): 1.0
@@ -5481,7 +5481,7 @@
 ('Marseille', 'Plovdiv'): 1.0
 ('Marseille', 'Bradford'): 4.0
 ('Marseille', 'Alicante'): 18.0
-('Marseille', 'Cluj-Napoca'): 13.0
+('Marseille', 'Cluj-Napoca'): 16.0
 ('Marseille', 'Granada'): 6.0
 ('Marseille', 'Timisoara'): 5.0
 ('Marseille', 'Brescia'): 7.0
@@ -5578,7 +5578,7 @@
 ('Antwerp', 'Ostrava'): 1.0
 ('Antwerp', 'Las Palmas'): 8.0
 ('Antwerp', 'Constanta'): 3.0
-('Antwerp', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Antwerp', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Antwerp', 'Stoke'): 8.0
 ('Antwerp', 'Santa Cruz de Tenerife'): 0.0
 ('Antwerp', 'Lublin'): 3.0
@@ -5587,7 +5587,7 @@
 ('Antwerp', 'Plovdiv'): 5.0
 ('Antwerp', 'Bradford'): 5.0
 ('Antwerp', 'Alicante'): 1.0
-('Antwerp', 'Cluj-Napoca'): 7.0
+('Antwerp', 'Cluj-Napoca'): 9.0
 ('Antwerp', 'Granada'): 8.0
 ('Antwerp', 'Timisoara'): 1.0
 ('Antwerp', 'Brescia'): 6.0
@@ -5683,7 +5683,7 @@
 ('Bilbao', 'Ostrava'): 2.0
 ('Bilbao', 'Las Palmas'): 46.0
 ('Bilbao', 'Constanta'): 3.0
-('Bilbao', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bilbao', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bilbao', 'Stoke'): 2.0
 ('Bilbao', 'Santa Cruz de Tenerife'): 18.0
 ('Bilbao', 'Lublin'): 1.0
@@ -5787,7 +5787,7 @@
 ('Newcastle', 'Ostrava'): 3.0
 ('Newcastle', 'Las Palmas'): 5.0
 ('Newcastle', 'Constanta'): 2.0
-('Newcastle', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Newcastle', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Newcastle', 'Stoke'): 635.0
 ('Newcastle', 'Santa Cruz de Tenerife'): 1.0
 ('Newcastle', 'Lublin'): 0.0
@@ -5890,7 +5890,7 @@
 ('Krakow', 'Ostrava'): 18.0
 ('Krakow', 'Las Palmas'): 2.0
 ('Krakow', 'Constanta'): 2.0
-('Krakow', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Krakow', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Krakow', 'Stoke'): 1.0
 ('Krakow', 'Santa Cruz de Tenerife'): 0.0
 ('Krakow', 'Lublin'): 435.0
@@ -5899,7 +5899,7 @@
 ('Krakow', 'Plovdiv'): 3.0
 ('Krakow', 'Bradford'): 7.0
 ('Krakow', 'Alicante'): 4.0
-('Krakow', 'Cluj-Napoca'): 14.0
+('Krakow', 'Cluj-Napoca'): 18.0
 ('Krakow', 'Granada'): 7.0
 ('Krakow', 'Timisoara'): 6.0
 ('Krakow', 'Brescia'): 2.0
@@ -5924,7 +5924,7 @@
 ('Bochum-Herne', 'Nuremberg'): 20.0
 ('Bochum-Herne', 'Riga'): 4.0
 ('Bochum-Herne', 'Duisburg'): 158.0
-('Bochum-Herne', 'Dortmund'): 286.0
+('Bochum-Herne', 'Dortmund'): 287.0
 ('Bochum-Herne', 'Hanover'): 20.0
 ('Bochum-Herne', 'Zurich'): 42.0
 ('Bochum-Herne', 'Oslo'): 3.0
@@ -5992,7 +5992,7 @@
 ('Bochum-Herne', 'Ostrava'): 0.0
 ('Bochum-Herne', 'Las Palmas'): 2.0
 ('Bochum-Herne', 'Constanta'): 0.0
-('Bochum-Herne', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bochum-Herne', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bochum-Herne', 'Stoke'): 4.0
 ('Bochum-Herne', 'Santa Cruz de Tenerife'): 0.0
 ('Bochum-Herne', 'Lublin'): 2.0
@@ -6093,7 +6093,7 @@
 ('Thessaloniki', 'Ostrava'): 3.0
 ('Thessaloniki', 'Las Palmas'): 5.0
 ('Thessaloniki', 'Constanta'): 6.0
-('Thessaloniki', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Thessaloniki', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Thessaloniki', 'Stoke'): 0.0
 ('Thessaloniki', 'Santa Cruz de Tenerife'): 0.0
 ('Thessaloniki', 'Lublin'): 1.0
@@ -6102,7 +6102,7 @@
 ('Thessaloniki', 'Plovdiv'): 37.0
 ('Thessaloniki', 'Bradford'): 0.0
 ('Thessaloniki', 'Alicante'): 2.0
-('Thessaloniki', 'Cluj-Napoca'): 7.0
+('Thessaloniki', 'Cluj-Napoca'): 8.0
 ('Thessaloniki', 'Granada'): 4.0
 ('Thessaloniki', 'Timisoara'): 6.0
 ('Thessaloniki', 'Brescia'): 6.0
@@ -6193,7 +6193,7 @@
 ('Nuremberg', 'Ostrava'): 3.0
 ('Nuremberg', 'Las Palmas'): 2.0
 ('Nuremberg', 'Constanta'): 2.0
-('Nuremberg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Nuremberg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Nuremberg', 'Stoke'): 0.0
 ('Nuremberg', 'Santa Cruz de Tenerife'): 0.0
 ('Nuremberg', 'Lublin'): 5.0
@@ -6292,7 +6292,7 @@
 ('Riga', 'Ostrava'): 16.0
 ('Riga', 'Las Palmas'): 0.0
 ('Riga', 'Constanta'): 1.0
-('Riga', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Riga', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Riga', 'Stoke'): 1.0
 ('Riga', 'Santa Cruz de Tenerife'): 0.0
 ('Riga', 'Lublin'): 19.0
@@ -6301,7 +6301,7 @@
 ('Riga', 'Plovdiv'): 2.0
 ('Riga', 'Bradford'): 1.0
 ('Riga', 'Alicante'): 4.0
-('Riga', 'Cluj-Napoca'): 22.0
+('Riga', 'Cluj-Napoca'): 33.0
 ('Riga', 'Granada'): 1.0
 ('Riga', 'Timisoara'): 3.0
 ('Riga', 'Brescia'): 0.0
@@ -6390,7 +6390,7 @@
 ('Duisburg', 'Ostrava'): 2.0
 ('Duisburg', 'Las Palmas'): 0.0
 ('Duisburg', 'Constanta'): 0.0
-('Duisburg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Duisburg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Duisburg', 'Stoke'): 3.0
 ('Duisburg', 'Santa Cruz de Tenerife'): 0.0
 ('Duisburg', 'Lublin'): 1.0
@@ -6487,7 +6487,7 @@
 ('Dortmund', 'Ostrava'): 2.0
 ('Dortmund', 'Las Palmas'): 5.0
 ('Dortmund', 'Constanta'): 1.0
-('Dortmund', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Dortmund', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Dortmund', 'Stoke'): 12.0
 ('Dortmund', 'Santa Cruz de Tenerife'): 0.0
 ('Dortmund', 'Lublin'): 0.0
@@ -6583,7 +6583,7 @@
 ('Hanover', 'Ostrava'): 0.0
 ('Hanover', 'Las Palmas'): 2.0
 ('Hanover', 'Constanta'): 0.0
-('Hanover', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Hanover', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Hanover', 'Stoke'): 7.0
 ('Hanover', 'Santa Cruz de Tenerife'): 0.0
 ('Hanover', 'Lublin'): 1.0
@@ -6678,7 +6678,7 @@
 ('Zurich', 'Ostrava'): 5.0
 ('Zurich', 'Las Palmas'): 9.0
 ('Zurich', 'Constanta'): 3.0
-('Zurich', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Zurich', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Zurich', 'Stoke'): 4.0
 ('Zurich', 'Santa Cruz de Tenerife'): 2.0
 ('Zurich', 'Lublin'): 4.0
@@ -6687,7 +6687,7 @@
 ('Zurich', 'Plovdiv'): 5.0
 ('Zurich', 'Bradford'): 9.0
 ('Zurich', 'Alicante'): 4.0
-('Zurich', 'Cluj-Napoca'): 12.0
+('Zurich', 'Cluj-Napoca'): 15.0
 ('Zurich', 'Granada'): 8.0
 ('Zurich', 'Timisoara'): 6.0
 ('Zurich', 'Brescia'): 12.0
@@ -6772,7 +6772,7 @@
 ('Oslo', 'Ostrava'): 14.0
 ('Oslo', 'Las Palmas'): 6.0
 ('Oslo', 'Constanta'): 1.0
-('Oslo', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Oslo', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Oslo', 'Stoke'): 3.0
 ('Oslo', 'Santa Cruz de Tenerife'): 1.0
 ('Oslo', 'Lublin'): 6.0
@@ -6781,7 +6781,7 @@
 ('Oslo', 'Plovdiv'): 2.0
 ('Oslo', 'Bradford'): 7.0
 ('Oslo', 'Alicante'): 17.0
-('Oslo', 'Cluj-Napoca'): 2.0
+('Oslo', 'Cluj-Napoca'): 3.0
 ('Oslo', 'Granada'): 5.0
 ('Oslo', 'Timisoara'): 4.0
 ('Oslo', 'Brescia'): 3.0
@@ -6865,7 +6865,7 @@
 ('Bremen', 'Ostrava'): 0.0
 ('Bremen', 'Las Palmas'): 2.0
 ('Bremen', 'Constanta'): 0.0
-('Bremen', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bremen', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bremen', 'Stoke'): 10.0
 ('Bremen', 'Santa Cruz de Tenerife'): 0.0
 ('Bremen', 'Lublin'): 1.0
@@ -6957,7 +6957,7 @@
 ('Dresden', 'Ostrava'): 34.0
 ('Dresden', 'Las Palmas'): 3.0
 ('Dresden', 'Constanta'): 3.0
-('Dresden', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Dresden', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Dresden', 'Stoke'): 26.0
 ('Dresden', 'Santa Cruz de Tenerife'): 0.0
 ('Dresden', 'Lublin'): 10.0
@@ -6966,7 +6966,7 @@
 ('Dresden', 'Plovdiv'): 9.0
 ('Dresden', 'Bradford'): 7.0
 ('Dresden', 'Alicante'): 2.0
-('Dresden', 'Cluj-Napoca'): 14.0
+('Dresden', 'Cluj-Napoca'): 21.0
 ('Dresden', 'Granada'): 8.0
 ('Dresden', 'Timisoara'): 3.0
 ('Dresden', 'Brescia'): 5.0
@@ -7048,7 +7048,7 @@
 ('Sheffield', 'Ostrava'): 4.0
 ('Sheffield', 'Las Palmas'): 1.0
 ('Sheffield', 'Constanta'): 0.0
-('Sheffield', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Sheffield', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Sheffield', 'Stoke'): 532.0
 ('Sheffield', 'Santa Cruz de Tenerife'): 0.0
 ('Sheffield', 'Lublin'): 1.0
@@ -7138,7 +7138,7 @@
 ('Palermo', 'Ostrava'): 2.0
 ('Palermo', 'Las Palmas'): 8.0
 ('Palermo', 'Constanta'): 3.0
-('Palermo', 'Castellamare di Stabia-Torre Annunziata'): 3.0
+('Palermo', 'Castellammare di Stabia-Torre Annunziata'): 7.0
 ('Palermo', 'Stoke'): 4.0
 ('Palermo', 'Santa Cruz de Tenerife'): 1.0
 ('Palermo', 'Lublin'): 1.0
@@ -7147,7 +7147,7 @@
 ('Palermo', 'Plovdiv'): 3.0
 ('Palermo', 'Bradford'): 0.0
 ('Palermo', 'Alicante'): 6.0
-('Palermo', 'Cluj-Napoca'): 3.0
+('Palermo', 'Cluj-Napoca'): 4.0
 ('Palermo', 'Granada'): 15.0
 ('Palermo', 'Timisoara'): 4.0
 ('Palermo', 'Brescia'): 76.0
@@ -7227,7 +7227,7 @@
 ('Poznan', 'Ostrava'): 7.0
 ('Poznan', 'Las Palmas'): 2.0
 ('Poznan', 'Constanta'): 0.0
-('Poznan', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Poznan', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Poznan', 'Stoke'): 2.0
 ('Poznan', 'Santa Cruz de Tenerife'): 0.0
 ('Poznan', 'Lublin'): 172.0
@@ -7236,7 +7236,7 @@
 ('Poznan', 'Plovdiv'): 16.0
 ('Poznan', 'Bradford'): 3.0
 ('Poznan', 'Alicante'): 5.0
-('Poznan', 'Cluj-Napoca'): 8.0
+('Poznan', 'Cluj-Napoca'): 11.0
 ('Poznan', 'Granada'): 4.0
 ('Poznan', 'Timisoara'): 6.0
 ('Poznan', 'Brescia'): 2.0
@@ -7315,7 +7315,7 @@
 ('Gelsenkirchen-Bottrop', 'Ostrava'): 0.0
 ('Gelsenkirchen-Bottrop', 'Las Palmas'): 0.0
 ('Gelsenkirchen-Bottrop', 'Constanta'): 0.0
-('Gelsenkirchen-Bottrop', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Gelsenkirchen-Bottrop', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Gelsenkirchen-Bottrop', 'Stoke'): 2.0
 ('Gelsenkirchen-Bottrop', 'Santa Cruz de Tenerife'): 0.0
 ('Gelsenkirchen-Bottrop', 'Lublin'): 0.0
@@ -7324,7 +7324,7 @@
 ('Gelsenkirchen-Bottrop', 'Plovdiv'): 0.0
 ('Gelsenkirchen-Bottrop', 'Bradford'): 0.0
 ('Gelsenkirchen-Bottrop', 'Alicante'): 0.0
-('Gelsenkirchen-Bottrop', 'Cluj-Napoca'): 2.0
+('Gelsenkirchen-Bottrop', 'Cluj-Napoca'): 3.0
 ('Gelsenkirchen-Bottrop', 'Granada'): 0.0
 ('Gelsenkirchen-Bottrop', 'Timisoara'): 0.0
 ('Gelsenkirchen-Bottrop', 'Brescia'): 0.0
@@ -7402,7 +7402,7 @@
 ('Bordeaux', 'Ostrava'): 0.0
 ('Bordeaux', 'Las Palmas'): 3.0
 ('Bordeaux', 'Constanta'): 1.0
-('Bordeaux', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bordeaux', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bordeaux', 'Stoke'): 5.0
 ('Bordeaux', 'Santa Cruz de Tenerife'): 0.0
 ('Bordeaux', 'Lublin'): 0.0
@@ -7411,7 +7411,7 @@
 ('Bordeaux', 'Plovdiv'): 1.0
 ('Bordeaux', 'Bradford'): 10.0
 ('Bordeaux', 'Alicante'): 5.0
-('Bordeaux', 'Cluj-Napoca'): 7.0
+('Bordeaux', 'Cluj-Napoca'): 8.0
 ('Bordeaux', 'Granada'): 8.0
 ('Bordeaux', 'Timisoara'): 4.0
 ('Bordeaux', 'Brescia'): 2.0
@@ -7488,7 +7488,7 @@
 ('Wroclaw', 'Ostrava'): 12.0
 ('Wroclaw', 'Las Palmas'): 1.0
 ('Wroclaw', 'Constanta'): 1.0
-('Wroclaw', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Wroclaw', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Wroclaw', 'Stoke'): 1.0
 ('Wroclaw', 'Santa Cruz de Tenerife'): 0.0
 ('Wroclaw', 'Lublin'): 111.0
@@ -7497,7 +7497,7 @@
 ('Wroclaw', 'Plovdiv'): 0.0
 ('Wroclaw', 'Bradford'): 2.0
 ('Wroclaw', 'Alicante'): 5.0
-('Wroclaw', 'Cluj-Napoca'): 5.0
+('Wroclaw', 'Cluj-Napoca'): 7.0
 ('Wroclaw', 'Granada'): 6.0
 ('Wroclaw', 'Timisoara'): 2.0
 ('Wroclaw', 'Brescia'): 0.0
@@ -7573,7 +7573,7 @@
 ('Gothenburg', 'Ostrava'): 3.0
 ('Gothenburg', 'Las Palmas'): 4.0
 ('Gothenburg', 'Constanta'): 0.0
-('Gothenburg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Gothenburg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Gothenburg', 'Stoke'): 2.0
 ('Gothenburg', 'Santa Cruz de Tenerife'): 0.0
 ('Gothenburg', 'Lublin'): 0.0
@@ -7582,7 +7582,7 @@
 ('Gothenburg', 'Plovdiv'): 1.0
 ('Gothenburg', 'Bradford'): 4.0
 ('Gothenburg', 'Alicante'): 7.0
-('Gothenburg', 'Cluj-Napoca'): 2.0
+('Gothenburg', 'Cluj-Napoca'): 3.0
 ('Gothenburg', 'Granada'): 4.0
 ('Gothenburg', 'Timisoara'): 2.0
 ('Gothenburg', 'Brescia'): 1.0
@@ -7657,7 +7657,7 @@
 ('Zaragoza', 'Ostrava'): 0.0
 ('Zaragoza', 'Las Palmas'): 55.0
 ('Zaragoza', 'Constanta'): 0.0
-('Zaragoza', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Zaragoza', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Zaragoza', 'Stoke'): 2.0
 ('Zaragoza', 'Santa Cruz de Tenerife'): 25.0
 ('Zaragoza', 'Lublin'): 0.0
@@ -7740,7 +7740,7 @@
 ('Genoa', 'Ostrava'): 0.0
 ('Genoa', 'Las Palmas'): 7.0
 ('Genoa', 'Constanta'): 6.0
-('Genoa', 'Castellamare di Stabia-Torre Annunziata'): 2.0
+('Genoa', 'Castellammare di Stabia-Torre Annunziata'): 11.0
 ('Genoa', 'Stoke'): 10.0
 ('Genoa', 'Santa Cruz de Tenerife'): 0.0
 ('Genoa', 'Lublin'): 0.0
@@ -7822,7 +7822,7 @@
 ('Catania', 'Ostrava'): 0.0
 ('Catania', 'Las Palmas'): 4.0
 ('Catania', 'Constanta'): 1.0
-('Catania', 'Castellamare di Stabia-Torre Annunziata'): 3.0
+('Catania', 'Castellammare di Stabia-Torre Annunziata'): 3.0
 ('Catania', 'Stoke'): 0.0
 ('Catania', 'Santa Cruz de Tenerife'): 0.0
 ('Catania', 'Lublin'): 1.0
@@ -7831,7 +7831,7 @@
 ('Catania', 'Plovdiv'): 3.0
 ('Catania', 'Bradford'): 0.0
 ('Catania', 'Alicante'): 2.0
-('Catania', 'Cluj-Napoca'): 8.0
+('Catania', 'Cluj-Napoca'): 9.0
 ('Catania', 'Granada'): 1.0
 ('Catania', 'Timisoara'): 2.0
 ('Catania', 'Brescia'): 47.0
@@ -7903,7 +7903,7 @@
 ('The Hague', 'Ostrava'): 9.0
 ('The Hague', 'Las Palmas'): 0.0
 ('The Hague', 'Constanta'): 3.0
-('The Hague', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('The Hague', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('The Hague', 'Stoke'): 2.0
 ('The Hague', 'Santa Cruz de Tenerife'): 0.0
 ('The Hague', 'Lublin'): 4.0
@@ -7912,7 +7912,7 @@
 ('The Hague', 'Plovdiv'): 0.0
 ('The Hague', 'Bradford'): 1.0
 ('The Hague', 'Alicante'): 4.0
-('The Hague', 'Cluj-Napoca'): 2.0
+('The Hague', 'Cluj-Napoca'): 3.0
 ('The Hague', 'Granada'): 3.0
 ('The Hague', 'Timisoara'): 3.0
 ('The Hague', 'Brescia'): 0.0
@@ -7983,7 +7983,7 @@
 ('Toulouse', 'Ostrava'): 1.0
 ('Toulouse', 'Las Palmas'): 0.0
 ('Toulouse', 'Constanta'): 8.0
-('Toulouse', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Toulouse', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Toulouse', 'Stoke'): 4.0
 ('Toulouse', 'Santa Cruz de Tenerife'): 0.0
 ('Toulouse', 'Lublin'): 3.0
@@ -8062,7 +8062,7 @@
 ('Bristol', 'Ostrava'): 0.0
 ('Bristol', 'Las Palmas'): 2.0
 ('Bristol', 'Constanta'): 0.0
-('Bristol', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bristol', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bristol', 'Stoke'): 581.0
 ('Bristol', 'Santa Cruz de Tenerife'): 1.0
 ('Bristol', 'Lublin'): 2.0
@@ -8140,7 +8140,7 @@
 ('Vilnius', 'Ostrava'): 6.0
 ('Vilnius', 'Las Palmas'): 1.0
 ('Vilnius', 'Constanta'): 1.0
-('Vilnius', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Vilnius', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Vilnius', 'Stoke'): 0.0
 ('Vilnius', 'Santa Cruz de Tenerife'): 0.0
 ('Vilnius', 'Lublin'): 82.0
@@ -8149,7 +8149,7 @@
 ('Vilnius', 'Plovdiv'): 2.0
 ('Vilnius', 'Bradford'): 1.0
 ('Vilnius', 'Alicante'): 2.0
-('Vilnius', 'Cluj-Napoca'): 12.0
+('Vilnius', 'Cluj-Napoca'): 16.0
 ('Vilnius', 'Granada'): 1.0
 ('Vilnius', 'Timisoara'): 4.0
 ('Vilnius', 'Brescia'): 3.0
@@ -8217,7 +8217,7 @@
 ('Saarbrucken', 'Ostrava'): 0.0
 ('Saarbrucken', 'Las Palmas'): 0.0
 ('Saarbrucken', 'Constanta'): 1.0
-('Saarbrucken', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Saarbrucken', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Saarbrucken', 'Stoke'): 0.0
 ('Saarbrucken', 'Santa Cruz de Tenerife'): 0.0
 ('Saarbrucken', 'Lublin'): 0.0
@@ -8293,7 +8293,7 @@
 ('Malaga', 'Ostrava'): 0.0
 ('Malaga', 'Las Palmas'): 52.0
 ('Malaga', 'Constanta'): 1.0
-('Malaga', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Malaga', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Malaga', 'Stoke'): 4.0
 ('Malaga', 'Santa Cruz de Tenerife'): 31.0
 ('Malaga', 'Lublin'): 0.0
@@ -8302,7 +8302,7 @@
 ('Malaga', 'Plovdiv'): 0.0
 ('Malaga', 'Bradford'): 5.0
 ('Malaga', 'Alicante'): 142.0
-('Malaga', 'Cluj-Napoca'): 3.0
+('Malaga', 'Cluj-Napoca'): 4.0
 ('Malaga', 'Granada'): 500.0
 ('Malaga', 'Timisoara'): 1.0
 ('Malaga', 'Brescia'): 6.0
@@ -8368,7 +8368,7 @@
 ('Nantes', 'Ostrava'): 0.0
 ('Nantes', 'Las Palmas'): 0.0
 ('Nantes', 'Constanta'): 2.0
-('Nantes', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Nantes', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Nantes', 'Stoke'): 0.0
 ('Nantes', 'Santa Cruz de Tenerife'): 0.0
 ('Nantes', 'Lublin'): 0.0
@@ -8377,7 +8377,7 @@
 ('Nantes', 'Plovdiv'): 0.0
 ('Nantes', 'Bradford'): 4.0
 ('Nantes', 'Alicante'): 2.0
-('Nantes', 'Cluj-Napoca'): 3.0
+('Nantes', 'Cluj-Napoca'): 4.0
 ('Nantes', 'Granada'): 4.0
 ('Nantes', 'Timisoara'): 4.0
 ('Nantes', 'Brescia'): 1.0
@@ -8442,7 +8442,7 @@
 ('Leeds', 'Ostrava'): 1.0
 ('Leeds', 'Las Palmas'): 4.0
 ('Leeds', 'Constanta'): 0.0
-('Leeds', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Leeds', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Leeds', 'Stoke'): 394.0
 ('Leeds', 'Santa Cruz de Tenerife'): 0.0
 ('Leeds', 'Lublin'): 0.0
@@ -8451,7 +8451,7 @@
 ('Leeds', 'Plovdiv'): 2.0
 ('Leeds', 'Bradford'): 3168.0
 ('Leeds', 'Alicante'): 7.0
-('Leeds', 'Cluj-Napoca'): 3.0
+('Leeds', 'Cluj-Napoca'): 4.0
 ('Leeds', 'Granada'): 74.0
 ('Leeds', 'Timisoara'): 1.0
 ('Leeds', 'Brescia'): 6.0
@@ -8515,7 +8515,7 @@
 ('Nottingham', 'Ostrava'): 3.0
 ('Nottingham', 'Las Palmas'): 2.0
 ('Nottingham', 'Constanta'): 0.0
-('Nottingham', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Nottingham', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Nottingham', 'Stoke'): 374.0
 ('Nottingham', 'Santa Cruz de Tenerife'): 0.0
 ('Nottingham', 'Lublin'): 0.0
@@ -8587,7 +8587,7 @@
 ('Florence', 'Ostrava'): 2.0
 ('Florence', 'Las Palmas'): 3.0
 ('Florence', 'Constanta'): 2.0
-('Florence', 'Castellamare di Stabia-Torre Annunziata'): 1.0
+('Florence', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Florence', 'Stoke'): 17.0
 ('Florence', 'Santa Cruz de Tenerife'): 0.0
 ('Florence', 'Lublin'): 3.0
@@ -8596,7 +8596,7 @@
 ('Florence', 'Plovdiv'): 4.0
 ('Florence', 'Bradford'): 50.0
 ('Florence', 'Alicante'): 7.0
-('Florence', 'Cluj-Napoca'): 3.0
+('Florence', 'Cluj-Napoca'): 4.0
 ('Florence', 'Granada'): 24.0
 ('Florence', 'Timisoara'): 2.0
 ('Florence', 'Brescia'): 116.0
@@ -8658,7 +8658,7 @@
 ('Gdansk', 'Ostrava'): 7.0
 ('Gdansk', 'Las Palmas'): 0.0
 ('Gdansk', 'Constanta'): 5.0
-('Gdansk', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Gdansk', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Gdansk', 'Stoke'): 0.0
 ('Gdansk', 'Santa Cruz de Tenerife'): 0.0
 ('Gdansk', 'Lublin'): 103.0
@@ -8667,7 +8667,7 @@
 ('Gdansk', 'Plovdiv'): 1.0
 ('Gdansk', 'Bradford'): 0.0
 ('Gdansk', 'Alicante'): 5.0
-('Gdansk', 'Cluj-Napoca'): 4.0
+('Gdansk', 'Cluj-Napoca'): 5.0
 ('Gdansk', 'Granada'): 3.0
 ('Gdansk', 'Timisoara'): 3.0
 ('Gdansk', 'Brescia'): 1.0
@@ -8728,7 +8728,7 @@
 ('Leipzig', 'Ostrava'): 4.0
 ('Leipzig', 'Las Palmas'): 2.0
 ('Leipzig', 'Constanta'): 2.0
-('Leipzig', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Leipzig', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Leipzig', 'Stoke'): 3.0
 ('Leipzig', 'Santa Cruz de Tenerife'): 0.0
 ('Leipzig', 'Lublin'): 11.0
@@ -8737,7 +8737,7 @@
 ('Leipzig', 'Plovdiv'): 17.0
 ('Leipzig', 'Bradford'): 9.0
 ('Leipzig', 'Alicante'): 1.0
-('Leipzig', 'Cluj-Napoca'): 20.0
+('Leipzig', 'Cluj-Napoca'): 26.0
 ('Leipzig', 'Granada'): 6.0
 ('Leipzig', 'Timisoara'): 3.0
 ('Leipzig', 'Brescia'): 6.0
@@ -8797,7 +8797,7 @@
 ('Mannheim', 'Ostrava'): 1.0
 ('Mannheim', 'Las Palmas'): 3.0
 ('Mannheim', 'Constanta'): 0.0
-('Mannheim', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Mannheim', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Mannheim', 'Stoke'): 1.0
 ('Mannheim', 'Santa Cruz de Tenerife'): 0.0
 ('Mannheim', 'Lublin'): 0.0
@@ -8865,7 +8865,7 @@
 ('Belfast', 'Ostrava'): 1.0
 ('Belfast', 'Las Palmas'): 3.0
 ('Belfast', 'Constanta'): 2.0
-('Belfast', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Belfast', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Belfast', 'Stoke'): 38.0
 ('Belfast', 'Santa Cruz de Tenerife'): 1.0
 ('Belfast', 'Lublin'): 1.0
@@ -8932,7 +8932,7 @@
 ('Portsmouth', 'Ostrava'): 3.0
 ('Portsmouth', 'Las Palmas'): 2.0
 ('Portsmouth', 'Constanta'): 1.0
-('Portsmouth', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Portsmouth', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Portsmouth', 'Stoke'): 242.0
 ('Portsmouth', 'Santa Cruz de Tenerife'): 2.0
 ('Portsmouth', 'Lublin'): 1.0
@@ -8998,7 +8998,7 @@
 ('Venice', 'Ostrava'): 4.0
 ('Venice', 'Las Palmas'): 6.0
 ('Venice', 'Constanta'): 6.0
-('Venice', 'Castellamare di Stabia-Torre Annunziata'): 4.0
+('Venice', 'Castellammare di Stabia-Torre Annunziata'): 11.0
 ('Venice', 'Stoke'): 4.0
 ('Venice', 'Santa Cruz de Tenerife'): 3.0
 ('Venice', 'Lublin'): 8.0
@@ -9007,7 +9007,7 @@
 ('Venice', 'Plovdiv'): 5.0
 ('Venice', 'Bradford'): 10.0
 ('Venice', 'Alicante'): 6.0
-('Venice', 'Cluj-Napoca'): 10.0
+('Venice', 'Cluj-Napoca'): 14.0
 ('Venice', 'Granada'): 36.0
 ('Venice', 'Timisoara'): 7.0
 ('Venice', 'Brescia'): 326.0
@@ -9063,7 +9063,7 @@
 ('Edinburgh', 'Ostrava'): 1.0
 ('Edinburgh', 'Las Palmas'): 4.0
 ('Edinburgh', 'Constanta'): 0.0
-('Edinburgh', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Edinburgh', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Edinburgh', 'Stoke'): 73.0
 ('Edinburgh', 'Santa Cruz de Tenerife'): 0.0
 ('Edinburgh', 'Lublin'): 5.0
@@ -9072,7 +9072,7 @@
 ('Edinburgh', 'Plovdiv'): 0.0
 ('Edinburgh', 'Bradford'): 194.0
 ('Edinburgh', 'Alicante'): 8.0
-('Edinburgh', 'Cluj-Napoca'): 6.0
+('Edinburgh', 'Cluj-Napoca'): 7.0
 ('Edinburgh', 'Granada'): 49.0
 ('Edinburgh', 'Timisoara'): 1.0
 ('Edinburgh', 'Brescia'): 1.0
@@ -9127,7 +9127,7 @@
 ('Murcia', 'Ostrava'): 0.0
 ('Murcia', 'Las Palmas'): 38.0
 ('Murcia', 'Constanta'): 1.0
-('Murcia', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Murcia', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Murcia', 'Stoke'): 0.0
 ('Murcia', 'Santa Cruz de Tenerife'): 28.0
 ('Murcia', 'Lublin'): 0.0
@@ -9190,7 +9190,7 @@
 ('Nice', 'Ostrava'): 8.0
 ('Nice', 'Las Palmas'): 7.0
 ('Nice', 'Constanta'): 1.0
-('Nice', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Nice', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Nice', 'Stoke'): 3.0
 ('Nice', 'Santa Cruz de Tenerife'): 0.0
 ('Nice', 'Lublin'): 6.0
@@ -9252,7 +9252,7 @@
 ('Liege', 'Ostrava'): 2.0
 ('Liege', 'Las Palmas'): 3.0
 ('Liege', 'Constanta'): 5.0
-('Liege', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Liege', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Liege', 'Stoke'): 9.0
 ('Liege', 'Santa Cruz de Tenerife'): 0.0
 ('Liege', 'Lublin'): 0.0
@@ -9313,7 +9313,7 @@
 ('Bratislava', 'Ostrava'): 76.0
 ('Bratislava', 'Las Palmas'): 1.0
 ('Bratislava', 'Constanta'): 1.0
-('Bratislava', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bratislava', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bratislava', 'Stoke'): 0.0
 ('Bratislava', 'Santa Cruz de Tenerife'): 0.0
 ('Bratislava', 'Lublin'): 6.0
@@ -9322,7 +9322,7 @@
 ('Bratislava', 'Plovdiv'): 7.0
 ('Bratislava', 'Bradford'): 2.0
 ('Bratislava', 'Alicante'): 2.0
-('Bratislava', 'Cluj-Napoca'): 37.0
+('Bratislava', 'Cluj-Napoca'): 48.0
 ('Bratislava', 'Granada'): 2.0
 ('Bratislava', 'Timisoara'): 16.0
 ('Bratislava', 'Brescia'): 6.0
@@ -9373,7 +9373,7 @@
 ('Leicester', 'Ostrava'): 5.0
 ('Leicester', 'Las Palmas'): 1.0
 ('Leicester', 'Constanta'): 0.0
-('Leicester', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Leicester', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Leicester', 'Stoke'): 465.0
 ('Leicester', 'Santa Cruz de Tenerife'): 0.0
 ('Leicester', 'Lublin'): 2.0
@@ -9432,7 +9432,7 @@
 ('Karlsruhe', 'Ostrava'): 2.0
 ('Karlsruhe', 'Las Palmas'): 3.0
 ('Karlsruhe', 'Constanta'): 0.0
-('Karlsruhe', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Karlsruhe', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Karlsruhe', 'Stoke'): 0.0
 ('Karlsruhe', 'Santa Cruz de Tenerife'): 0.0
 ('Karlsruhe', 'Lublin'): 2.0
@@ -9441,7 +9441,7 @@
 ('Karlsruhe', 'Plovdiv'): 2.0
 ('Karlsruhe', 'Bradford'): 2.0
 ('Karlsruhe', 'Alicante'): 1.0
-('Karlsruhe', 'Cluj-Napoca'): 2.0
+('Karlsruhe', 'Cluj-Napoca'): 3.0
 ('Karlsruhe', 'Granada'): 3.0
 ('Karlsruhe', 'Timisoara'): 2.0
 ('Karlsruhe', 'Brescia'): 2.0
@@ -9490,7 +9490,7 @@
 ('Bergamo', 'Ostrava'): 4.0
 ('Bergamo', 'Las Palmas'): 1.0
 ('Bergamo', 'Constanta'): 0.0
-('Bergamo', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bergamo', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bergamo', 'Stoke'): 0.0
 ('Bergamo', 'Santa Cruz de Tenerife'): 0.0
 ('Bergamo', 'Lublin'): 0.0
@@ -9499,7 +9499,7 @@
 ('Bergamo', 'Plovdiv'): 0.0
 ('Bergamo', 'Bradford'): 1.0
 ('Bergamo', 'Alicante'): 1.0
-('Bergamo', 'Cluj-Napoca'): 3.0
+('Bergamo', 'Cluj-Napoca'): 4.0
 ('Bergamo', 'Granada'): 0.0
 ('Bergamo', 'Timisoara'): 3.0
 ('Bergamo', 'Brescia'): 298.0
@@ -9547,7 +9547,7 @@
 ('Palma de Mallorca', 'Ostrava'): 0.0
 ('Palma de Mallorca', 'Las Palmas'): 24.0
 ('Palma de Mallorca', 'Constanta'): 2.0
-('Palma de Mallorca', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Palma de Mallorca', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Palma de Mallorca', 'Stoke'): 0.0
 ('Palma de Mallorca', 'Santa Cruz de Tenerife'): 5.0
 ('Palma de Mallorca', 'Lublin'): 0.0
@@ -9603,7 +9603,7 @@
 ('Bologna', 'Ostrava'): 3.0
 ('Bologna', 'Las Palmas'): 6.0
 ('Bologna', 'Constanta'): 0.0
-('Bologna', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bologna', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bologna', 'Stoke'): 0.0
 ('Bologna', 'Santa Cruz de Tenerife'): 1.0
 ('Bologna', 'Lublin'): 6.0
@@ -9612,7 +9612,7 @@
 ('Bologna', 'Plovdiv'): 2.0
 ('Bologna', 'Bradford'): 2.0
 ('Bologna', 'Alicante'): 6.0
-('Bologna', 'Cluj-Napoca'): 19.0
+('Bologna', 'Cluj-Napoca'): 25.0
 ('Bologna', 'Granada'): 15.0
 ('Bologna', 'Timisoara'): 6.0
 ('Bologna', 'Brescia'): 229.0
@@ -9658,7 +9658,7 @@
 ('Bielefeld', 'Ostrava'): 0.0
 ('Bielefeld', 'Las Palmas'): 1.0
 ('Bielefeld', 'Constanta'): 0.0
-('Bielefeld', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bielefeld', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bielefeld', 'Stoke'): 0.0
 ('Bielefeld', 'Santa Cruz de Tenerife'): 0.0
 ('Bielefeld', 'Lublin'): 1.0
@@ -9712,7 +9712,7 @@
 ('Rouen', 'Ostrava'): 2.0
 ('Rouen', 'Las Palmas'): 1.0
 ('Rouen', 'Constanta'): 0.0
-('Rouen', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Rouen', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Rouen', 'Stoke'): 2.0
 ('Rouen', 'Santa Cruz de Tenerife'): 1.0
 ('Rouen', 'Lublin'): 0.0
@@ -9765,7 +9765,7 @@
 ('Strasbourg', 'Ostrava'): 8.0
 ('Strasbourg', 'Las Palmas'): 1.0
 ('Strasbourg', 'Constanta'): 1.0
-('Strasbourg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Strasbourg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Strasbourg', 'Stoke'): 1.0
 ('Strasbourg', 'Santa Cruz de Tenerife'): 0.0
 ('Strasbourg', 'Lublin'): 4.0
@@ -9774,7 +9774,7 @@
 ('Strasbourg', 'Plovdiv'): 3.0
 ('Strasbourg', 'Bradford'): 4.0
 ('Strasbourg', 'Alicante'): 5.0
-('Strasbourg', 'Cluj-Napoca'): 14.0
+('Strasbourg', 'Cluj-Napoca'): 19.0
 ('Strasbourg', 'Granada'): 5.0
 ('Strasbourg', 'Timisoara'): 3.0
 ('Strasbourg', 'Brescia'): 1.0
@@ -9817,7 +9817,7 @@
 ('Tallinn', 'Ostrava'): 26.0
 ('Tallinn', 'Las Palmas'): 3.0
 ('Tallinn', 'Constanta'): 1.0
-('Tallinn', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Tallinn', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Tallinn', 'Stoke'): 0.0
 ('Tallinn', 'Santa Cruz de Tenerife'): 0.0
 ('Tallinn', 'Lublin'): 4.0
@@ -9826,7 +9826,7 @@
 ('Tallinn', 'Plovdiv'): 2.0
 ('Tallinn', 'Bradford'): 0.0
 ('Tallinn', 'Alicante'): 0.0
-('Tallinn', 'Cluj-Napoca'): 15.0
+('Tallinn', 'Cluj-Napoca'): 20.0
 ('Tallinn', 'Granada'): 2.0
 ('Tallinn', 'Timisoara'): 4.0
 ('Tallinn', 'Brescia'): 1.0
@@ -9868,7 +9868,7 @@
 ('Szczecin', 'Ostrava'): 0.0
 ('Szczecin', 'Las Palmas'): 0.0
 ('Szczecin', 'Constanta'): 1.0
-('Szczecin', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Szczecin', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Szczecin', 'Stoke'): 0.0
 ('Szczecin', 'Santa Cruz de Tenerife'): 0.0
 ('Szczecin', 'Lublin'): 64.0
@@ -9877,7 +9877,7 @@
 ('Szczecin', 'Plovdiv'): 0.0
 ('Szczecin', 'Bradford'): 0.0
 ('Szczecin', 'Alicante'): 2.0
-('Szczecin', 'Cluj-Napoca'): 2.0
+('Szczecin', 'Cluj-Napoca'): 3.0
 ('Szczecin', 'Granada'): 1.0
 ('Szczecin', 'Timisoara'): 1.0
 ('Szczecin', 'Brescia'): 0.0
@@ -9918,7 +9918,7 @@
 ('Grenoble', 'Ostrava'): 3.0
 ('Grenoble', 'Las Palmas'): 1.0
 ('Grenoble', 'Constanta'): 1.0
-('Grenoble', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Grenoble', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Grenoble', 'Stoke'): 2.0
 ('Grenoble', 'Santa Cruz de Tenerife'): 0.0
 ('Grenoble', 'Lublin'): 1.0
@@ -9967,7 +9967,7 @@
 ('Bari', 'Ostrava'): 1.0
 ('Bari', 'Las Palmas'): 0.0
 ('Bari', 'Constanta'): 0.0
-('Bari', 'Castellamare di Stabia-Torre Annunziata'): 3.0
+('Bari', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Bari', 'Stoke'): 0.0
 ('Bari', 'Santa Cruz de Tenerife'): 0.0
 ('Bari', 'Lublin'): 2.0
@@ -10015,7 +10015,7 @@
 ('Toulon', 'Ostrava'): 0.0
 ('Toulon', 'Las Palmas'): 1.0
 ('Toulon', 'Constanta'): 1.0
-('Toulon', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Toulon', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Toulon', 'Stoke'): 1.0
 ('Toulon', 'Santa Cruz de Tenerife'): 4.0
 ('Toulon', 'Lublin'): 0.0
@@ -10062,7 +10062,7 @@
 ('Brighton', 'Ostrava'): 1.0
 ('Brighton', 'Las Palmas'): 1.0
 ('Brighton', 'Constanta'): 1.0
-('Brighton', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Brighton', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Brighton', 'Stoke'): 216.0
 ('Brighton', 'Santa Cruz de Tenerife'): 0.0
 ('Brighton', 'Lublin'): 0.0
@@ -10108,7 +10108,7 @@
 ('Darmstadt', 'Ostrava'): 2.0
 ('Darmstadt', 'Las Palmas'): 1.0
 ('Darmstadt', 'Constanta'): 0.0
-('Darmstadt', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Darmstadt', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Darmstadt', 'Stoke'): 1.0
 ('Darmstadt', 'Santa Cruz de Tenerife'): 0.0
 ('Darmstadt', 'Lublin'): 2.0
@@ -10117,7 +10117,7 @@
 ('Darmstadt', 'Plovdiv'): 1.0
 ('Darmstadt', 'Bradford'): 0.0
 ('Darmstadt', 'Alicante'): 0.0
-('Darmstadt', 'Cluj-Napoca'): 18.0
+('Darmstadt', 'Cluj-Napoca'): 27.0
 ('Darmstadt', 'Granada'): 3.0
 ('Darmstadt', 'Timisoara'): 3.0
 ('Darmstadt', 'Brescia'): 3.0
@@ -10153,7 +10153,7 @@
 ('Wuppertal', 'Ostrava'): 1.0
 ('Wuppertal', 'Las Palmas'): 0.0
 ('Wuppertal', 'Constanta'): 0.0
-('Wuppertal', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Wuppertal', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Wuppertal', 'Stoke'): 0.0
 ('Wuppertal', 'Santa Cruz de Tenerife'): 0.0
 ('Wuppertal', 'Lublin'): 0.0
@@ -10197,7 +10197,7 @@
 ('Utrecht', 'Ostrava'): 2.0
 ('Utrecht', 'Las Palmas'): 1.0
 ('Utrecht', 'Constanta'): 0.0
-('Utrecht', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Utrecht', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Utrecht', 'Stoke'): 7.0
 ('Utrecht', 'Santa Cruz de Tenerife'): 0.0
 ('Utrecht', 'Lublin'): 0.0
@@ -10206,7 +10206,7 @@
 ('Utrecht', 'Plovdiv'): 0.0
 ('Utrecht', 'Bradford'): 1.0
 ('Utrecht', 'Alicante'): 1.0
-('Utrecht', 'Cluj-Napoca'): 7.0
+('Utrecht', 'Cluj-Napoca'): 10.0
 ('Utrecht', 'Granada'): 6.0
 ('Utrecht', 'Timisoara'): 0.0
 ('Utrecht', 'Brescia'): 1.0
@@ -10240,7 +10240,7 @@
 ('Bournemouth', 'Ostrava'): 0.0
 ('Bournemouth', 'Las Palmas'): 2.0
 ('Bournemouth', 'Constanta'): 0.0
-('Bournemouth', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bournemouth', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bournemouth', 'Stoke'): 159.0
 ('Bournemouth', 'Santa Cruz de Tenerife'): 0.0
 ('Bournemouth', 'Lublin'): 0.0
@@ -10282,7 +10282,7 @@
 ('Middlesbrough', 'Ostrava'): 7.0
 ('Middlesbrough', 'Las Palmas'): 2.0
 ('Middlesbrough', 'Constanta'): 2.0
-('Middlesbrough', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Middlesbrough', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Middlesbrough', 'Stoke'): 261.0
 ('Middlesbrough', 'Santa Cruz de Tenerife'): 0.0
 ('Middlesbrough', 'Lublin'): 0.0
@@ -10323,7 +10323,7 @@
 ('Geneva', 'Ostrava'): 1.0
 ('Geneva', 'Las Palmas'): 8.0
 ('Geneva', 'Constanta'): 1.0
-('Geneva', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Geneva', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Geneva', 'Stoke'): 2.0
 ('Geneva', 'Santa Cruz de Tenerife'): 0.0
 ('Geneva', 'Lublin'): 13.0
@@ -10332,7 +10332,7 @@
 ('Geneva', 'Plovdiv'): 11.0
 ('Geneva', 'Bradford'): 10.0
 ('Geneva', 'Alicante'): 4.0
-('Geneva', 'Cluj-Napoca'): 17.0
+('Geneva', 'Cluj-Napoca'): 21.0
 ('Geneva', 'Granada'): 14.0
 ('Geneva', 'Timisoara'): 2.0
 ('Geneva', 'Brescia'): 12.0
@@ -10363,7 +10363,7 @@
 ('Bydgoszcz', 'Ostrava'): 5.0
 ('Bydgoszcz', 'Las Palmas'): 0.0
 ('Bydgoszcz', 'Constanta'): 0.0
-('Bydgoszcz', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Bydgoszcz', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Bydgoszcz', 'Stoke'): 0.0
 ('Bydgoszcz', 'Santa Cruz de Tenerife'): 0.0
 ('Bydgoszcz', 'Lublin'): 54.0
@@ -10402,7 +10402,7 @@
 ('Basel', 'Ostrava'): 2.0
 ('Basel', 'Las Palmas'): 2.0
 ('Basel', 'Constanta'): 1.0
-('Basel', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Basel', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Basel', 'Stoke'): 15.0
 ('Basel', 'Santa Cruz de Tenerife'): 3.0
 ('Basel', 'Lublin'): 2.0
@@ -10411,7 +10411,7 @@
 ('Basel', 'Plovdiv'): 6.0
 ('Basel', 'Bradford'): 7.0
 ('Basel', 'Alicante'): 3.0
-('Basel', 'Cluj-Napoca'): 26.0
+('Basel', 'Cluj-Napoca'): 28.0
 ('Basel', 'Granada'): 7.0
 ('Basel', 'Timisoara'): 3.0
 ('Basel', 'Brescia'): 10.0
@@ -10440,7 +10440,7 @@
 ('Kaunas', 'Ostrava'): 4.0
 ('Kaunas', 'Las Palmas'): 1.0
 ('Kaunas', 'Constanta'): 1.0
-('Kaunas', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Kaunas', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Kaunas', 'Stoke'): 0.0
 ('Kaunas', 'Santa Cruz de Tenerife'): 0.0
 ('Kaunas', 'Lublin'): 7.0
@@ -10449,7 +10449,7 @@
 ('Kaunas', 'Plovdiv'): 3.0
 ('Kaunas', 'Bradford'): 3.0
 ('Kaunas', 'Alicante'): 2.0
-('Kaunas', 'Cluj-Napoca'): 4.0
+('Kaunas', 'Cluj-Napoca'): 6.0
 ('Kaunas', 'Granada'): 2.0
 ('Kaunas', 'Timisoara'): 1.0
 ('Kaunas', 'Brescia'): 0.0
@@ -10477,7 +10477,7 @@
 ('Brno', 'Ostrava'): 175.0
 ('Brno', 'Las Palmas'): 0.0
 ('Brno', 'Constanta'): 0.0
-('Brno', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Brno', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Brno', 'Stoke'): 0.0
 ('Brno', 'Santa Cruz de Tenerife'): 0.0
 ('Brno', 'Lublin'): 4.0
@@ -10486,7 +10486,7 @@
 ('Brno', 'Plovdiv'): 1.0
 ('Brno', 'Bradford'): 0.0
 ('Brno', 'Alicante'): 1.0
-('Brno', 'Cluj-Napoca'): 8.0
+('Brno', 'Cluj-Napoca'): 10.0
 ('Brno', 'Granada'): 2.0
 ('Brno', 'Timisoara'): 3.0
 ('Brno', 'Brescia'): 2.0
@@ -10513,7 +10513,7 @@
 ('Southampton', 'Ostrava'): 2.0
 ('Southampton', 'Las Palmas'): 15.0
 ('Southampton', 'Constanta'): 1.0
-('Southampton', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Southampton', 'Castellammare di Stabia-Torre Annunziata'): 1.0
 ('Southampton', 'Stoke'): 375.0
 ('Southampton', 'Santa Cruz de Tenerife'): 3.0
 ('Southampton', 'Lublin'): 0.0
@@ -10548,7 +10548,7 @@
 ('Lens', 'Ostrava'): 0.0
 ('Lens', 'Las Palmas'): 3.0
 ('Lens', 'Constanta'): 1.0
-('Lens', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Lens', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Lens', 'Stoke'): 2.0
 ('Lens', 'Santa Cruz de Tenerife'): 0.0
 ('Lens', 'Lublin'): 0.0
@@ -10557,7 +10557,7 @@
 ('Lens', 'Plovdiv'): 1.0
 ('Lens', 'Bradford'): 1.0
 ('Lens', 'Alicante'): 0.0
-('Lens', 'Cluj-Napoca'): 5.0
+('Lens', 'Cluj-Napoca'): 6.0
 ('Lens', 'Granada'): 0.0
 ('Lens', 'Timisoara'): 0.0
 ('Lens', 'Brescia'): 1.0
@@ -10582,7 +10582,7 @@
 ('Augsburg', 'Ostrava'): 0.0
 ('Augsburg', 'Las Palmas'): 0.0
 ('Augsburg', 'Constanta'): 0.0
-('Augsburg', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Augsburg', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Augsburg', 'Stoke'): 2.0
 ('Augsburg', 'Santa Cruz de Tenerife'): 0.0
 ('Augsburg', 'Lublin'): 4.0
@@ -10591,7 +10591,7 @@
 ('Augsburg', 'Plovdiv'): 0.0
 ('Augsburg', 'Bradford'): 0.0
 ('Augsburg', 'Alicante'): 0.0
-('Augsburg', 'Cluj-Napoca'): 5.0
+('Augsburg', 'Cluj-Napoca'): 7.0
 ('Augsburg', 'Granada'): 4.0
 ('Augsburg', 'Timisoara'): 2.0
 ('Augsburg', 'Brescia'): 2.0
@@ -10615,7 +10615,7 @@
 ('Padua', 'Ostrava'): 1.0
 ('Padua', 'Las Palmas'): 1.0
 ('Padua', 'Constanta'): 0.0
-('Padua', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Padua', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Padua', 'Stoke'): 0.0
 ('Padua', 'Santa Cruz de Tenerife'): 1.0
 ('Padua', 'Lublin'): 10.0
@@ -10624,7 +10624,7 @@
 ('Padua', 'Plovdiv'): 0.0
 ('Padua', 'Bradford'): 1.0
 ('Padua', 'Alicante'): 0.0
-('Padua', 'Cluj-Napoca'): 2.0
+('Padua', 'Cluj-Napoca'): 3.0
 ('Padua', 'Granada'): 3.0
 ('Padua', 'Timisoara'): 0.0
 ('Padua', 'Brescia'): 139.0
@@ -10647,7 +10647,7 @@
 ('Padua', 'Ghent'): 5.0
 ('Ostrava', 'Las Palmas'): 0.0
 ('Ostrava', 'Constanta'): 0.0
-('Ostrava', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Ostrava', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Ostrava', 'Stoke'): 0.0
 ('Ostrava', 'Santa Cruz de Tenerife'): 0.0
 ('Ostrava', 'Lublin'): 2.0
@@ -10656,7 +10656,7 @@
 ('Ostrava', 'Plovdiv'): 1.0
 ('Ostrava', 'Bradford'): 0.0
 ('Ostrava', 'Alicante'): 0.0
-('Ostrava', 'Cluj-Napoca'): 3.0
+('Ostrava', 'Cluj-Napoca'): 4.0
 ('Ostrava', 'Granada'): 0.0
 ('Ostrava', 'Timisoara'): 0.0
 ('Ostrava', 'Brescia'): 1.0
@@ -10678,7 +10678,7 @@
 ('Ostrava', 'Valletta'): 1.0
 ('Ostrava', 'Ghent'): 5.0
 ('Las Palmas', 'Constanta'): 0.0
-('Las Palmas', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Las Palmas', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Las Palmas', 'Stoke'): 5.0
 ('Las Palmas', 'Santa Cruz de Tenerife'): 84.0
 ('Las Palmas', 'Lublin'): 0.0
@@ -10708,7 +10708,7 @@
 ('Las Palmas', 'Bonn'): 1.0
 ('Las Palmas', 'Valletta'): 1.0
 ('Las Palmas', 'Ghent'): 1.0
-('Constanta', 'Castellamare di Stabia-Torre Annunziata'): 0.0
+('Constanta', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Constanta', 'Stoke'): 0.0
 ('Constanta', 'Santa Cruz de Tenerife'): 0.0
 ('Constanta', 'Lublin'): 1.0
@@ -10717,7 +10717,7 @@
 ('Constanta', 'Plovdiv'): 5.0
 ('Constanta', 'Bradford'): 0.0
 ('Constanta', 'Alicante'): 4.0
-('Constanta', 'Cluj-Napoca'): 188.0
+('Constanta', 'Cluj-Napoca'): 242.0
 ('Constanta', 'Granada'): 0.0
 ('Constanta', 'Timisoara'): 89.0
 ('Constanta', 'Brescia'): 1.0
@@ -10738,35 +10738,35 @@
 ('Constanta', 'Bonn'): 0.0
 ('Constanta', 'Valletta'): 0.0
 ('Constanta', 'Ghent'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Stoke'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Santa Cruz de Tenerife'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Lublin'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Cardiff'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Iasi'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Plovdiv'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Bradford'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Alicante'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Cluj-Napoca'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Granada'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Timisoara'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Brescia'): 3.0
-('Castellamare di Stabia-Torre Annunziata', 'Galati'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Montpellier'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Varna'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Verona'): 1.0
-('Castellamare di Stabia-Torre Annunziata', 'Busto Arsizio'): 1.0
-('Castellamare di Stabia-Torre Annunziata', 'Valladolid'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Eindhoven'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Charleroi'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Cordoba'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'A Coruna'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Craiova'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Caserta'): 2.0
-('Castellamare di Stabia-Torre Annunziata', 'Coventry'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Brasov'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Bonn'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Valletta'): 0.0
-('Castellamare di Stabia-Torre Annunziata', 'Ghent'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Stoke'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Santa Cruz de Tenerife'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Lublin'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Cardiff'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Iasi'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Plovdiv'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Bradford'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Alicante'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Cluj-Napoca'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Granada'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Timisoara'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Brescia'): 1.0
+('Castellammare di Stabia-Torre Annunziata', 'Galati'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Montpellier'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Varna'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Verona'): 1.0
+('Castellammare di Stabia-Torre Annunziata', 'Busto Arsizio'): 1.0
+('Castellammare di Stabia-Torre Annunziata', 'Valladolid'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Eindhoven'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Charleroi'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Cordoba'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'A Coruna'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Craiova'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Caserta'): 7.0
+('Castellammare di Stabia-Torre Annunziata', 'Coventry'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Brasov'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Bonn'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Valletta'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Ghent'): 0.0
 ('Stoke', 'Santa Cruz de Tenerife'): 0.0
 ('Stoke', 'Lublin'): 1.0
 ('Stoke', 'Cardiff'): 256.0
@@ -10827,7 +10827,7 @@
 ('Lublin', 'Plovdiv'): 2.0
 ('Lublin', 'Bradford'): 1.0
 ('Lublin', 'Alicante'): 0.0
-('Lublin', 'Cluj-Napoca'): 6.0
+('Lublin', 'Cluj-Napoca'): 9.0
 ('Lublin', 'Granada'): 1.0
 ('Lublin', 'Timisoara'): 1.0
 ('Lublin', 'Brescia'): 1.0
@@ -10852,7 +10852,7 @@
 ('Cardiff', 'Plovdiv'): 0.0
 ('Cardiff', 'Bradford'): 211.0
 ('Cardiff', 'Alicante'): 8.0
-('Cardiff', 'Cluj-Napoca'): 3.0
+('Cardiff', 'Cluj-Napoca'): 4.0
 ('Cardiff', 'Granada'): 12.0
 ('Cardiff', 'Timisoara'): 2.0
 ('Cardiff', 'Brescia'): 4.0
@@ -10876,7 +10876,7 @@
 ('Iasi', 'Plovdiv'): 2.0
 ('Iasi', 'Bradford'): 0.0
 ('Iasi', 'Alicante'): 0.0
-('Iasi', 'Cluj-Napoca'): 326.0
+('Iasi', 'Cluj-Napoca'): 431.0
 ('Iasi', 'Granada'): 0.0
 ('Iasi', 'Timisoara'): 154.0
 ('Iasi', 'Brescia'): 0.0
@@ -10899,7 +10899,7 @@
 ('Iasi', 'Ghent'): 0.0
 ('Plovdiv', 'Bradford'): 0.0
 ('Plovdiv', 'Alicante'): 0.0
-('Plovdiv', 'Cluj-Napoca'): 6.0
+('Plovdiv', 'Cluj-Napoca'): 9.0
 ('Plovdiv', 'Granada'): 0.0
 ('Plovdiv', 'Timisoara'): 7.0
 ('Plovdiv', 'Brescia'): 0.0
@@ -10942,7 +10942,7 @@
 ('Bradford', 'Bonn'): 3.0
 ('Bradford', 'Valletta'): 1.0
 ('Bradford', 'Ghent'): 5.0
-('Alicante', 'Cluj-Napoca'): 2.0
+('Alicante', 'Cluj-Napoca'): 3.0
 ('Alicante', 'Granada'): 69.0
 ('Alicante', 'Timisoara'): 2.0
 ('Alicante', 'Brescia'): 2.0
@@ -10964,23 +10964,23 @@
 ('Alicante', 'Valletta'): 2.0
 ('Alicante', 'Ghent'): 1.0
 ('Cluj-Napoca', 'Granada'): 0.0
-('Cluj-Napoca', 'Timisoara'): 466.0
-('Cluj-Napoca', 'Brescia'): 6.0
-('Cluj-Napoca', 'Galati'): 105.0
-('Cluj-Napoca', 'Montpellier'): 6.0
-('Cluj-Napoca', 'Varna'): 2.0
-('Cluj-Napoca', 'Verona'): 9.0
+('Cluj-Napoca', 'Timisoara'): 619.0
+('Cluj-Napoca', 'Brescia'): 7.0
+('Cluj-Napoca', 'Galati'): 130.0
+('Cluj-Napoca', 'Montpellier'): 9.0
+('Cluj-Napoca', 'Varna'): 3.0
+('Cluj-Napoca', 'Verona'): 11.0
 ('Cluj-Napoca', 'Busto Arsizio'): 0.0
 ('Cluj-Napoca', 'Valladolid'): 0.0
-('Cluj-Napoca', 'Eindhoven'): 2.0
+('Cluj-Napoca', 'Eindhoven'): 3.0
 ('Cluj-Napoca', 'Charleroi'): 2.0
-('Cluj-Napoca', 'Cordoba'): 4.0
+('Cluj-Napoca', 'Cordoba'): 5.0
 ('Cluj-Napoca', 'A Coruna'): 0.0
-('Cluj-Napoca', 'Craiova'): 228.0
+('Cluj-Napoca', 'Craiova'): 284.0
 ('Cluj-Napoca', 'Caserta'): 0.0
 ('Cluj-Napoca', 'Coventry'): 0.0
-('Cluj-Napoca', 'Brasov'): 309.0
-('Cluj-Napoca', 'Bonn'): 6.0
+('Cluj-Napoca', 'Brasov'): 407.0
+('Cluj-Napoca', 'Bonn'): 8.0
 ('Cluj-Napoca', 'Valletta'): 0.0
 ('Cluj-Napoca', 'Ghent'): 0.0
 ('Granada', 'Timisoara'): 0.0
