@@ -3,7 +3,8 @@ import pandas as pd # only required for old 'lemmatize' function
 # create_lemmatised_wordlists()
 from tqdm.notebook import tqdm
 import spacy
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 import re
 
 # import_lemmatised_wordlists()
@@ -14,12 +15,15 @@ import os
 from gensim.corpora import Dictionary
 
 # initialize_wordcloud()
+import numpy as np
 import requests
 from io import BytesIO
 from PIL import Image
 from wordcloud import WordCloud
 
-
+# Calculate_corpus
+from collections import Counter
+import pandas as pd
 
 ### Can be removed in the near future
 def lemmatize(texts, POSfilter=["PROPN", "NOUN", "ADJ", "VERB", "ADV"], nlp_max_length = 1500000):
@@ -67,7 +71,7 @@ def lemmatize(texts, POSfilter=["PROPN", "NOUN", "ADJ", "VERB", "ADV"], nlp_max_
 
 
 
-def create_lemmatised_wordlists(INPUT_DIR="../../../../data/enwiki_city_pairs/", OUTPUT_DIR= "../../../../data/NOUN/", POS=['NOUN']):
+def create_lemmatised_wordlists(INPUT_DIR="../../../../data/enwiki_city_pairs/", OUTPUT_DIR= "../../../../data/NOUN/", POS=['NOUN'], OVERRIDE_OLD_WORDLISTS = False):
     """
     -->
         function that function that lemmatises text files.
@@ -91,22 +95,22 @@ def create_lemmatised_wordlists(INPUT_DIR="../../../../data/enwiki_city_pairs/",
     for root, dirs, files in tqdm(list(os.walk(INPUT_DIR))):
         
         # Create subdirectories in output path
-        [os.makedirs(os.path.join(O, dir), exist_ok=True) for dir in dirs]
+        [os.makedirs(os.path.join(OUTPUT_DIR, dir), exist_ok=True) for dir in dirs]
 
-        for file in files:
+        for file in tqdm(files, total=len(files)):
             file_path = os.path.join(root, file)
             file_output_dir = root.replace(INPUT_DIR, OUTPUT_DIR)
-        
-            _lemmatize_file(file_path, file_output_dir, city_pair=file[:4], POS=POS)
+            if OVERRIDE_OLD_WORDLISTS or not os.path.exists(os.path.join(file_output_dir, f"{''.join(POS)}__{file[:-4]}__.pickle" )):
+                lemmatize_file(file_path, file_output_dir, city_pair=file[:-4], POS=POS)
 
     return('Succesfully lemmatised the given texts.')
 
 
 
-def _lemmatize_file(FILE_PATH, OUTPUT_DIR, city_pair, POS):
+def lemmatize_file(FILE_PATH, OUTPUT_DIR, city_pair, POS):
     """
     -->
-        internal function that lemmatises a single file.
+        function that lemmatises a single file.
 
         Parameters:
         -----------
@@ -124,11 +128,11 @@ def _lemmatize_file(FILE_PATH, OUTPUT_DIR, city_pair, POS):
     chunked_text = [' '.join(city_pair_text_list[offs:offs+chunk_size]) for offs in range(0, len(city_pair_text_list), chunk_size)]
     
     processed_text = [text for text in tqdm(nlp.pipe(chunked_text, n_process=2, batch_size=1, disable=["ner", "parser"]), total=len(chunked_text))]
-    lemmatized_text = [[word.lemma_ for word in text if word.pos_ not in POS and not word.is_punct and not word.is_stop] for text in processed_text]
+    lemmatized_text = [[word.lemma_ for word in text if word.pos_ in POS and not word.is_punct and not word.is_stop] for text in processed_text]
     regexed_text = [[re.sub(r'\W+', '', word) for word in text] for text in lemmatized_text]
     flattened_words = [item for sublist in regexed_text for item in sublist]
     
-    with open(f'{OUTPUT_DIR}/{''.join(POS)}__{city_pair}__.pickle', 'wb') as fp:
+    with open(f"{OUTPUT_DIR}/{''.join(POS)}__{city_pair}__.pickle", 'wb') as fp:
         pickle.dump(flattened_words, fp)
 
 
@@ -152,9 +156,10 @@ def import_lemmatised_wordlists(PATH='../../../../data/enwiki_city_pairs_lemmati
     for root, dirs, files in os.walk(PATH, topdown=True):
         for name in files:
             file_path = os.path.join(root, name)
-            
+            parent_dir = os.path.basename(os.path.dirname(file_path))
+
             with open(file_path, 'rb') as fp:
-                data.append((pickle.load(fp), name.split('__')[1]))
+                data.append((pickle.load(fp), parent_dir, name.split('__')[1]))
     
     if sort:
         data = sorted(data, key=lambda x: len(x[0]), reverse=True)
@@ -198,6 +203,7 @@ def initialize_wordcloud(background_color='#fff'):
         Parameters:
         -----------
             background_color: hex (e.g. #fff) -> background color of the wordcloud
+
     """
 
     # black circle
@@ -210,3 +216,114 @@ def initialize_wordcloud(background_color='#fff'):
                     mask=circle_mask)
     
     return wordcloud
+
+
+
+def calculate_corpus(data: list, CORPUS_PATH='./new_corpus.csv'):
+    """
+    -->
+        function that creates a corpus from a list of wordlists. 
+
+        Parameters:
+        -----------
+            data: list of tuples (wordlist, parent_dir, city_pair) -> output from 'import_lemmatised_wordlists()'.
+            CORPUS_PATH: str (default = './new_corpus.csv') -> path of the output file.
+
+    """
+    corpus = pd.DataFrame(columns=['word'])
+
+    # Create Dataframe with Word Counts
+    for i in tqdm(range(len(data))):
+        word_count = Counter(data[i][0])
+
+        new_word = list(set(word_count.keys()) - set(corpus['word']))
+        corpus = corpus.append(pd.DataFrame({'word': new_word}), ignore_index=True)
+
+        wordlist = []
+        for word in corpus['word']:
+            if word in word_count.keys():
+                wordlist.append(word_count[word])
+            else:
+                wordlist.append(0)
+
+        corpus[data[i][2]] = wordlist
+
+        corpus.set_index('word', inplace=True)
+        corpus.fillna(0, inplace=True)
+
+        corpus.to_csv(CORPUS_PATH)
+        
+        return corpus
+
+
+
+def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False) -> tuple:
+    """
+    -->
+        function that calculates the term frequency (and optionally inverse document frequency) for a corpus
+
+        Parameters:
+            -----------
+                corpus: pd.DataFrame -> output from 'calculate_corpus()'.
+                OUTPUT_PATH: str -> path of the output file.
+                include_idf: bool ( default=False) -> Whether you would like to include -idf.
+
+    """
+    
+    if not isinstance(corpus, pd.DataFrame):
+        raise Exception("Corpus is required as input (can use calculate_corpus to create one.)")
+        
+    if not OUTPUT_PATH:
+        OUTPUT_PATH = './new_tfidf.csv' if include_idf else './new_tf.csv'
+        
+    try:
+        corpus.set_index('word', inplace=True)
+    except:
+        pass
+    
+    tf_idf = {k: [] for k in corpus.columns}
+
+    # Create Dataframe with Relative Word Frequencies
+    for index, row in tqdm(corpus.iterrows(), total=len(corpus)):
+        docs_with = np.count_nonzero(row)
+
+        for colname, count in row.items():
+            total_uniques = np.count_nonzero(corpus[colname])
+            tf = count / total_uniques
+            result = tf
+            
+            if include_idf:
+                idf = math.log(len(corpus.columns) / docs_with)
+                result *= idf
+
+            tf_idf[colname].append(result)
+
+    tf_idf_df = pd.DataFrame.from_dict(tf_idf)
+    tf_idf_df.set_index(corpus.index, inplace=True)
+
+    tf_idf_df.to_csv(OUTPUT_PATH)
+    print(f"Saved results to '{OUTPUT_PATH}'.")
+
+    return tf_idf_df
+
+
+
+def check_path(path):
+    """
+    -->
+        function that checks if file exists and if so, asks the user if they want to override it.
+
+        Parameters:
+            -----------
+                path: str -> path to check
+
+    """
+    if os.path.exists(path):
+        protection = input(f"This file already exists. Are you sure you want to override?\nType 'Yes' to continue: ")
+        if protection == 'Yes':
+            return true
+        else:
+            print("\nCanceling Operation...\n")
+            return False
+    else:
+        return True
