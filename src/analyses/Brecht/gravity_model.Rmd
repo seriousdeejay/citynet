@@ -1,0 +1,39 @@
+---
+title: "gravity_model"
+author: "Brecht Nijman"
+date: "6/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Data & Packages
+
+
+
+```{r libraries}
+library(tidyverse)
+library(glmnet)
+# library(readr)
+library(magrittr)
+library(ggplot2)
+```
+
+```{r load data}
+gravity_df <- read_delim("citynet/src/output/gravity_df_noDUM.csv", 
+                               ";", escape_double = FALSE, trim_ws = TRUE)
+
+head(gravity_df)
+```
+
+```{r}
+ggplot(gravity_df) +
+  geom_histogram(aes(gravity_df$collocation_en)) +
+  geom_histogram(aes(gravity_df$collocation_fr))
+```
+```{r}
+
+```
+

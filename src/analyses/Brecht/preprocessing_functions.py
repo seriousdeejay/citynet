@@ -335,6 +335,8 @@ def create_city_dict(city_list):
     # (the symbol used to split separate placenames)
     for city in city_list:
         keys = city.split('-')
+        if len(keys) > 1:
+            keys.append(city)
         for key in keys:
             city_dict[key] = city
 
