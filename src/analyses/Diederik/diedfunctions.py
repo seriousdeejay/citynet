@@ -25,6 +25,8 @@ from wordcloud import WordCloud
 from collections import Counter
 import pandas as pd
 
+import math
+
 ### Can be removed in the near future
 def lemmatize(texts, POSfilter=["PROPN", "NOUN", "ADJ", "VERB", "ADV"], nlp_max_length = 1500000):
     """
@@ -248,12 +250,12 @@ def calculate_corpus(data: list, CORPUS_PATH='./new_corpus.csv'):
 
         corpus[data[i][2]] = wordlist
 
-        corpus.set_index('word', inplace=True)
-        corpus.fillna(0, inplace=True)
+    corpus.set_index('word', inplace=True)
+    corpus.fillna(0, inplace=True)
 
-        corpus.to_csv(CORPUS_PATH)
+    corpus.to_csv(CORPUS_PATH)
         
-        return corpus
+    return corpus
 
 
 
@@ -321,7 +323,7 @@ def check_path(path):
     if os.path.exists(path):
         protection = input(f"This file already exists. Are you sure you want to override?\nType 'Yes' to continue: ")
         if protection == 'Yes':
-            return true
+            return True
         else:
             print("\nCanceling Operation...\n")
             return False
