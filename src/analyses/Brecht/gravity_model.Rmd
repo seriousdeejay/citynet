@@ -21,12 +21,33 @@ library(magrittr)
 library(ggplot2)
 ```
 
+```{r}
+# knitr::root.dir("")
+```
+
+```{r}
+getwd()
+```
+
+
 ```{r load data}
-gravity_df <- read_delim("citynet/src/output/gravity_df_noDUM.csv", 
-                               ";", escape_double = FALSE, trim_ws = TRUE)
+setwd("/Users/brecht/Documents/citynet_2")
+gravity_df <- read_delim("citynet/src/output/gravity_df_DUM.csv",
+                         ";", escape_double = FALSE, 
+                         col_types = 
+                           cols(border_DUM = col_factor(levels = c("0", "1")), 
+                                FR_DUM = col_factor(levels = c("0", "1")), 
+                                FR_int = col_factor(levels = c("0", "1")), 
+                                EN_DUM = col_factor(levels = c("0", "1")), 
+                                EN_int = col_factor(levels = c("0", "1"))), 
+                         trim_ws = TRUE)
+
 
 head(gravity_df)
 ```
+
+
+
 
 ```{r}
 ggplot(gravity_df) +
@@ -34,6 +55,112 @@ ggplot(gravity_df) +
   geom_histogram(aes(gravity_df$collocation_fr))
 ```
 ```{r}
+lm.fit <- lm(collocation_en ~ POP_A + POP_B + distance, gravity_df)
+summary(lm.fit)
+```
+
+```{r}
+# subset only cities larger than 1mil
+smaller_df <-
+  gravity_df %>% 
+  filter(POP_A > 999 & POP_B > 999)
+
+head(smaller_df)
+```
+```{r}
+lm.fit2 <- lm(collocation_en ~ POP_A + POP_B + distance, smaller_df)
+summary(lm.fit2)
+```
+```{r}
+# french model
+lm.fit3 <- lm(collocation_fr ~ POP_A + POP_B + distance, gravity_df)
+summary(lm.fit3)
+```
+
+```{r}
+# french model on cities greater than 1 million
+lm.fit4 <- lm(collocation_fr ~ POP_A + POP_B + distance, smaller_df)
+summary(lm.fit4)
+```
+
+```{r}
+# excluding 0s
+no_zeros_fr <- 
+  gravity_df %>% 
+  filter(collocation_fr > 0)
 
 ```
 
+```{r}
+# lm.fit5 <- lm(collocation_fr ~ POP_A + POP_B + distance, no_zeros_fr)
+# summary(lm.fit5)
+```
+
+```{r}
+# ggplot(gravity_df) +
+#   geom_histogram(aes(log10(gravity_df$collocation_en), alpha = .8, fill = 'red'), bins = 80) +
+#   geom_histogram(aes(log10(gravity_df$collocation_fr), alpha = .8), bins = 80)
+```
+
+```{r}
+# ggplot(gravity_df) +
+#  geom_histogram(aes(gravity_df$collocation_en_norm, alpha = .8, fill = 'red')) +
+#  geom_histogram(aes(gravity_df$collocation_fr_norm, alpha = .8))
+```
+
+```{r}
+# with border dummy
+lm.fit6 <- lm(collocation_fr ~ POP_A + POP_B + distance + border_DUM,
+              gravity_df)
+summary(lm.fit6)
+```
+
+```{r}
+# with border dummy & french dummy
+lm.fit7 <- lm(collocation_fr ~ POP_A + POP_B + distance + border_DUM + FR_DUM,
+              gravity_df)
+summary(lm.fit7)
+```
+
+```{r}
+# with border dummy & double_french dummy
+lm.fit8 <- lm(collocation_fr ~ POP_A + POP_B + distance + border_DUM + FR_int,
+              gravity_df)
+summary(lm.fit8)
+```
+
+```{r}
+# with border dummy for english
+lm.fit9 <- lm(collocation_en ~ POP_A + POP_B + distance + border_DUM,
+              gravity_df)
+summary(lm.fit9)
+```
+
+```{r}
+# with border dummy and EN_DUM
+lm.fit10 <- lm(collocation_en ~ POP_A + POP_B + distance + border_DUM + EN_DUM,
+              gravity_df)
+summary(lm.fit10)
+```
+
+```{r}
+# with border dummy and EN_DUM
+lm.fit11 <- lm(collocation_en ~ POP_A + POP_B + distance + border_DUM + EN_int,
+              gravity_df)
+summary(lm.fit11)
+```
+
+```{r}
+# with border dummy and EN_int on large cities only
+lm.fit12 <- lm(collocation_en ~ POP_A + POP_B + distance + border_DUM + EN_int,
+              smaller_df)
+summary(lm.fit12)
+```
+
+```{r}
+# with border dummy and EN_int on large cities only
+lm.fit13 <- lm(collocation_fr ~ POP_A + POP_B + distance + border_DUM + FR_int,
+              smaller_df)
+
+summary(lm.fit13)
+```
