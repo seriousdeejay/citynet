@@ -260,7 +260,7 @@ def calculate_corpus(data: list, CORPUS_PATH='./new_corpus.csv'):
 
 
 
-def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_doc=0) -> tuple:
+def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_freq=0, min_doc=0) -> tuple:
     """
     -->
         function that calculates the term frequency (and optionally inverse document frequency) for a corpus
@@ -272,6 +272,8 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_doc=0) -> tup
                 include_idf: bool ( default=False) -> Whether you would like to include -idf.
 
     """
+    if not isinstance(min_freq, int) or not min_freq:
+        raise Exception("min_freq should be given an integer value greater than 0.")
     
     if not isinstance(min_doc, int) or not min_doc:
         raise Exception("min_doc should be given an integer value greater than 0.")
@@ -294,7 +296,7 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_doc=0) -> tup
         docs_with = np.count_nonzero(row)
 
         for colname, count in row.items():
-            if docs_with >= min_doc:
+            if docs_with >= min_doc and count >= min_freq:
                 # total_uniques = np.count_nonzero(corpus[colname])
                 total_words = sum(corpus[colname])
                 tf = count / total_words
