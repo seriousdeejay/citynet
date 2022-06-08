@@ -290,7 +290,8 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_freq=0, min_d
         pass
     
     tf_idf = {k: [] for k in corpus.columns}
-
+    sumdict = {x: sum(corpus[x]) for x in corpus.columns}
+    
     # Create Dataframe with Relative Word Frequencies
     for index, row in tqdm(corpus.iterrows(), total=len(corpus)):
         docs_with = np.count_nonzero(row)
@@ -298,8 +299,8 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_freq=0, min_d
         for colname, count in row.items():
             if docs_with >= min_doc and count >= min_freq:
                 # total_uniques = np.count_nonzero(corpus[colname])
-                total_words = sum(corpus[colname])
-                tf = count / total_words
+                # total_words = sum(corpus[colname])
+                tf = count / sumdict[colname]
                 result = tf
                 
                 if include_idf:
