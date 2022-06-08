@@ -197,7 +197,7 @@ def vectorize(lemmatized_text, filter_extremes=True, MIN_DF = 1, MAX_DF = 0.6):
 
 
 
-def initialize_wordcloud(background_color='#fff'):
+def initialize_wordcloud(background_color='#fff', max_words=200):
     """
     -->
         function that initialised a wordcloud.
@@ -212,7 +212,8 @@ def initialize_wordcloud(background_color='#fff'):
     response = requests.get('https://i.ibb.co/kHNWRYD/black-circle-better.png')
     circle_mask = np.array(Image.open(BytesIO(response.content)))
 
-    wordcloud = WordCloud(background_color=background_color,
+    wordcloud = WordCloud(max_words=max_words,
+                    background_color=background_color,
                     # font_path='/System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf',
                     color_func=lambda *args, **kwargs: (0,0,0),
                     mask=circle_mask)
@@ -259,7 +260,7 @@ def calculate_corpus(data: list, CORPUS_PATH='./new_corpus.csv'):
 
 
 
-def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False) -> tuple:
+def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_doc=0) -> tuple:
     """
     -->
         function that calculates the term frequency (and optionally inverse document frequency) for a corpus
@@ -272,6 +273,9 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False) -> tuple:
 
     """
     
+    if not isinstance(min_doc, int) or not min_doc:
+        raise Exception("min_doc should be given an integer value greater than 0.")
+        
     if not isinstance(corpus, pd.DataFrame):
         raise Exception("Corpus is required as input (can use calculate_corpus to create one.)")
         
@@ -290,13 +294,17 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False) -> tuple:
         docs_with = np.count_nonzero(row)
 
         for colname, count in row.items():
-            total_uniques = np.count_nonzero(corpus[colname])
-            tf = count / total_uniques
-            result = tf
-            
-            if include_idf:
-                idf = math.log(len(corpus.columns) / docs_with)
-                result *= idf
+            if docs_with >= min_doc:
+                # total_uniques = np.count_nonzero(corpus[colname])
+                total_words = sum(corpus[colname])
+                tf = count / total_words
+                result = tf
+                
+                if include_idf:
+                    idf = math.log(len(corpus.columns) / docs_with)
+                    result *= idf 
+            else:
+                result = 0
 
             tf_idf[colname].append(result)
 
