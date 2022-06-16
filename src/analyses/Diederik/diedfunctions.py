@@ -27,6 +27,11 @@ import pandas as pd
 
 import math
 
+# Train_lda_model
+from gensim.models.wrappers import LdaMallet
+from gensim.models import CoherenceModel
+
+
 ### Can be removed in the near future
 def lemmatize(texts, POSfilter=["PROPN", "NOUN", "ADJ", "VERB", "ADV"], nlp_max_length = 1500000):
     """
@@ -318,6 +323,42 @@ def calculate_tf(corpus='', OUTPUT_PATH='', include_idf=False, min_freq=0, min_d
     print(f"Saved results to '{OUTPUT_PATH}'.")
 
     return tf_idf_df
+
+
+
+PATH_TO_MALLET = r'C:/mallet/bin/mallet.bat'
+def train_lda_model(lemmatized_text, dictionary=[], corpus=[], MIN_DF = 2, MAX_DF = 1, N_TOPICS = 10, N_ITERATIONS = 1000):
+    """
+    -->
+        function that trains model.
+
+        Parameters:
+        -----------
+            lemmatized_text: list, str -> contains the key words to be matched (created with the lemmatization function)
+            dictionary: gensim.corpora.dictionary.Dictionary -> output from vectorization function
+            corpus: list ([dictionary.doc2bow(text)...) -> output from vectorization function
+            MIN_DF: int (default = 1) -> minimum document frequency
+            MAX_DF: int (default = 0.6) -> maximum document frequency
+            N_TOPICS: int (default = 10) -> Topics to detect
+            N_ITERATIONS: int (default = 1000) -> 1000 often enough
+
+    """
+
+    # Call vectorization function if either dictionary or corpus is missing as parameter
+#     if vectorize and not type(dictionary) == gensim.corpora.dictionary.Dictionary or not corpus:
+#         dictionary, corpus = vectorize(lemmatized_text, MIN_DF, MAX_DF)
+    
+    lda_model = LdaMallet(PATH_TO_MALLET,
+                corpus=corpus,
+                id2word=dictionary,
+                num_topics=N_TOPICS,
+                # alpha=auto,
+                optimize_interval=10,
+                iterations=N_ITERATIONS)
+    
+    coherence_score = CoherenceModel(model=lda_model, texts=lemmatized_text, dictionary=dictionary, coherence='c_v').get_coherence()
+    
+    return(lda_model, coherence_score, dictionary, corpus)
 
 
 
