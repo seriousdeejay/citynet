@@ -1,4 +1,5 @@
 import os
+from ast import literal_eval
 import pickle
 from tqdm.notebook import tqdm
 import re
@@ -10,6 +11,215 @@ nlp = spacy.load("en_core_web_lg")
 nlp.disable_pipes('ner', 'parser')
 
 from general_functions import check_path
+
+
+
+def get_english_words(path="../../../input/english_words_alpha_370k.txt"):
+    if not os.path.exists(path):
+        raise Exception("Provide a valid path to a file with English words.")
+
+    with open(path) as word_file:
+            ENGLISH_WORDS = set(word.strip().lower() for word in word_file)
+    
+    if not len(ENGLISH_WORDS):
+        raise Exception("No wordlist could be found in the given file!")
+            
+    return ENGLISH_WORDS
+
+
+
+def is_english_word(word, english_words):
+    return word.lower() in english_words
+
+
+
+def remove_non_existing_words_from_wordlist(wordlist: list, english_words) -> list:
+    if not len(english_words):
+        raise Exception("The supplied english words list is empty."
+                       )
+    wordset = set(wordlist)
+    non_existent = []
+    
+    for word in wordset:
+        if not is_english_word(word, english_words):
+            non_existent.append(word)
+            
+    return([word for word in wordlist if word not in non_existent])
+
+
+
+def keep_english_words_in_paragraphs(paragraphs, english_words=[], english_words_file="../../../input/english_words_alpha_370k.txt"):
+    if not english_words:
+        english_words = get_english_words(path=english_words_file)
+        
+    cleaned_paragraphs = []
+    for paragraph in paragraphs:
+        cleaned_paragraph = remove_non_existing_words_from_wordlist(wordlist=paragraph, english_words=english_words)
+        cleaned_paragraphs.append(cleaned_paragraph)
+        
+    return cleaned_paragraphs
+
+
+
+def lemmatise_paragraphs(paragraphs, POStag, NLP_MAX_LENGTH=1500000):
+    """
+    --> function that lemmatises the paragraphs of a single text file.
+    """
+    
+    nlp.max_length = NLP_MAX_LENGTH
+    
+    #Checks if valid part-of-speech tag was provided
+    POStags=["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
+    if not isinstance(POStag, str) or POStag.upper() not in POStags:
+        raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
+    
+    processed_paragraphs = [text for text in tqdm(nlp.pipe(paragraphs, n_process=2, batch_size=1, disable=["ner", "parser"]), desc=f"Lemmatising ({POStag})...",total=len(paragraphs), leave=False)]
+    lemmatized_paragraphs = [[word.lemma_ for word in paragraph if word.pos_ == POStag and not word.is_punct and not word.is_stop] for paragraph in processed_paragraphs]
+    regexed_paragraphs= [[re.sub(r'\W+', '', word) for word in paragraph] for paragraph in lemmatized_paragraphs]
+   
+    return regexed_paragraphs
+
+
+
+def lemmatise_city_pair(df=df, POS=POS, OVERWRITE=False, ONLY_ENGLISH_WORDS=False, ENGLISH_WORDS = [],
+    english_words_file="../../../input/english_words_alpha_370k.txt", NLP_MAX_LENGTH=1500000):
+    
+    for tag in tqdm(POS, desc=f"POS: {POS}", leave=False):
+        if OVERWRITE or tag not in df.columns:
+            df[f"{tag}"] = lemmatise_paragraphs(paragraphs=df['paragraph'], POStag=tag, NLP_MAX_LENGTH=NLP_MAX_LENGTH)
+
+        if ONLY_ENGLISH_WORDS and (OVERWRITE or f'{tag}_clean' not in df.columns):
+            df[f'{tag}_clean'] = keep_english_words_in_paragraphs(paragraphs=df[tag], english_words=ENGLISH_WORDS)
+            
+    return df
+
+
+
+def lemmatise(INPUT_DIR, POS, BATCHES=[], LEMMATISATION_TYPE='', ONLY_ENGLISH_WORDS=False, english_words_file="../../../input/english_words_alpha_370k.txt", OVERWRITE=False, NLP_MAX_LENGTH=1500000):   
+    BATCHES = [str(batch) for batch in BATCHES]
+    
+    #Checks if valid part-of-speech tag was provided
+    POStags = ["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
+    if not isinstance(POS, list) or len([tag.upper() for tag in POS if tag not in POStags]):
+        raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
+    
+    if ONLY_ENGLISH_WORDS:
+        with open(english_words_file) as word_file:
+            ENGLISH_WORDS = set(word.strip().lower() for word in word_file)
+
+    chosen_batches = [batch for batch in os.listdir(INPUT_DIR) if not BATCHES or batch in BATCHES]
+    
+#     # Where the magic happens
+    for batch in tqdm(chosen_batches, desc=f"BATCHES: {BATCHES}"):
+        batch_dir = os.path.join(INPUT_DIR, batch)
+        
+        for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
+            citypair_dir = os.path.join(batch_dir, citypair)
+            CITY_PAIR = citypair.split('___')[1]
+
+            df_paragraphs_path = f"{citypair_dir}/{CITY_PAIR}.csv"
+            
+            if os.path.exists(df_paragraphs_path):
+                df = pd.read_csv(df_paragraphs_path)
+                df = lemmatise_city_pair(df=df, POS=POS, OVERWRITE=OVERWRITE, ONLY_ENGLISH_WORDS=ONLY_ENGLISH_WORDS, ENGLISH_WORDS=ENGLISH_WORDS, NLP_MAX_LENGTH=NLP_MAX_LENGTH)
+                df.to_csv(df_paragraphs_path, index=False)
+            else:
+                print(f"Batch: {batch}, City Pair: '{CITY_PAIR}' has no file at '{df_paragraphs_path}'.")
+
+
+
+"""
+Example:
+    %%time
+
+    INPUT_DIR = "../../../../../data/clean/city_pair_paragraphs3/"
+    BATCHES = [5]
+    POS = ["NOUN", "VERB"]
+    # LEMMATISATION_TYPE = 'quick', 'accurate'
+    ONLY_ENGLISH_WORDS = True
+    OVERWRITE = True
+
+    df = lemmatise(INPUT_DIR, POS, BATCHES, ONLY_ENGLISH_WORDS=ONLY_ENGLISH_WORDS, OVERWRITE=OVERWRITE)
+"""
+
+
+
+def import_lemmatised_paragraphs(INPUT_DIR, POS, BATCHES=[], ONLY_ENGLISH_WORDS=False, merged_POS=True, sort_by_paragraphs=False):
+    BATCHES = [str(batch) for batch in BATCHES]
+    
+    POStags = ["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
+    if not isinstance(POS, list) or len([tag for tag in POS if tag.upper() not in POStags]):
+        raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
+    
+    chosen_batches = [batch for batch in os.listdir(INPUT_DIR) if not BATCHES or batch in BATCHES]
+    
+    # Where the magic happens
+    data_list = []
+    missing_POS = dict()
+    collected_POS = set()
+    
+    for batch in tqdm(chosen_batches, desc=f"BATCHES: {BATCHES}"):
+        batch_dir = os.path.join(INPUT_DIR, batch)
+        
+        for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
+            citypair_dir = os.path.join(batch_dir, citypair)
+            CITY_PAIR = citypair.split('___')[1]
+
+            df_paragraphs_path = f"{citypair_dir}/{CITY_PAIR}.csv"
+            df = pd.read_csv(df_paragraphs_path)
+            
+            sub_df = df[['paragraph', 'paragraph_id']]
+            if merged_POS:
+                sub_df['merged_POS'] = [[] for _ in range(df.shape[0])]
+            
+            combined_POS = None
+            for tag in POS:
+                if ONLY_ENGLISH_WORDS:
+                    column_name = f'{tag}_clean'   
+                else:
+                    column_name = f'{tag}'
+                
+                if column_name not in df.columns:
+                    if not column_name in missing_POS.keys():
+                        missing_POS[column_name] = []
+                        
+                    missing_POS[column_name].append(CITY_PAIR)
+                    
+                else:
+                    string_to_list = df[column_name].apply(literal_eval)
+                    
+                    if merged_POS:
+                        sub_df['merged_POS'] += string_to_list    
+                        
+                    else:   
+                        sub_df[tag] = string_to_list
+                            
+                    collected_POS.add(tag)
+
+             
+            citypair_dict = {'batch': batch, 'city_pair': CITY_PAIR, 'paragraphs_count': len(df), 'english_words': ONLY_ENGLISH_WORDS, 'collected_POS': collected_POS, 'lemmatized_paragraphs': sub_df}
+            data_list.append(citypair_dict)
+    
+    if sort_by_paragraphs:
+        data_list = sorted(data_list, key=lambda k: k['paragraphs_count'], reverse=True)
+    
+    if len(missing_POS):
+        print(f'The following POS tags are missing: {missing_POS}')
+    
+    return data_list
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
