@@ -197,7 +197,7 @@ def compare_lda_models(OUTPUT_DIR, TOPIC_SELECTION, LEMMATIZED_TEXT, DICTIONARY=
     for N_TOPICS in tqdm(TOPIC_SELECTION, total=len(TOPIC_SELECTION), desc='Creating models...', leave=True):
         output = train_lda_model(lemmatized_text=LEMMATIZED_TEXT, dictionary=DICTIONARY, corpus=CORPUS, MIN_DF = MIN_DF, MAX_DF = MAX_DF, N_TOPICS = N_TOPICS, N_ITERATIONS = N_ITERATIONS, PATH_TO_MALLET=PATH_TO_MALLET, GET_COHERENCE_SCORE=GET_COHERENCE_SCORE, COHERENCE=COHERENCE)
         print('coherence_score:', output['coherence_score'])
-        NAME = f"lda_model_{N_TOPICS}topics_{MIN_DF}min_{MAX_DF}max"
+        NAME = f"lda_model_{N_TOPICS}topics_{MIN_DF}min_{MAX_DF}max".replace('.', '_')
         save_lda_model(output['lda_model'], COHERENCE_SCORE=output['coherence_score'], DICTIONARY=output['dictionary'], CORPUS=output['corpus'], TEXTS=LEMMATIZED_TEXT, VIS=None, OUTPUT_DIR=OUTPUT_DIR, NAME=NAME, SAVE_VIS=True, SAVE_DICT=True)
         
         # # model, coherence, _, _ = train_model(words, dictionary, corpus, N_TOPICS=n_topics)
