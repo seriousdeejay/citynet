@@ -424,8 +424,8 @@ def create_citylink(matrix):
     based on code by Tongjing Wang"""
 
     city_link = {}
-    for i in range(len(matrix)-1):
-        for j in range(i+1, len(matrix)-1):
+    for i in range(len(matrix)):
+        for j in range(i+1, len(matrix)):
             city_link[(matrix.index[i], matrix.columns[j])] = matrix.iloc[i,j]
     return city_link
 

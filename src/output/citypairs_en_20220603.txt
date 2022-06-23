@@ -147,6 +147,7 @@
 ('Paris', 'Bonn'): 545.0
 ('Paris', 'Valletta'): 31.0
 ('Paris', 'Ghent'): 382.0
+('Paris', 'Gdynia'): 19.0
 ('London', 'Madrid'): 2386.0
 ('London', 'Berlin'): 7668.0
 ('London', 'Milan'): 2588.0
@@ -295,6 +296,7 @@
 ('London', 'Bonn'): 439.0
 ('London', 'Valletta'): 62.0
 ('London', 'Ghent'): 268.0
+('London', 'Gdynia'): 23.0
 ('Madrid', 'Berlin'): 1075.0
 ('Madrid', 'Milan'): 1176.0
 ('Madrid', 'Barcelona'): 5267.0
@@ -442,6 +444,7 @@
 ('Madrid', 'Bonn'): 87.0
 ('Madrid', 'Valletta'): 8.0
 ('Madrid', 'Ghent'): 50.0
+('Madrid', 'Gdynia'): 2.0
 ('Berlin', 'Milan'): 964.0
 ('Berlin', 'Barcelona'): 899.0
 ('Berlin', 'Athens'): 561.0
@@ -588,6 +591,7 @@
 ('Berlin', 'Bonn'): 1589.0
 ('Berlin', 'Valletta'): 7.0
 ('Berlin', 'Ghent'): 109.0
+('Berlin', 'Gdynia'): 41.0
 ('Milan', 'Barcelona'): 1069.0
 ('Milan', 'Athens'): 281.0
 ('Milan', 'Rome'): 3837.0
@@ -733,6 +737,7 @@
 ('Milan', 'Bonn'): 49.0
 ('Milan', 'Valletta'): 14.0
 ('Milan', 'Ghent'): 36.0
+('Milan', 'Gdynia'): 1.0
 ('Barcelona', 'Athens'): 426.0
 ('Barcelona', 'Rome'): 827.0
 ('Barcelona', 'Birmingham'): 160.0
@@ -877,6 +882,7 @@
 ('Barcelona', 'Bonn'): 52.0
 ('Barcelona', 'Valletta'): 21.0
 ('Barcelona', 'Ghent'): 36.0
+('Barcelona', 'Gdynia'): 1.0
 ('Athens', 'Rome'): 1170.0
 ('Athens', 'Birmingham'): 115.0
 ('Athens', 'Lisbon'): 137.0
@@ -1020,6 +1026,7 @@
 ('Athens', 'Bonn'): 63.0
 ('Athens', 'Valletta'): 16.0
 ('Athens', 'Ghent'): 22.0
+('Athens', 'Gdynia'): 4.0
 ('Rome', 'Birmingham'): 153.0
 ('Rome', 'Lisbon'): 474.0
 ('Rome', 'Naples'): 3694.0
@@ -1162,6 +1169,7 @@
 ('Rome', 'Bonn'): 226.0
 ('Rome', 'Valletta'): 98.0
 ('Rome', 'Ghent'): 120.0
+('Rome', 'Gdynia'): 11.0
 ('Birmingham', 'Lisbon'): 35.0
 ('Birmingham', 'Naples'): 21.0
 ('Birmingham', 'Katowice'): 5.0
@@ -1303,6 +1311,7 @@
 ('Birmingham', 'Bonn'): 22.0
 ('Birmingham', 'Valletta'): 3.0
 ('Birmingham', 'Ghent'): 17.0
+('Birmingham', 'Gdynia'): 1.0
 ('Lisbon', 'Naples'): 188.0
 ('Lisbon', 'Katowice'): 4.0
 ('Lisbon', 'Manchester'): 113.0
@@ -1443,6 +1452,7 @@
 ('Lisbon', 'Bonn'): 33.0
 ('Lisbon', 'Valletta'): 7.0
 ('Lisbon', 'Ghent'): 20.0
+('Lisbon', 'Gdynia'): 4.0
 ('Naples', 'Katowice'): 4.0
 ('Naples', 'Manchester'): 27.0
 ('Naples', 'Hamburg'): 96.0
@@ -1582,6 +1592,7 @@
 ('Naples', 'Bonn'): 20.0
 ('Naples', 'Valletta'): 54.0
 ('Naples', 'Ghent'): 23.0
+('Naples', 'Gdynia'): 2.0
 ('Katowice', 'Manchester'): 3.0
 ('Katowice', 'Hamburg'): 12.0
 ('Katowice', 'Budapest'): 24.0
@@ -1720,6 +1731,7 @@
 ('Katowice', 'Bonn'): 5.0
 ('Katowice', 'Valletta'): 0.0
 ('Katowice', 'Ghent'): 1.0
+('Katowice', 'Gdynia'): 53.0
 ('Manchester', 'Hamburg'): 162.0
 ('Manchester', 'Budapest'): 67.0
 ('Manchester', 'Bucharest'): 35.0
@@ -1857,6 +1869,7 @@
 ('Manchester', 'Bonn'): 33.0
 ('Manchester', 'Valletta'): 6.0
 ('Manchester', 'Ghent'): 18.0
+('Manchester', 'Gdynia'): 0.0
 ('Hamburg', 'Budapest'): 210.0
 ('Hamburg', 'Bucharest'): 43.0
 ('Hamburg', 'Warsaw'): 193.0
@@ -1993,6 +2006,7 @@
 ('Hamburg', 'Bonn'): 358.0
 ('Hamburg', 'Valletta'): 5.0
 ('Hamburg', 'Ghent'): 38.0
+('Hamburg', 'Gdynia'): 20.0
 ('Budapest', 'Bucharest'): 345.0
 ('Budapest', 'Warsaw'): 427.0
 ('Budapest', 'Stuttgart'): 128.0
@@ -2128,6 +2142,7 @@
 ('Budapest', 'Bonn'): 52.0
 ('Budapest', 'Valletta'): 2.0
 ('Budapest', 'Ghent'): 20.0
+('Budapest', 'Gdynia'): 7.0
 ('Bucharest', 'Warsaw'): 204.0
 ('Bucharest', 'Stuttgart'): 56.0
 ('Bucharest', 'Vienna'): 425.0
@@ -2262,6 +2277,7 @@
 ('Bucharest', 'Bonn'): 29.0
 ('Bucharest', 'Valletta'): 6.0
 ('Bucharest', 'Ghent'): 14.0
+('Bucharest', 'Gdynia'): 4.0
 ('Warsaw', 'Stuttgart'): 74.0
 ('Warsaw', 'Vienna'): 1047.0
 ('Warsaw', 'Munich'): 317.0
@@ -2395,6 +2411,7 @@
 ('Warsaw', 'Bonn'): 80.0
 ('Warsaw', 'Valletta'): 5.0
 ('Warsaw', 'Ghent'): 23.0
+('Warsaw', 'Gdynia'): 199.0
 ('Stuttgart', 'Vienna'): 634.0
 ('Stuttgart', 'Munich'): 1381.0
 ('Stuttgart', 'Brussels'): 158.0
@@ -2527,6 +2544,7 @@
 ('Stuttgart', 'Bonn'): 166.0
 ('Stuttgart', 'Valletta'): 1.0
 ('Stuttgart', 'Ghent'): 15.0
+('Stuttgart', 'Gdynia'): 2.0
 ('Vienna', 'Munich'): 2729.0
 ('Vienna', 'Brussels'): 975.0
 ('Vienna', 'Stockholm'): 551.0
@@ -2658,6 +2676,7 @@
 ('Vienna', 'Bonn'): 363.0
 ('Vienna', 'Valletta'): 12.0
 ('Vienna', 'Ghent'): 82.0
+('Vienna', 'Gdynia'): 9.0
 ('Munich', 'Brussels'): 469.0
 ('Munich', 'Stockholm'): 322.0
 ('Munich', 'Frankfurt'): 1719.0
@@ -2788,6 +2807,7 @@
 ('Munich', 'Bonn'): 518.0
 ('Munich', 'Valletta'): 5.0
 ('Munich', 'Ghent'): 37.0
+('Munich', 'Gdynia'): 5.0
 ('Brussels', 'Stockholm'): 332.0
 ('Brussels', 'Frankfurt'): 437.0
 ('Brussels', 'Cologne'): 396.0
@@ -2917,6 +2937,7 @@
 ('Brussels', 'Bonn'): 172.0
 ('Brussels', 'Valletta'): 7.0
 ('Brussels', 'Ghent'): 769.0
+('Brussels', 'Gdynia'): 1.0
 ('Stockholm', 'Frankfurt'): 194.0
 ('Stockholm', 'Cologne'): 152.0
 ('Stockholm', 'Copenhagen'): 1156.0
@@ -3045,6 +3066,7 @@
 ('Stockholm', 'Bonn'): 64.0
 ('Stockholm', 'Valletta'): 11.0
 ('Stockholm', 'Ghent'): 30.0
+('Stockholm', 'Gdynia'): 13.0
 ('Frankfurt', 'Cologne'): 1288.0
 ('Frankfurt', 'Copenhagen'): 189.0
 ('Frankfurt', 'Valencia'): 42.0
@@ -3172,6 +3194,7 @@
 ('Frankfurt', 'Bonn'): 379.0
 ('Frankfurt', 'Valletta'): 2.0
 ('Frankfurt', 'Ghent'): 26.0
+('Frankfurt', 'Gdynia'): 1.0
 ('Cologne', 'Copenhagen'): 159.0
 ('Cologne', 'Valencia'): 36.0
 ('Cologne', 'Turin'): 51.0
@@ -3298,6 +3321,7 @@
 ('Cologne', 'Bonn'): 1117.0
 ('Cologne', 'Valletta'): 1.0
 ('Cologne', 'Ghent'): 65.0
+('Cologne', 'Gdynia'): 2.0
 ('Copenhagen', 'Valencia'): 49.0
 ('Copenhagen', 'Turin'): 37.0
 ('Copenhagen', 'Glasgow'): 130.0
@@ -3423,6 +3447,7 @@
 ('Copenhagen', 'Bonn'): 81.0
 ('Copenhagen', 'Valletta'): 7.0
 ('Copenhagen', 'Ghent'): 40.0
+('Copenhagen', 'Gdynia'): 15.0
 ('Valencia', 'Turin'): 24.0
 ('Valencia', 'Glasgow'): 32.0
 ('Valencia', 'Prague'): 55.0
@@ -3547,6 +3572,7 @@
 ('Valencia', 'Bonn'): 8.0
 ('Valencia', 'Valletta'): 8.0
 ('Valencia', 'Ghent'): 9.0
+('Valencia', 'Gdynia'): 7.0
 ('Turin', 'Glasgow'): 31.0
 ('Turin', 'Prague'): 73.0
 ('Turin', 'Lyon'): 175.0
@@ -3670,6 +3696,7 @@
 ('Turin', 'Bonn'): 16.0
 ('Turin', 'Valletta'): 11.0
 ('Turin', 'Ghent'): 26.0
+('Turin', 'Gdynia'): 0.0
 ('Glasgow', 'Prague'): 52.0
 ('Glasgow', 'Lyon'): 83.0
 ('Glasgow', 'Sofia'): 15.0
@@ -3792,6 +3819,7 @@
 ('Glasgow', 'Bonn'): 33.0
 ('Glasgow', 'Valletta'): 4.0
 ('Glasgow', 'Ghent'): 18.0
+('Glasgow', 'Gdynia'): 6.0
 ('Prague', 'Lyon'): 82.0
 ('Prague', 'Sofia'): 247.0
 ('Prague', 'Liverpool'): 81.0
@@ -3913,6 +3941,7 @@
 ('Prague', 'Bonn'): 109.0
 ('Prague', 'Valletta'): 4.0
 ('Prague', 'Ghent'): 26.0
+('Prague', 'Gdynia'): 9.0
 ('Lyon', 'Sofia'): 32.0
 ('Lyon', 'Liverpool'): 124.0
 ('Lyon', 'Porto'): 64.0
@@ -4033,6 +4062,7 @@
 ('Lyon', 'Bonn'): 22.0
 ('Lyon', 'Valletta'): 0.0
 ('Lyon', 'Ghent'): 32.0
+('Lyon', 'Gdynia'): 3.0
 ('Sofia', 'Liverpool'): 58.0
 ('Sofia', 'Porto'): 41.0
 ('Sofia', 'Seville'): 26.0
@@ -4152,6 +4182,7 @@
 ('Sofia', 'Bonn'): 22.0
 ('Sofia', 'Valletta'): 13.0
 ('Sofia', 'Ghent'): 8.0
+('Sofia', 'Gdynia'): 3.0
 ('Liverpool', 'Porto'): 174.0
 ('Liverpool', 'Seville'): 24.0
 ('Liverpool', 'Dublin'): 746.0
@@ -4270,6 +4301,7 @@
 ('Liverpool', 'Bonn'): 22.0
 ('Liverpool', 'Valletta'): 3.0
 ('Liverpool', 'Ghent'): 10.0
+('Liverpool', 'Gdynia'): 3.0
 ('Porto', 'Seville'): 58.0
 ('Porto', 'Dublin'): 40.0
 ('Porto', 'Helsinki'): 20.0
@@ -4387,6 +4419,7 @@
 ('Porto', 'Bonn'): 9.0
 ('Porto', 'Valletta'): 18.0
 ('Porto', 'Ghent'): 8.0
+('Porto', 'Gdynia'): 2.0
 ('Seville', 'Dublin'): 47.0
 ('Seville', 'Helsinki'): 13.0
 ('Seville', 'Amsterdam'): 44.0
@@ -4503,6 +4536,7 @@
 ('Seville', 'Bonn'): 7.0
 ('Seville', 'Valletta'): 3.0
 ('Seville', 'Ghent'): 7.0
+('Seville', 'Gdynia'): 2.0
 ('Dublin', 'Helsinki'): 60.0
 ('Dublin', 'Amsterdam'): 281.0
 ('Dublin', 'Rotterdam'): 63.0
@@ -4618,6 +4652,7 @@
 ('Dublin', 'Bonn'): 51.0
 ('Dublin', 'Valletta'): 7.0
 ('Dublin', 'Ghent'): 21.0
+('Dublin', 'Gdynia'): 2.0
 ('Helsinki', 'Amsterdam'): 177.0
 ('Helsinki', 'Rotterdam'): 53.0
 ('Helsinki', 'Dusseldorf'): 36.0
@@ -4732,6 +4767,7 @@
 ('Helsinki', 'Bonn'): 38.0
 ('Helsinki', 'Valletta'): 8.0
 ('Helsinki', 'Ghent'): 22.0
+('Helsinki', 'Gdynia'): 19.0
 ('Amsterdam', 'Rotterdam'): 1734.0
 ('Amsterdam', 'Dusseldorf'): 227.0
 ('Amsterdam', 'Essen-Oberhausen'): 104.0
@@ -4845,6 +4881,7 @@
 ('Amsterdam', 'Bonn'): 126.0
 ('Amsterdam', 'Valletta'): 11.0
 ('Amsterdam', 'Ghent'): 162.0
+('Amsterdam', 'Gdynia'): 2.0
 ('Rotterdam', 'Dusseldorf'): 61.0
 ('Rotterdam', 'Essen-Oberhausen'): 52.0
 ('Rotterdam', 'Lille'): 34.0
@@ -4957,6 +4994,7 @@
 ('Rotterdam', 'Bonn'): 28.0
 ('Rotterdam', 'Valletta'): 4.0
 ('Rotterdam', 'Ghent'): 76.0
+('Rotterdam', 'Gdynia'): 8.0
 ('Dusseldorf', 'Essen-Oberhausen'): 378.0
 ('Dusseldorf', 'Lille'): 14.0
 ('Dusseldorf', 'Lodz'): 7.0
@@ -5068,6 +5106,7 @@
 ('Dusseldorf', 'Bonn'): 334.0
 ('Dusseldorf', 'Valletta'): 1.0
 ('Dusseldorf', 'Ghent'): 9.0
+('Dusseldorf', 'Gdynia'): 0.0
 ('Essen-Oberhausen', 'Lille'): 6.0
 ('Essen-Oberhausen', 'Lodz'): 7.0
 ('Essen-Oberhausen', 'Marseille'): 5.0
@@ -5178,6 +5217,7 @@
 ('Essen-Oberhausen', 'Bonn'): 133.0
 ('Essen-Oberhausen', 'Valletta'): 1.0
 ('Essen-Oberhausen', 'Ghent'): 8.0
+('Essen-Oberhausen', 'Gdynia'): 1.0
 ('Lille', 'Lodz'): 5.0
 ('Lille', 'Marseille'): 325.0
 ('Lille', 'Antwerp'): 131.0
@@ -5287,6 +5327,7 @@
 ('Lille', 'Bonn'): 12.0
 ('Lille', 'Valletta'): 1.0
 ('Lille', 'Ghent'): 111.0
+('Lille', 'Gdynia'): 1.0
 ('Lodz', 'Marseille'): 4.0
 ('Lodz', 'Antwerp'): 4.0
 ('Lodz', 'Bilbao'): 2.0
@@ -5395,6 +5436,7 @@
 ('Lodz', 'Bonn'): 11.0
 ('Lodz', 'Valletta'): 0.0
 ('Lodz', 'Ghent'): 2.0
+('Lodz', 'Gdynia'): 75.0
 ('Marseille', 'Antwerp'): 33.0
 ('Marseille', 'Bilbao'): 32.0
 ('Marseille', 'Newcastle'): 66.0
@@ -5502,6 +5544,7 @@
 ('Marseille', 'Bonn'): 14.0
 ('Marseille', 'Valletta'): 16.0
 ('Marseille', 'Ghent'): 11.0
+('Marseille', 'Gdynia'): 3.0
 ('Antwerp', 'Bilbao'): 16.0
 ('Antwerp', 'Newcastle'): 38.0
 ('Antwerp', 'Krakow'): 20.0
@@ -5608,6 +5651,7 @@
 ('Antwerp', 'Bonn'): 30.0
 ('Antwerp', 'Valletta'): 3.0
 ('Antwerp', 'Ghent'): 699.0
+('Antwerp', 'Gdynia'): 5.0
 ('Bilbao', 'Newcastle'): 18.0
 ('Bilbao', 'Krakow'): 8.0
 ('Bilbao', 'Bochum-Herne'): 2.0
@@ -5713,6 +5757,7 @@
 ('Bilbao', 'Bonn'): 7.0
 ('Bilbao', 'Valletta'): 1.0
 ('Bilbao', 'Ghent'): 7.0
+('Bilbao', 'Gdynia'): 2.0
 ('Newcastle', 'Krakow'): 4.0
 ('Newcastle', 'Bochum-Herne'): 5.0
 ('Newcastle', 'Thessaloniki'): 4.0
@@ -5817,6 +5862,7 @@
 ('Newcastle', 'Bonn'): 10.0
 ('Newcastle', 'Valletta'): 3.0
 ('Newcastle', 'Ghent'): 10.0
+('Newcastle', 'Gdynia'): 3.0
 ('Krakow', 'Bochum-Herne'): 4.0
 ('Krakow', 'Thessaloniki'): 20.0
 ('Krakow', 'Nuremberg'): 45.0
@@ -5920,6 +5966,7 @@
 ('Krakow', 'Bonn'): 17.0
 ('Krakow', 'Valletta'): 0.0
 ('Krakow', 'Ghent'): 10.0
+('Krakow', 'Gdynia'): 83.0
 ('Bochum-Herne', 'Thessaloniki'): 5.0
 ('Bochum-Herne', 'Nuremberg'): 20.0
 ('Bochum-Herne', 'Riga'): 4.0
@@ -6022,6 +6069,7 @@
 ('Bochum-Herne', 'Bonn'): 65.0
 ('Bochum-Herne', 'Valletta'): 1.0
 ('Bochum-Herne', 'Ghent'): 3.0
+('Bochum-Herne', 'Gdynia'): 0.0
 ('Thessaloniki', 'Nuremberg'): 11.0
 ('Thessaloniki', 'Riga'): 11.0
 ('Thessaloniki', 'Duisburg'): 0.0
@@ -6123,6 +6171,7 @@
 ('Thessaloniki', 'Bonn'): 17.0
 ('Thessaloniki', 'Valletta'): 9.0
 ('Thessaloniki', 'Ghent'): 5.0
+('Thessaloniki', 'Gdynia'): 2.0
 ('Nuremberg', 'Riga'): 20.0
 ('Nuremberg', 'Duisburg'): 27.0
 ('Nuremberg', 'Dortmund'): 72.0
@@ -6223,6 +6272,7 @@
 ('Nuremberg', 'Bonn'): 67.0
 ('Nuremberg', 'Valletta'): 0.0
 ('Nuremberg', 'Ghent'): 10.0
+('Nuremberg', 'Gdynia'): 1.0
 ('Riga', 'Duisburg'): 4.0
 ('Riga', 'Dortmund'): 7.0
 ('Riga', 'Hanover'): 22.0
@@ -6322,6 +6372,7 @@
 ('Riga', 'Bonn'): 21.0
 ('Riga', 'Valletta'): 5.0
 ('Riga', 'Ghent'): 1.0
+('Riga', 'Gdynia'): 20.0
 ('Duisburg', 'Dortmund'): 288.0
 ('Duisburg', 'Hanover'): 23.0
 ('Duisburg', 'Zurich'): 38.0
@@ -6420,6 +6471,7 @@
 ('Duisburg', 'Bonn'): 79.0
 ('Duisburg', 'Valletta'): 0.0
 ('Duisburg', 'Ghent'): 4.0
+('Duisburg', 'Gdynia'): 1.0
 ('Dortmund', 'Hanover'): 85.0
 ('Dortmund', 'Zurich'): 71.0
 ('Dortmund', 'Oslo'): 6.0
@@ -6517,6 +6569,7 @@
 ('Dortmund', 'Bonn'): 72.0
 ('Dortmund', 'Valletta'): 3.0
 ('Dortmund', 'Ghent'): 3.0
+('Dortmund', 'Gdynia'): 0.0
 ('Hanover', 'Zurich'): 59.0
 ('Hanover', 'Oslo'): 16.0
 ('Hanover', 'Bremen'): 444.0
@@ -6613,6 +6666,7 @@
 ('Hanover', 'Bonn'): 56.0
 ('Hanover', 'Valletta'): 1.0
 ('Hanover', 'Ghent'): 6.0
+('Hanover', 'Gdynia'): 4.0
 ('Zurich', 'Oslo'): 183.0
 ('Zurich', 'Bremen'): 70.0
 ('Zurich', 'Dresden'): 226.0
@@ -6708,6 +6762,7 @@
 ('Zurich', 'Bonn'): 160.0
 ('Zurich', 'Valletta'): 2.0
 ('Zurich', 'Ghent'): 20.0
+('Zurich', 'Gdynia'): 1.0
 ('Oslo', 'Bremen'): 37.0
 ('Oslo', 'Dresden'): 59.0
 ('Oslo', 'Sheffield'): 15.0
@@ -6802,6 +6857,7 @@
 ('Oslo', 'Bonn'): 39.0
 ('Oslo', 'Valletta'): 5.0
 ('Oslo', 'Ghent'): 14.0
+('Oslo', 'Gdynia'): 2.0
 ('Bremen', 'Dresden'): 142.0
 ('Bremen', 'Sheffield'): 6.0
 ('Bremen', 'Palermo'): 7.0
@@ -6895,6 +6951,7 @@
 ('Bremen', 'Bonn'): 81.0
 ('Bremen', 'Valletta'): 2.0
 ('Bremen', 'Ghent'): 10.0
+('Bremen', 'Gdynia'): 6.0
 ('Dresden', 'Sheffield'): 11.0
 ('Dresden', 'Palermo'): 23.0
 ('Dresden', 'Poznan'): 41.0
@@ -6987,6 +7044,7 @@
 ('Dresden', 'Bonn'): 106.0
 ('Dresden', 'Valletta'): 0.0
 ('Dresden', 'Ghent'): 16.0
+('Dresden', 'Gdynia'): 3.0
 ('Sheffield', 'Palermo'): 6.0
 ('Sheffield', 'Poznan'): 0.0
 ('Sheffield', 'Gelsenkirchen-Bottrop'): 0.0
@@ -7078,6 +7136,7 @@
 ('Sheffield', 'Bonn'): 10.0
 ('Sheffield', 'Valletta'): 1.0
 ('Sheffield', 'Ghent'): 4.0
+('Sheffield', 'Gdynia'): 5.0
 ('Palermo', 'Poznan'): 3.0
 ('Palermo', 'Gelsenkirchen-Bottrop'): 1.0
 ('Palermo', 'Bordeaux'): 24.0
@@ -7168,6 +7227,7 @@
 ('Palermo', 'Bonn'): 8.0
 ('Palermo', 'Valletta'): 22.0
 ('Palermo', 'Ghent'): 5.0
+('Palermo', 'Gdynia'): 1.0
 ('Poznan', 'Gelsenkirchen-Bottrop'): 2.0
 ('Poznan', 'Bordeaux'): 5.0
 ('Poznan', 'Wroclaw'): 416.0
@@ -7257,6 +7317,7 @@
 ('Poznan', 'Bonn'): 4.0
 ('Poznan', 'Valletta'): 1.0
 ('Poznan', 'Ghent'): 4.0
+('Poznan', 'Gdynia'): 104.0
 ('Gelsenkirchen-Bottrop', 'Bordeaux'): 0.0
 ('Gelsenkirchen-Bottrop', 'Wroclaw'): 0.0
 ('Gelsenkirchen-Bottrop', 'Gothenburg'): 1.0
@@ -7345,6 +7406,7 @@
 ('Gelsenkirchen-Bottrop', 'Bonn'): 16.0
 ('Gelsenkirchen-Bottrop', 'Valletta'): 0.0
 ('Gelsenkirchen-Bottrop', 'Ghent'): 0.0
+('Gelsenkirchen-Bottrop', 'Gdynia'): 0.0
 ('Bordeaux', 'Wroclaw'): 9.0
 ('Bordeaux', 'Gothenburg'): 11.0
 ('Bordeaux', 'Zaragoza'): 15.0
@@ -7432,6 +7494,7 @@
 ('Bordeaux', 'Bonn'): 13.0
 ('Bordeaux', 'Valletta'): 1.0
 ('Bordeaux', 'Ghent'): 23.0
+('Bordeaux', 'Gdynia'): 6.0
 ('Wroclaw', 'Gothenburg'): 5.0
 ('Wroclaw', 'Zaragoza'): 2.0
 ('Wroclaw', 'Genoa'): 2.0
@@ -7518,6 +7581,7 @@
 ('Wroclaw', 'Bonn'): 19.0
 ('Wroclaw', 'Valletta'): 1.0
 ('Wroclaw', 'Ghent'): 6.0
+('Wroclaw', 'Gdynia'): 74.0
 ('Gothenburg', 'Zaragoza'): 0.0
 ('Gothenburg', 'Genoa'): 8.0
 ('Gothenburg', 'Catania'): 2.0
@@ -7603,6 +7667,7 @@
 ('Gothenburg', 'Bonn'): 6.0
 ('Gothenburg', 'Valletta'): 2.0
 ('Gothenburg', 'Ghent'): 8.0
+('Gothenburg', 'Gdynia'): 5.0
 ('Zaragoza', 'Genoa'): 14.0
 ('Zaragoza', 'Catania'): 6.0
 ('Zaragoza', 'The Hague'): 2.0
@@ -7687,6 +7752,7 @@
 ('Zaragoza', 'Bonn'): 5.0
 ('Zaragoza', 'Valletta'): 2.0
 ('Zaragoza', 'Ghent'): 4.0
+('Zaragoza', 'Gdynia'): 1.0
 ('Genoa', 'Catania'): 131.0
 ('Genoa', 'The Hague'): 15.0
 ('Genoa', 'Toulouse'): 19.0
@@ -7770,6 +7836,7 @@
 ('Genoa', 'Bonn'): 10.0
 ('Genoa', 'Valletta'): 21.0
 ('Genoa', 'Ghent'): 17.0
+('Genoa', 'Gdynia'): 1.0
 ('Catania', 'The Hague'): 2.0
 ('Catania', 'Toulouse'): 4.0
 ('Catania', 'Bristol'): 0.0
@@ -7852,6 +7919,7 @@
 ('Catania', 'Bonn'): 6.0
 ('Catania', 'Valletta'): 5.0
 ('Catania', 'Ghent'): 3.0
+('Catania', 'Gdynia'): 0.0
 ('The Hague', 'Toulouse'): 14.0
 ('The Hague', 'Bristol'): 11.0
 ('The Hague', 'Vilnius'): 5.0
@@ -7933,6 +8001,7 @@
 ('The Hague', 'Bonn'): 43.0
 ('The Hague', 'Valletta'): 2.0
 ('The Hague', 'Ghent'): 45.0
+('The Hague', 'Gdynia'): 0.0
 ('Toulouse', 'Bristol'): 19.0
 ('Toulouse', 'Vilnius'): 2.0
 ('Toulouse', 'Saarbrucken'): 7.0
@@ -8013,6 +8082,7 @@
 ('Toulouse', 'Bonn'): 13.0
 ('Toulouse', 'Valletta'): 1.0
 ('Toulouse', 'Ghent'): 13.0
+('Toulouse', 'Gdynia'): 0.0
 ('Bristol', 'Vilnius'): 5.0
 ('Bristol', 'Saarbrucken'): 2.0
 ('Bristol', 'Malaga'): 9.0
@@ -8092,6 +8162,7 @@
 ('Bristol', 'Bonn'): 14.0
 ('Bristol', 'Valletta'): 2.0
 ('Bristol', 'Ghent'): 5.0
+('Bristol', 'Gdynia'): 1.0
 ('Vilnius', 'Saarbrucken'): 1.0
 ('Vilnius', 'Malaga'): 6.0
 ('Vilnius', 'Nantes'): 3.0
@@ -8170,6 +8241,7 @@
 ('Vilnius', 'Bonn'): 4.0
 ('Vilnius', 'Valletta'): 1.0
 ('Vilnius', 'Ghent'): 3.0
+('Vilnius', 'Gdynia'): 14.0
 ('Saarbrucken', 'Malaga'): 1.0
 ('Saarbrucken', 'Nantes'): 0.0
 ('Saarbrucken', 'Leeds'): 6.0
@@ -8247,6 +8319,7 @@
 ('Saarbrucken', 'Bonn'): 39.0
 ('Saarbrucken', 'Valletta'): 0.0
 ('Saarbrucken', 'Ghent'): 2.0
+('Saarbrucken', 'Gdynia'): 1.0
 ('Malaga', 'Nantes'): 7.0
 ('Malaga', 'Leeds'): 10.0
 ('Malaga', 'Nottingham'): 0.0
@@ -8323,6 +8396,7 @@
 ('Malaga', 'Bonn'): 5.0
 ('Malaga', 'Valletta'): 3.0
 ('Malaga', 'Ghent'): 3.0
+('Malaga', 'Gdynia'): 0.0
 ('Nantes', 'Leeds'): 14.0
 ('Nantes', 'Nottingham'): 9.0
 ('Nantes', 'Florence'): 20.0
@@ -8398,6 +8472,7 @@
 ('Nantes', 'Bonn'): 3.0
 ('Nantes', 'Valletta'): 0.0
 ('Nantes', 'Ghent'): 12.0
+('Nantes', 'Gdynia'): 0.0
 ('Leeds', 'Nottingham'): 889.0
 ('Leeds', 'Florence'): 73.0
 ('Leeds', 'Gdansk'): 3.0
@@ -8472,6 +8547,7 @@
 ('Leeds', 'Bonn'): 6.0
 ('Leeds', 'Valletta'): 1.0
 ('Leeds', 'Ghent'): 6.0
+('Leeds', 'Gdynia'): 0.0
 ('Nottingham', 'Florence'): 41.0
 ('Nottingham', 'Gdansk'): 1.0
 ('Nottingham', 'Leipzig'): 11.0
@@ -8545,6 +8621,7 @@
 ('Nottingham', 'Bonn'): 7.0
 ('Nottingham', 'Valletta'): 0.0
 ('Nottingham', 'Ghent'): 5.0
+('Nottingham', 'Gdynia'): 2.0
 ('Florence', 'Gdansk'): 3.0
 ('Florence', 'Leipzig'): 82.0
 ('Florence', 'Mannheim'): 32.0
@@ -8617,6 +8694,7 @@
 ('Florence', 'Bonn'): 39.0
 ('Florence', 'Valletta'): 12.0
 ('Florence', 'Ghent'): 32.0
+('Florence', 'Gdynia'): 1.0
 ('Gdansk', 'Leipzig'): 21.0
 ('Gdansk', 'Mannheim'): 4.0
 ('Gdansk', 'Belfast'): 3.0
@@ -8688,6 +8766,7 @@
 ('Gdansk', 'Bonn'): 8.0
 ('Gdansk', 'Valletta'): 0.0
 ('Gdansk', 'Ghent'): 2.0
+('Gdansk', 'Gdynia'): 357.0
 ('Leipzig', 'Mannheim'): 138.0
 ('Leipzig', 'Belfast'): 8.0
 ('Leipzig', 'Portsmouth'): 2.0
@@ -8758,6 +8837,7 @@
 ('Leipzig', 'Bonn'): 264.0
 ('Leipzig', 'Valletta'): 0.0
 ('Leipzig', 'Ghent'): 13.0
+('Leipzig', 'Gdynia'): 3.0
 ('Mannheim', 'Belfast'): 5.0
 ('Mannheim', 'Portsmouth'): 2.0
 ('Mannheim', 'Venice'): 39.0
@@ -8827,6 +8907,7 @@
 ('Mannheim', 'Bonn'): 90.0
 ('Mannheim', 'Valletta'): 1.0
 ('Mannheim', 'Ghent'): 5.0
+('Mannheim', 'Gdynia'): 0.0
 ('Belfast', 'Portsmouth'): 95.0
 ('Belfast', 'Venice'): 26.0
 ('Belfast', 'Edinburgh'): 570.0
@@ -8895,6 +8976,7 @@
 ('Belfast', 'Bonn'): 8.0
 ('Belfast', 'Valletta'): 1.0
 ('Belfast', 'Ghent'): 9.0
+('Belfast', 'Gdynia'): 0.0
 ('Portsmouth', 'Venice'): 15.0
 ('Portsmouth', 'Edinburgh'): 176.0
 ('Portsmouth', 'Murcia'): 3.0
@@ -8962,6 +9044,7 @@
 ('Portsmouth', 'Bonn'): 2.0
 ('Portsmouth', 'Valletta'): 7.0
 ('Portsmouth', 'Ghent'): 5.0
+('Portsmouth', 'Gdynia'): 3.0
 ('Venice', 'Edinburgh'): 164.0
 ('Venice', 'Murcia'): 5.0
 ('Venice', 'Nice'): 85.0
@@ -9028,6 +9111,7 @@
 ('Venice', 'Bonn'): 48.0
 ('Venice', 'Valletta'): 15.0
 ('Venice', 'Ghent'): 51.0
+('Venice', 'Gdynia'): 9.0
 ('Edinburgh', 'Murcia'): 2.0
 ('Edinburgh', 'Nice'): 43.0
 ('Edinburgh', 'Liege'): 13.0
@@ -9093,6 +9177,7 @@
 ('Edinburgh', 'Bonn'): 66.0
 ('Edinburgh', 'Valletta'): 11.0
 ('Edinburgh', 'Ghent'): 31.0
+('Edinburgh', 'Gdynia'): 3.0
 ('Murcia', 'Nice'): 8.0
 ('Murcia', 'Liege'): 5.0
 ('Murcia', 'Bratislava'): 0.0
@@ -9157,6 +9242,7 @@
 ('Murcia', 'Bonn'): 2.0
 ('Murcia', 'Valletta'): 0.0
 ('Murcia', 'Ghent'): 0.0
+('Murcia', 'Gdynia'): 0.0
 ('Nice', 'Liege'): 66.0
 ('Nice', 'Bratislava'): 18.0
 ('Nice', 'Leicester'): 10.0
@@ -9220,6 +9306,7 @@
 ('Nice', 'Bonn'): 16.0
 ('Nice', 'Valletta'): 8.0
 ('Nice', 'Ghent'): 10.0
+('Nice', 'Gdynia'): 1.0
 ('Liege', 'Bratislava'): 5.0
 ('Liege', 'Leicester'): 7.0
 ('Liege', 'Karlsruhe'): 6.0
@@ -9282,6 +9369,7 @@
 ('Liege', 'Bonn'): 36.0
 ('Liege', 'Valletta'): 1.0
 ('Liege', 'Ghent'): 213.0
+('Liege', 'Gdynia'): 0.0
 ('Bratislava', 'Leicester'): 2.0
 ('Bratislava', 'Karlsruhe'): 6.0
 ('Bratislava', 'Bergamo'): 3.0
@@ -9343,6 +9431,7 @@
 ('Bratislava', 'Bonn'): 18.0
 ('Bratislava', 'Valletta'): 3.0
 ('Bratislava', 'Ghent'): 5.0
+('Bratislava', 'Gdynia'): 4.0
 ('Leicester', 'Karlsruhe'): 1.0
 ('Leicester', 'Bergamo'): 2.0
 ('Leicester', 'Palma de Mallorca'): 0.0
@@ -9403,6 +9492,7 @@
 ('Leicester', 'Bonn'): 7.0
 ('Leicester', 'Valletta'): 2.0
 ('Leicester', 'Ghent'): 8.0
+('Leicester', 'Gdynia'): 0.0
 ('Karlsruhe', 'Bergamo'): 1.0
 ('Karlsruhe', 'Palma de Mallorca'): 2.0
 ('Karlsruhe', 'Bologna'): 10.0
@@ -9462,6 +9552,7 @@
 ('Karlsruhe', 'Bonn'): 77.0
 ('Karlsruhe', 'Valletta'): 0.0
 ('Karlsruhe', 'Ghent'): 6.0
+('Karlsruhe', 'Gdynia'): 0.0
 ('Bergamo', 'Palma de Mallorca'): 3.0
 ('Bergamo', 'Bologna'): 108.0
 ('Bergamo', 'Bielefeld'): 0.0
@@ -9520,6 +9611,7 @@
 ('Bergamo', 'Bonn'): 4.0
 ('Bergamo', 'Valletta'): 0.0
 ('Bergamo', 'Ghent'): 2.0
+('Bergamo', 'Gdynia'): 0.0
 ('Palma de Mallorca', 'Bologna'): 2.0
 ('Palma de Mallorca', 'Bielefeld'): 2.0
 ('Palma de Mallorca', 'Rouen'): 0.0
@@ -9577,6 +9669,7 @@
 ('Palma de Mallorca', 'Bonn'): 0.0
 ('Palma de Mallorca', 'Valletta'): 4.0
 ('Palma de Mallorca', 'Ghent'): 2.0
+('Palma de Mallorca', 'Gdynia'): 0.0
 ('Bologna', 'Bielefeld'): 8.0
 ('Bologna', 'Rouen'): 9.0
 ('Bologna', 'Strasbourg'): 56.0
@@ -9633,6 +9726,7 @@
 ('Bologna', 'Bonn'): 14.0
 ('Bologna', 'Valletta'): 9.0
 ('Bologna', 'Ghent'): 16.0
+('Bologna', 'Gdynia'): 0.0
 ('Bielefeld', 'Rouen'): 0.0
 ('Bielefeld', 'Strasbourg'): 7.0
 ('Bielefeld', 'Tallinn'): 2.0
@@ -9688,6 +9782,7 @@
 ('Bielefeld', 'Bonn'): 51.0
 ('Bielefeld', 'Valletta'): 1.0
 ('Bielefeld', 'Ghent'): 1.0
+('Bielefeld', 'Gdynia'): 0.0
 ('Rouen', 'Strasbourg'): 72.0
 ('Rouen', 'Tallinn'): 0.0
 ('Rouen', 'Szczecin'): 1.0
@@ -9742,6 +9837,7 @@
 ('Rouen', 'Bonn'): 3.0
 ('Rouen', 'Valletta'): 0.0
 ('Rouen', 'Ghent'): 10.0
+('Rouen', 'Gdynia'): 0.0
 ('Strasbourg', 'Tallinn'): 8.0
 ('Strasbourg', 'Szczecin'): 3.0
 ('Strasbourg', 'Grenoble'): 76.0
@@ -9795,6 +9891,7 @@
 ('Strasbourg', 'Bonn'): 106.0
 ('Strasbourg', 'Valletta'): 1.0
 ('Strasbourg', 'Ghent'): 15.0
+('Strasbourg', 'Gdynia'): 0.0
 ('Tallinn', 'Szczecin'): 7.0
 ('Tallinn', 'Grenoble'): 3.0
 ('Tallinn', 'Bari'): 1.0
@@ -9847,6 +9944,7 @@
 ('Tallinn', 'Bonn'): 10.0
 ('Tallinn', 'Valletta'): 5.0
 ('Tallinn', 'Ghent'): 5.0
+('Tallinn', 'Gdynia'): 9.0
 ('Szczecin', 'Grenoble'): 0.0
 ('Szczecin', 'Bari'): 0.0
 ('Szczecin', 'Toulon'): 0.0
@@ -9898,6 +9996,7 @@
 ('Szczecin', 'Bonn'): 4.0
 ('Szczecin', 'Valletta'): 0.0
 ('Szczecin', 'Ghent'): 0.0
+('Szczecin', 'Gdynia'): 65.0
 ('Grenoble', 'Bari'): 2.0
 ('Grenoble', 'Toulon'): 32.0
 ('Grenoble', 'Brighton'): 2.0
@@ -9948,6 +10047,7 @@
 ('Grenoble', 'Bonn'): 12.0
 ('Grenoble', 'Valletta'): 0.0
 ('Grenoble', 'Ghent'): 7.0
+('Grenoble', 'Gdynia'): 1.0
 ('Bari', 'Toulon'): 1.0
 ('Bari', 'Brighton'): 3.0
 ('Bari', 'Darmstadt'): 1.0
@@ -9997,6 +10097,7 @@
 ('Bari', 'Bonn'): 2.0
 ('Bari', 'Valletta'): 6.0
 ('Bari', 'Ghent'): 1.0
+('Bari', 'Gdynia'): 0.0
 ('Toulon', 'Brighton'): 5.0
 ('Toulon', 'Darmstadt'): 0.0
 ('Toulon', 'Wuppertal'): 0.0
@@ -10045,6 +10146,7 @@
 ('Toulon', 'Bonn'): 1.0
 ('Toulon', 'Valletta'): 25.0
 ('Toulon', 'Ghent'): 4.0
+('Toulon', 'Gdynia'): 0.0
 ('Brighton', 'Darmstadt'): 4.0
 ('Brighton', 'Wuppertal'): 1.0
 ('Brighton', 'Utrecht'): 7.0
@@ -10092,6 +10194,7 @@
 ('Brighton', 'Bonn'): 9.0
 ('Brighton', 'Valletta'): 2.0
 ('Brighton', 'Ghent'): 3.0
+('Brighton', 'Gdynia'): 0.0
 ('Darmstadt', 'Wuppertal'): 14.0
 ('Darmstadt', 'Utrecht'): 7.0
 ('Darmstadt', 'Bournemouth'): 0.0
@@ -10138,6 +10241,7 @@
 ('Darmstadt', 'Bonn'): 71.0
 ('Darmstadt', 'Valletta'): 0.0
 ('Darmstadt', 'Ghent'): 1.0
+('Darmstadt', 'Gdynia'): 1.0
 ('Wuppertal', 'Utrecht'): 1.0
 ('Wuppertal', 'Bournemouth'): 0.0
 ('Wuppertal', 'Middlesbrough'): 0.0
@@ -10183,6 +10287,7 @@
 ('Wuppertal', 'Bonn'): 81.0
 ('Wuppertal', 'Valletta'): 0.0
 ('Wuppertal', 'Ghent'): 0.0
+('Wuppertal', 'Gdynia'): 0.0
 ('Utrecht', 'Bournemouth'): 1.0
 ('Utrecht', 'Middlesbrough'): 1.0
 ('Utrecht', 'Geneva'): 43.0
@@ -10227,6 +10332,7 @@
 ('Utrecht', 'Bonn'): 44.0
 ('Utrecht', 'Valletta'): 7.0
 ('Utrecht', 'Ghent'): 81.0
+('Utrecht', 'Gdynia'): 0.0
 ('Bournemouth', 'Middlesbrough'): 110.0
 ('Bournemouth', 'Geneva'): 4.0
 ('Bournemouth', 'Bydgoszcz'): 0.0
@@ -10270,6 +10376,7 @@
 ('Bournemouth', 'Bonn'): 2.0
 ('Bournemouth', 'Valletta'): 0.0
 ('Bournemouth', 'Ghent'): 1.0
+('Bournemouth', 'Gdynia'): 0.0
 ('Middlesbrough', 'Geneva'): 1.0
 ('Middlesbrough', 'Bydgoszcz'): 1.0
 ('Middlesbrough', 'Basel'): 23.0
@@ -10312,6 +10419,7 @@
 ('Middlesbrough', 'Bonn'): 0.0
 ('Middlesbrough', 'Valletta'): 2.0
 ('Middlesbrough', 'Ghent'): 1.0
+('Middlesbrough', 'Gdynia'): 0.0
 ('Geneva', 'Bydgoszcz'): 5.0
 ('Geneva', 'Basel'): 575.0
 ('Geneva', 'Kaunas'): 9.0
@@ -10353,6 +10461,7 @@
 ('Geneva', 'Bonn'): 96.0
 ('Geneva', 'Valletta'): 3.0
 ('Geneva', 'Ghent'): 26.0
+('Geneva', 'Gdynia'): 5.0
 ('Bydgoszcz', 'Basel'): 1.0
 ('Bydgoszcz', 'Kaunas'): 5.0
 ('Bydgoszcz', 'Brno'): 1.0
@@ -10393,6 +10502,7 @@
 ('Bydgoszcz', 'Bonn'): 2.0
 ('Bydgoszcz', 'Valletta'): 0.0
 ('Bydgoszcz', 'Ghent'): 0.0
+('Bydgoszcz', 'Gdynia'): 62.0
 ('Basel', 'Kaunas'): 3.0
 ('Basel', 'Brno'): 11.0
 ('Basel', 'Southampton'): 18.0
@@ -10432,6 +10542,7 @@
 ('Basel', 'Bonn'): 88.0
 ('Basel', 'Valletta'): 1.0
 ('Basel', 'Ghent'): 17.0
+('Basel', 'Gdynia'): 1.0
 ('Kaunas', 'Brno'): 2.0
 ('Kaunas', 'Southampton'): 0.0
 ('Kaunas', 'Lens'): 1.0
@@ -10470,6 +10581,7 @@
 ('Kaunas', 'Bonn'): 5.0
 ('Kaunas', 'Valletta'): 1.0
 ('Kaunas', 'Ghent'): 2.0
+('Kaunas', 'Gdynia'): 5.0
 ('Brno', 'Southampton'): 2.0
 ('Brno', 'Lens'): 0.0
 ('Brno', 'Augsburg'): 1.0
@@ -10507,6 +10619,7 @@
 ('Brno', 'Bonn'): 6.0
 ('Brno', 'Valletta'): 1.0
 ('Brno', 'Ghent'): 7.0
+('Brno', 'Gdynia'): 0.0
 ('Southampton', 'Lens'): 6.0
 ('Southampton', 'Augsburg'): 2.0
 ('Southampton', 'Padua'): 3.0
@@ -10543,6 +10656,7 @@
 ('Southampton', 'Bonn'): 3.0
 ('Southampton', 'Valletta'): 3.0
 ('Southampton', 'Ghent'): 6.0
+('Southampton', 'Gdynia'): 3.0
 ('Lens', 'Augsburg'): 1.0
 ('Lens', 'Padua'): 0.0
 ('Lens', 'Ostrava'): 0.0
@@ -10578,6 +10692,7 @@
 ('Lens', 'Bonn'): 1.0
 ('Lens', 'Valletta'): 1.0
 ('Lens', 'Ghent'): 9.0
+('Lens', 'Gdynia'): 1.0
 ('Augsburg', 'Padua'): 18.0
 ('Augsburg', 'Ostrava'): 0.0
 ('Augsburg', 'Las Palmas'): 0.0
@@ -10612,6 +10727,7 @@
 ('Augsburg', 'Bonn'): 36.0
 ('Augsburg', 'Valletta'): 0.0
 ('Augsburg', 'Ghent'): 6.0
+('Augsburg', 'Gdynia'): 3.0
 ('Padua', 'Ostrava'): 1.0
 ('Padua', 'Las Palmas'): 1.0
 ('Padua', 'Constanta'): 0.0
@@ -10645,6 +10761,7 @@
 ('Padua', 'Bonn'): 2.0
 ('Padua', 'Valletta'): 2.0
 ('Padua', 'Ghent'): 5.0
+('Padua', 'Gdynia'): 1.0
 ('Ostrava', 'Las Palmas'): 0.0
 ('Ostrava', 'Constanta'): 0.0
 ('Ostrava', 'Castellammare di Stabia-Torre Annunziata'): 0.0
@@ -10677,6 +10794,7 @@
 ('Ostrava', 'Bonn'): 3.0
 ('Ostrava', 'Valletta'): 1.0
 ('Ostrava', 'Ghent'): 5.0
+('Ostrava', 'Gdynia'): 1.0
 ('Las Palmas', 'Constanta'): 0.0
 ('Las Palmas', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Las Palmas', 'Stoke'): 5.0
@@ -10708,6 +10826,7 @@
 ('Las Palmas', 'Bonn'): 1.0
 ('Las Palmas', 'Valletta'): 1.0
 ('Las Palmas', 'Ghent'): 1.0
+('Las Palmas', 'Gdynia'): 1.0
 ('Constanta', 'Castellammare di Stabia-Torre Annunziata'): 0.0
 ('Constanta', 'Stoke'): 0.0
 ('Constanta', 'Santa Cruz de Tenerife'): 0.0
@@ -10738,6 +10857,7 @@
 ('Constanta', 'Bonn'): 0.0
 ('Constanta', 'Valletta'): 0.0
 ('Constanta', 'Ghent'): 0.0
+('Constanta', 'Gdynia'): 4.0
 ('Castellammare di Stabia-Torre Annunziata', 'Stoke'): 0.0
 ('Castellammare di Stabia-Torre Annunziata', 'Santa Cruz de Tenerife'): 0.0
 ('Castellammare di Stabia-Torre Annunziata', 'Lublin'): 0.0
@@ -10767,6 +10887,7 @@
 ('Castellammare di Stabia-Torre Annunziata', 'Bonn'): 0.0
 ('Castellammare di Stabia-Torre Annunziata', 'Valletta'): 0.0
 ('Castellammare di Stabia-Torre Annunziata', 'Ghent'): 0.0
+('Castellammare di Stabia-Torre Annunziata', 'Gdynia'): 1.0
 ('Stoke', 'Santa Cruz de Tenerife'): 0.0
 ('Stoke', 'Lublin'): 1.0
 ('Stoke', 'Cardiff'): 256.0
@@ -10795,6 +10916,7 @@
 ('Stoke', 'Bonn'): 1.0
 ('Stoke', 'Valletta'): 0.0
 ('Stoke', 'Ghent'): 2.0
+('Stoke', 'Gdynia'): 1.0
 ('Santa Cruz de Tenerife', 'Lublin'): 0.0
 ('Santa Cruz de Tenerife', 'Cardiff'): 0.0
 ('Santa Cruz de Tenerife', 'Iasi'): 0.0
@@ -10822,6 +10944,7 @@
 ('Santa Cruz de Tenerife', 'Bonn'): 0.0
 ('Santa Cruz de Tenerife', 'Valletta'): 0.0
 ('Santa Cruz de Tenerife', 'Ghent'): 0.0
+('Santa Cruz de Tenerife', 'Gdynia'): 0.0
 ('Lublin', 'Cardiff'): 3.0
 ('Lublin', 'Iasi'): 0.0
 ('Lublin', 'Plovdiv'): 2.0
@@ -10848,6 +10971,7 @@
 ('Lublin', 'Bonn'): 2.0
 ('Lublin', 'Valletta'): 0.0
 ('Lublin', 'Ghent'): 2.0
+('Lublin', 'Gdynia'): 32.0
 ('Cardiff', 'Iasi'): 0.0
 ('Cardiff', 'Plovdiv'): 0.0
 ('Cardiff', 'Bradford'): 211.0
@@ -10873,6 +10997,7 @@
 ('Cardiff', 'Bonn'): 1.0
 ('Cardiff', 'Valletta'): 2.0
 ('Cardiff', 'Ghent'): 8.0
+('Cardiff', 'Gdynia'): 1.0
 ('Iasi', 'Plovdiv'): 2.0
 ('Iasi', 'Bradford'): 0.0
 ('Iasi', 'Alicante'): 0.0
@@ -10897,6 +11022,7 @@
 ('Iasi', 'Bonn'): 8.0
 ('Iasi', 'Valletta'): 0.0
 ('Iasi', 'Ghent'): 0.0
+('Iasi', 'Gdynia'): 0.0
 ('Plovdiv', 'Bradford'): 0.0
 ('Plovdiv', 'Alicante'): 0.0
 ('Plovdiv', 'Cluj-Napoca'): 9.0
@@ -10920,6 +11046,7 @@
 ('Plovdiv', 'Bonn'): 1.0
 ('Plovdiv', 'Valletta'): 1.0
 ('Plovdiv', 'Ghent'): 2.0
+('Plovdiv', 'Gdynia'): 0.0
 ('Bradford', 'Alicante'): 5.0
 ('Bradford', 'Cluj-Napoca'): 0.0
 ('Bradford', 'Granada'): 11.0
@@ -10942,6 +11069,7 @@
 ('Bradford', 'Bonn'): 3.0
 ('Bradford', 'Valletta'): 1.0
 ('Bradford', 'Ghent'): 5.0
+('Bradford', 'Gdynia'): 0.0
 ('Alicante', 'Cluj-Napoca'): 3.0
 ('Alicante', 'Granada'): 69.0
 ('Alicante', 'Timisoara'): 2.0
@@ -10963,6 +11091,7 @@
 ('Alicante', 'Bonn'): 2.0
 ('Alicante', 'Valletta'): 2.0
 ('Alicante', 'Ghent'): 1.0
+('Alicante', 'Gdynia'): 1.0
 ('Cluj-Napoca', 'Granada'): 0.0
 ('Cluj-Napoca', 'Timisoara'): 619.0
 ('Cluj-Napoca', 'Brescia'): 7.0
@@ -10983,6 +11112,7 @@
 ('Cluj-Napoca', 'Bonn'): 8.0
 ('Cluj-Napoca', 'Valletta'): 0.0
 ('Cluj-Napoca', 'Ghent'): 0.0
+('Cluj-Napoca', 'Gdynia'): 0.0
 ('Granada', 'Timisoara'): 0.0
 ('Granada', 'Brescia'): 0.0
 ('Granada', 'Galati'): 0.0
@@ -11002,6 +11132,7 @@
 ('Granada', 'Bonn'): 5.0
 ('Granada', 'Valletta'): 1.0
 ('Granada', 'Ghent'): 5.0
+('Granada', 'Gdynia'): 0.0
 ('Timisoara', 'Brescia'): 2.0
 ('Timisoara', 'Galati'): 59.0
 ('Timisoara', 'Montpellier'): 4.0
@@ -11020,6 +11151,7 @@
 ('Timisoara', 'Bonn'): 3.0
 ('Timisoara', 'Valletta'): 0.0
 ('Timisoara', 'Ghent'): 3.0
+('Timisoara', 'Gdynia'): 0.0
 ('Brescia', 'Galati'): 1.0
 ('Brescia', 'Montpellier'): 7.0
 ('Brescia', 'Varna'): 2.0
@@ -11037,6 +11169,7 @@
 ('Brescia', 'Bonn'): 0.0
 ('Brescia', 'Valletta'): 1.0
 ('Brescia', 'Ghent'): 2.0
+('Brescia', 'Gdynia'): 0.0
 ('Galati', 'Montpellier'): 0.0
 ('Galati', 'Varna'): 1.0
 ('Galati', 'Verona'): 0.0
@@ -11053,6 +11186,7 @@
 ('Galati', 'Bonn'): 1.0
 ('Galati', 'Valletta'): 0.0
 ('Galati', 'Ghent'): 0.0
+('Galati', 'Gdynia'): 0.0
 ('Montpellier', 'Varna'): 2.0
 ('Montpellier', 'Verona'): 8.0
 ('Montpellier', 'Busto Arsizio'): 0.0
@@ -11068,6 +11202,7 @@
 ('Montpellier', 'Bonn'): 10.0
 ('Montpellier', 'Valletta'): 1.0
 ('Montpellier', 'Ghent'): 5.0
+('Montpellier', 'Gdynia'): 0.0
 ('Varna', 'Verona'): 4.0
 ('Varna', 'Busto Arsizio'): 0.0
 ('Varna', 'Valladolid'): 0.0
@@ -11082,6 +11217,7 @@
 ('Varna', 'Bonn'): 0.0
 ('Varna', 'Valletta'): 0.0
 ('Varna', 'Ghent'): 0.0
+('Varna', 'Gdynia'): 0.0
 ('Verona', 'Busto Arsizio'): 2.0
 ('Verona', 'Valladolid'): 2.0
 ('Verona', 'Eindhoven'): 0.0
@@ -11095,6 +11231,7 @@
 ('Verona', 'Bonn'): 10.0
 ('Verona', 'Valletta'): 1.0
 ('Verona', 'Ghent'): 5.0
+('Verona', 'Gdynia'): 0.0
 ('Busto Arsizio', 'Valladolid'): 0.0
 ('Busto Arsizio', 'Eindhoven'): 0.0
 ('Busto Arsizio', 'Charleroi'): 0.0
@@ -11107,6 +11244,7 @@
 ('Busto Arsizio', 'Bonn'): 0.0
 ('Busto Arsizio', 'Valletta'): 0.0
 ('Busto Arsizio', 'Ghent'): 0.0
+('Busto Arsizio', 'Gdynia'): 0.0
 ('Valladolid', 'Eindhoven'): 1.0
 ('Valladolid', 'Charleroi'): 3.0
 ('Valladolid', 'Cordoba'): 91.0
@@ -11118,6 +11256,7 @@
 ('Valladolid', 'Bonn'): 3.0
 ('Valladolid', 'Valletta'): 0.0
 ('Valladolid', 'Ghent'): 2.0
+('Valladolid', 'Gdynia'): 0.0
 ('Eindhoven', 'Charleroi'): 4.0
 ('Eindhoven', 'Cordoba'): 1.0
 ('Eindhoven', 'A Coruna'): 0.0
@@ -11128,6 +11267,7 @@
 ('Eindhoven', 'Bonn'): 8.0
 ('Eindhoven', 'Valletta'): 0.0
 ('Eindhoven', 'Ghent'): 13.0
+('Eindhoven', 'Gdynia'): 0.0
 ('Charleroi', 'Cordoba'): 0.0
 ('Charleroi', 'A Coruna'): 0.0
 ('Charleroi', 'Craiova'): 1.0
@@ -11137,6 +11277,7 @@
 ('Charleroi', 'Bonn'): 1.0
 ('Charleroi', 'Valletta'): 0.0
 ('Charleroi', 'Ghent'): 51.0
+('Charleroi', 'Gdynia'): 1.0
 ('Cordoba', 'A Coruna'): 9.0
 ('Cordoba', 'Craiova'): 0.0
 ('Cordoba', 'Caserta'): 0.0
@@ -11145,6 +11286,7 @@
 ('Cordoba', 'Bonn'): 6.0
 ('Cordoba', 'Valletta'): 1.0
 ('Cordoba', 'Ghent'): 2.0
+('Cordoba', 'Gdynia'): 0.0
 ('A Coruna', 'Craiova'): 0.0
 ('A Coruna', 'Caserta'): 0.0
 ('A Coruna', 'Coventry'): 0.0
@@ -11152,24 +11294,32 @@
 ('A Coruna', 'Bonn'): 1.0
 ('A Coruna', 'Valletta'): 1.0
 ('A Coruna', 'Ghent'): 1.0
+('A Coruna', 'Gdynia'): 0.0
 ('Craiova', 'Caserta'): 0.0
 ('Craiova', 'Coventry'): 0.0
 ('Craiova', 'Brasov'): 86.0
 ('Craiova', 'Bonn'): 1.0
 ('Craiova', 'Valletta'): 2.0
 ('Craiova', 'Ghent'): 0.0
+('Craiova', 'Gdynia'): 0.0
 ('Caserta', 'Coventry'): 0.0
 ('Caserta', 'Brasov'): 0.0
 ('Caserta', 'Bonn'): 0.0
 ('Caserta', 'Valletta'): 0.0
 ('Caserta', 'Ghent'): 0.0
+('Caserta', 'Gdynia'): 0.0
 ('Coventry', 'Brasov'): 0.0
 ('Coventry', 'Bonn'): 1.0
 ('Coventry', 'Valletta'): 1.0
 ('Coventry', 'Ghent'): 5.0
+('Coventry', 'Gdynia'): 0.0
 ('Brasov', 'Bonn'): 1.0
 ('Brasov', 'Valletta'): 0.0
 ('Brasov', 'Ghent'): 1.0
+('Brasov', 'Gdynia'): 1.0
 ('Bonn', 'Valletta'): 4.0
 ('Bonn', 'Ghent'): 22.0
+('Bonn', 'Gdynia'): 3.0
 ('Valletta', 'Ghent'): 0.0
+('Valletta', 'Gdynia'): 0.0
+('Ghent', 'Gdynia'): 0.0
