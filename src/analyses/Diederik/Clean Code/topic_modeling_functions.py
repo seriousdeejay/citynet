@@ -18,6 +18,7 @@ from gensim.models import CoherenceModel
 import gensim
 import pyLDAvis
 import pyLDAvis.gensim_models as gensimvis
+import pandas as pd
 
 # Load_lda_model
 from IPython.display import HTML
@@ -90,7 +91,7 @@ def train_lda_model(lemmatized_text, dictionary=[], corpus=[], MIN_DF = 0.05, MA
     if not type(dictionary) == gensim.corpora.dictionary.Dictionary or not corpus:
         dictionary, corpus = vectorize(lemmatized_text, MIN_DF, MAX_DF)
 
-    
+    print(f"topics: {N_TOPICS}, MIN_DF: {MIN_DF}, MAX_DF: {MAX_DF}")
 
     lda_model = LdaMallet(PATH_TO_MALLET,
                 corpus=corpus,
@@ -105,12 +106,12 @@ def train_lda_model(lemmatized_text, dictionary=[], corpus=[], MIN_DF = 0.05, MA
 
     if GET_COHERENCE_SCORE:
         output['coherence_score'] = calculate_coherence_score(MODEL=lda_model, LEMMATIZED_TEXT=lemmatized_text, DICTIONARY=dictionary, COHERENCE=COHERENCE)
-    
+
     return(output)
 
 
 
-def save_lda_model(MODEL,  OUTPUT_DIR, NAME, DICTIONARY=None, CORPUS=None, TEXTS=None, VIS=None, SAVE_VIS=True, SAVE_DICT=True, SAVE_TEXTS=True):
+def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=None, CORPUS=None, TEXTS=None, VIS=None, SAVE_VIS=True, SAVE_DICT=True, SAVE_TEXTS=True):
     """
     --> function that saves an LDA model.
 
@@ -147,13 +148,20 @@ def save_lda_model(MODEL,  OUTPUT_DIR, NAME, DICTIONARY=None, CORPUS=None, TEXTS
         DICTIONARY.save(os.path.join(directory, f"{NAME}_dictionary.dict"))
 
     if SAVE_TEXTS:
-        if not isinstance(TEXTS, list):
-            raise Exception("TEXTS parameter is not of type list.")
+        if not isinstance(TEXTS,  (pd.Series, list)):
+            raise Exception("TEXTS parameter is not a valid list type.")
 
-        with open(os.path.join(directory, f"{NAME}_texts.pickle"), 'wb') as fp:
-            pickle.dump(TEXTS, fp)
+        if isinstance(TEXTS, list):
+            with open(os.path.join(directory, f"{NAME}_texts.pickle"), 'wb') as fp:
+                pickle.dump(TEXTS, fp)
+        else:
+            TEXTS.to_pickle(os.path.join(directory, f"{NAME}_texts.pickle"))
 
     MODEL.save(os.path.join(directory, f"{NAME}_model.model"))
+
+    if COHERENCE_SCORE is not None:
+        with open(os.path.join(directory, f"{COHERENCE_SCORE}.txt"), 'w') as fp:
+            pass
 
     print(f'Model has been saved to the following location: {directory}.')
 
@@ -186,17 +194,17 @@ def compare_lda_models(OUTPUT_DIR, TOPIC_SELECTION, LEMMATIZED_TEXT, DICTIONARY=
 
     my_models = []
 
-    for n_topics in tqdm(TOPIC_SELECTION, total=len(TOPIC_SELECTION), desc='Creating models...', leave=True):
-        output = train_lda_model(lemmatized_text=LEMMATIZED_TEXT, dictionary=DICTIONARY, corpus=CORPUS, MIN_DF = MIN_DF, MAX_DF = MAX_DF, N_TOPICS = 10, N_ITERATIONS = N_ITERATIONS, PATH_TO_MALLET=PATH_TO_MALLET, GET_COHERENCE_SCORE=GET_COHERENCE_SCORE, COHERENCE=COHERENCE)
-        
-        NAME = f"lda_model_{n_topics}topics_{MIN_DF}min_{MAX_DF}max"
-        save_lda_model(output['lda_model'], DICTIONARY=output['dictionary'], CORPUS=output['corpus'], TEXTS=LEMMATIZED_TEXT, VIS=None, OUTPUT_DIR=OUTPUT_DIR, NAME=NAME, SAVE_VIS=True, SAVE_DICT=True)
+    for N_TOPICS in tqdm(TOPIC_SELECTION, total=len(TOPIC_SELECTION), desc='Creating models...', leave=True):
+        output = train_lda_model(lemmatized_text=LEMMATIZED_TEXT, dictionary=DICTIONARY, corpus=CORPUS, MIN_DF = MIN_DF, MAX_DF = MAX_DF, N_TOPICS = N_TOPICS, N_ITERATIONS = N_ITERATIONS, PATH_TO_MALLET=PATH_TO_MALLET, GET_COHERENCE_SCORE=GET_COHERENCE_SCORE, COHERENCE=COHERENCE)
+        print('coherence_score:', output['coherence_score'])
+        NAME = f"lda_model_{N_TOPICS}topics_{MIN_DF}min_{MAX_DF}max"
+        save_lda_model(output['lda_model'], COHERENCE_SCORE=output['coherence_score'], DICTIONARY=output['dictionary'], CORPUS=output['corpus'], TEXTS=LEMMATIZED_TEXT, VIS=None, OUTPUT_DIR=OUTPUT_DIR, NAME=NAME, SAVE_VIS=True, SAVE_DICT=True)
         
         # # model, coherence, _, _ = train_model(words, dictionary, corpus, N_TOPICS=n_topics)
         # keyname = f'lda_model__{n_topics}'
         # model.save(f'../../../../lda_models/{keyname}.model')
 
-        my_models.append({'name': NAME, 'model': output['lda_model'], 'n_topics': n_topics, 'coherence_score': output['coherence_score']})
+        my_models.append({'name': NAME, 'model': output['lda_model'], 'N_TOPICS': N_TOPICS, 'coherence_score': output['coherence_score']})
     
     return my_models
 
@@ -217,13 +225,13 @@ def load_lda_model(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_TEXTS=True, LO
     """
 
     name = os.path.basename(INPUT_DIR)
-    output = {'model': None, 'coherence_score': None, 'visualisation': None, 'lemmatised_documents': None, 'dictionary': None}
+    output = {'model': None, 'coherence_score': None, 'visualisation': None, 'texts': None, 'dictionary': None}
 
     if os.path.exists(INPUT_DIR):
         files = os.listdir(INPUT_DIR)
 
         for file in files:
-            path = os.path.join(INPUT_DIR, file)
+            path = os.path.abspath(os.path.join(INPUT_DIR, file))
 
             if file.endswith('.model'):
                 output['model'] = gensim.models.LdaModel.load(path)
@@ -233,12 +241,14 @@ def load_lda_model(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_TEXTS=True, LO
                 output['dictionary'] = Dictionary.load(path)
             elif file.endswith('.pickle') and LOAD_TEXTS:
                 with open(path, 'rb') as fp:
-                    output['lemmatised_documents'] = pickle.load(fp)
+                    output['texts'] = pickle.load(fp)
+            elif file.endswith('.txt'):
+                output['coherence_score'] = file[:-4]
 
-    if LOAD_COHERENCE_SCORE:
-        if not output['texts']:
+    if LOAD_COHERENCE_SCORE and output['coherence_score'] is None:
+        if output['texts'] is None:
             raise Exception("LOAD_TEXTS=True Parameter and .pickle file is required to calculate the coherence score.")
-        if not output['dictionary']:
+        if output['dictionary'] is None:
             raise Exception("LOAD_DICT=True Parameter and .pickle file is required to calculate the coherence score.")
 
         output['coherence_score'] = calculate_coherence_score(MODEL=output['model'], LEMMATIZED_TEXT=output['texts'], DICTIONARY=output['dictionary'], COHERENCE='c_v')
@@ -268,6 +278,7 @@ def load_lda_models(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_COHERENCE_SCO
 
     for model_directory in os.listdir(INPUT_DIR):
         model_path = os.path.join(INPUT_DIR, model_directory)
+        print(model_path)
         models.append(load_lda_model(INPUT_DIR=model_path, LOAD_VIS=LOAD_VIS, LOAD_DICT=LOAD_DICT, LOAD_COHERENCE_SCORE=LOAD_COHERENCE_SCORE))
     
     return models

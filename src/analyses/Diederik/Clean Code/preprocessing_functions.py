@@ -81,7 +81,7 @@ def lemmatise_paragraphs(paragraphs, POStag, NLP_MAX_LENGTH=1500000):
 
 
 
-def lemmatise_city_pair(df=df, POS=POS, OVERWRITE=False, ONLY_ENGLISH_WORDS=False, ENGLISH_WORDS = [],
+def lemmatise_city_pair(df, POS, OVERWRITE=False, ONLY_ENGLISH_WORDS=False, ENGLISH_WORDS = [],
     english_words_file="../../../input/english_words_alpha_370k.txt", NLP_MAX_LENGTH=1500000):
     
     for tag in tqdm(POS, desc=f"POS: {POS}", leave=False):
@@ -168,7 +168,8 @@ def import_lemmatised_paragraphs(INPUT_DIR, POS, BATCHES=[], ONLY_ENGLISH_WORDS=
             df_paragraphs_path = f"{citypair_dir}/{CITY_PAIR}.csv"
             df = pd.read_csv(df_paragraphs_path)
             
-            sub_df = df[['paragraph', 'paragraph_id']]
+            sub_df = df[['city_pair', 'paragraph_id', 'paragraph']]
+
             if merged_POS:
                 sub_df['merged_POS'] = [[] for _ in range(df.shape[0])]
             
@@ -222,160 +223,159 @@ def import_lemmatised_paragraphs(INPUT_DIR, POS, BATCHES=[], ONLY_ENGLISH_WORDS=
 
 
 
+# def lemmatise_paragraphs(df, OUTPUT_PATH, POS, ONLY_ENGLISH_WORDS=False, ENGLISH_WORD_LIST=[], OVERWRITE=False, NLP_MAX_LENGTH=1500000):
+#     """
+#     -->
+#         function that lemmatises the paragraphs of a single text file.
 
-def lemmatise_paragraphs(df, OUTPUT_PATH, POS, ONLY_ENGLISH_WORDS=False, ENGLISH_WORD_LIST=[], OVERWRITE=False, NLP_MAX_LENGTH=1500000):
-    """
-    -->
-        function that lemmatises the paragraphs of a single text file.
-
-        Parameters:
-        -----------
-            FILE_PATH: Str -> input directory path, to the text files
-            FILE_OUTPUT_DIR: Str -> output directory path, where you want to save the .pickle files
-            POS: string (e.g. "NOUN") -> options: (https://spacy.io/usage/spacy-101#annotations-pos-deps)
-            OVERRIDE_OLD_WORDLISTS: Bool -> Whether you want to override existing output files
-            NLP_MAX_LENGTH: Int (default: 1500000) -> Allowed number of characters per file
-    """
+#         Parameters:
+#         -----------
+#             FILE_PATH: Str -> input directory path, to the text files
+#             FILE_OUTPUT_DIR: Str -> output directory path, where you want to save the .pickle files
+#             POS: string (e.g. "NOUN") -> options: (https://spacy.io/usage/spacy-101#annotations-pos-deps)
+#             OVERRIDE_OLD_WORDLISTS: Bool -> Whether you want to override existing output files
+#             NLP_MAX_LENGTH: Int (default: 1500000) -> Allowed number of characters per file
+#     """
     
-    nlp.max_length = NLP_MAX_LENGTH
+#     nlp.max_length = NLP_MAX_LENGTH
     
-    #Checks if valid part-of-speech tag was provided
-    POStags=["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
-    if not isinstance(POS, str) or POS.upper() not in POStags:
-        raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
+#     #Checks if valid part-of-speech tag was provided
+#     POStags=["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
+#     if not isinstance(POS, str) or POS.upper() not in POStags:
+#         raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
     
-    paragraphs_dict = {}
-    if check_path(OUTPUT_PATH, OVERWRITE):
-        processed_paragraphs = [text for text in tqdm(nlp.pipe(df.paragraph, n_process=2, batch_size=1, disable=["ner", "parser"]), desc=f"Lemmatising ({OUTPUT_PATH.split('___')[1]})",total=len(df.paragraph), leave=False)]
-        lemmatized_paragraphs = [[word.lemma_ for word in paragraph if word.pos_ == POS and not word.is_punct and not word.is_stop] for paragraph in processed_paragraphs]
-        regexed_paragraphs= [[re.sub(r'\W+', '', word) for word in paragraph] for paragraph in lemmatized_paragraphs]
+#     paragraphs_dict = {}
+#     if check_path(OUTPUT_PATH, OVERWRITE):
+#         processed_paragraphs = [text for text in tqdm(nlp.pipe(df.paragraph, n_process=2, batch_size=1, disable=["ner", "parser"]), desc=f"Lemmatising ({OUTPUT_PATH.split('___')[1]})",total=len(df.paragraph), leave=False)]
+#         lemmatized_paragraphs = [[word.lemma_ for word in paragraph if word.pos_ == POS and not word.is_punct and not word.is_stop] for paragraph in processed_paragraphs]
+#         regexed_paragraphs= [[re.sub(r'\W+', '', word) for word in paragraph] for paragraph in lemmatized_paragraphs]
         
-        for index, lemmatised_paragraph in enumerate(regexed_paragraphs):
-            paragraphs_dict[df.loc[index].paragraph_id] = lemmatised_paragraph
+#         for index, lemmatised_paragraph in enumerate(regexed_paragraphs):
+#             paragraphs_dict[df.loc[index].paragraph_id] = lemmatised_paragraph
 
-        with open(OUTPUT_PATH, 'wb') as fp:
-            pickle.dump(paragraphs_dict, fp)
+#         with open(OUTPUT_PATH, 'wb') as fp:
+#             pickle.dump(paragraphs_dict, fp)
     
-    filename = os.path.basename(OUTPUT_PATH)
-    CLEAN_PATH = f"{os.path.dirname(OUTPUT_PATH)}/{'_CLEAN.'.join(filename.split('.'))}"
+#     filename = os.path.basename(OUTPUT_PATH)
+#     CLEAN_PATH = f"{os.path.dirname(OUTPUT_PATH)}/{'_CLEAN.'.join(filename.split('.'))}"
 
-    if ONLY_ENGLISH_WORDS and check_path(CLEAN_PATH, OVERWRITE):
-        if not paragraphs_dict:
-            with open(OUTPUT_PATH, 'rb') as file_read:
-                    paragraphs_dict = pickle.load(file_read)
+#     if ONLY_ENGLISH_WORDS and check_path(CLEAN_PATH, OVERWRITE):
+#         if not paragraphs_dict:
+#             with open(OUTPUT_PATH, 'rb') as file_read:
+#                     paragraphs_dict = pickle.load(file_read)
                     
-        for paragraph_id in tqdm(paragraphs_dict, desc='Removing non-existent words', leave=False):
-            cleaned_lemmatised_paragraph = remove_non_existing_words(paragraphs_dict[paragraph_id], ENGLISH_WORD_LIST)
-            paragraphs_dict[paragraph_id] = cleaned_lemmatised_paragraph
+#         for paragraph_id in tqdm(paragraphs_dict, desc='Removing non-existent words', leave=False):
+#             cleaned_lemmatised_paragraph = remove_non_existing_words(paragraphs_dict[paragraph_id], ENGLISH_WORD_LIST)
+#             paragraphs_dict[paragraph_id] = cleaned_lemmatised_paragraph
 
-        with open(CLEAN_PATH, 'wb') as file_write:
-            pickle.dump(paragraphs_dict, file_write)
-
-
-
-def is_english_word(word, english_words):
-    return word.lower() in english_words
+#         with open(CLEAN_PATH, 'wb') as file_write:
+#             pickle.dump(paragraphs_dict, file_write)
 
 
 
-def remove_non_existing_words(wordlist: list, english_words) -> list:
-    if not len(english_words):
-        raise Exception("The supplied english words list is empty."
-                       )
-    wordset = set(wordlist)
-    non_existent = []
+# def is_english_word(word, english_words):
+#     return word.lower() in english_words
+
+
+
+# def remove_non_existing_words(wordlist: list, english_words) -> list:
+#     if not len(english_words):
+#         raise Exception("The supplied english words list is empty."
+#                        )
+#     wordset = set(wordlist)
+#     non_existent = []
     
-    for word in wordset:
-        if not is_english_word(word, english_words):
-            non_existent.append(word)
+#     for word in wordset:
+#         if not is_english_word(word, english_words):
+#             non_existent.append(word)
             
-    return([word for word in wordlist if word not in non_existent])
+#     return([word for word in wordlist if word not in non_existent])
 
 
 
-def lemmatise(INPUT_DIR, POS, BATCHES=[], LEMMATISATION_TYPE='', ONLY_ENGLISH_WORDS=False, english_words_file="../../../input/english_words_alpha_370k.txt", OVERWRITE=False):   
-    BATCHES = [int(x) for x in BATCHES]
-    reg_str = 'biggest_cities_([0-9]+)'
+# def lemmatise(INPUT_DIR, POS, BATCHES=[], LEMMATISATION_TYPE='', ONLY_ENGLISH_WORDS=False, english_words_file="../../../input/english_words_alpha_370k.txt", OVERWRITE=False):   
+#     BATCHES = [int(x) for x in BATCHES]
+#     reg_str = 'biggest_cities_([0-9]+)'
     
-    #Checks if valid part-of-speech tag was provided
-    POStags = ["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
-    if not isinstance(POS, list) or len([tag.upper() for tag in POS if tag not in POStags]):
-        raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
+#     #Checks if valid part-of-speech tag was provided
+#     POStags = ["PROPN", "AUX", "NOUN", "ADJ", "VERB", "ADP", "SYM", "NUM"]
+#     if not isinstance(POS, list) or len([tag.upper() for tag in POS if tag not in POStags]):
+#         raise Exception(f'POSfilter only allows any of the following (SpaCy) part-of-speech tags: {POStags}.')
     
-    if ONLY_ENGLISH_WORDS:
-        with open(english_words_file) as word_file:
-            ENGLISH_WORDS = set(word.strip().lower() for word in word_file)
+#     if ONLY_ENGLISH_WORDS:
+#         with open(english_words_file) as word_file:
+#             ENGLISH_WORDS = set(word.strip().lower() for word in word_file)
 
-    batch_dirs = [os.path.join(INPUT_DIR, batch) for batch in os.listdir(INPUT_DIR) if not BATCHES or int(re.findall(reg_str, batch)[0]) in BATCHES]
+#     batch_dirs = [os.path.join(INPUT_DIR, batch) for batch in os.listdir(INPUT_DIR) if not BATCHES or int(re.findall(reg_str, batch)[0]) in BATCHES]
 
-    # Where the magic happens
-    for batch_dir in tqdm(batch_dirs, desc=f"BATCHES: {BATCHES}"):
+#     # Where the magic happens
+#     for batch_dir in tqdm(batch_dirs, desc=f"BATCHES: {BATCHES}"):
         
-        for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
-            citypair_dir = os.path.join(batch_dir, citypair)
-            CITY_PAIR = citypair.split('___')[1]
+#         for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
+#             citypair_dir = os.path.join(batch_dir, citypair)
+#             CITY_PAIR = citypair.split('___')[1]
 
-            df_paragraphs_path = f"{citypair_dir}/{CITY_PAIR}.csv"
-            if os.path.exists(df_paragraphs_path):
-                df = pd.read_csv(df_paragraphs_path)
+#             df_paragraphs_path = f"{citypair_dir}/{CITY_PAIR}.csv"
+#             if os.path.exists(df_paragraphs_path):
+#                 df = pd.read_csv(df_paragraphs_path)
 
-                for tag in tqdm(POS, desc=f"POS: {POS}", leave=False):
-                    POS_path = f"{citypair_dir}/lemmatisation/{tag}.pickle"
-                    lemmatise_paragraphs(df=df, 
-                                         OUTPUT_PATH=POS_path,
-                                         POS=tag,
-                                         OVERWRITE=OVERWRITE,
-                                         ONLY_ENGLISH_WORDS=ONLY_ENGLISH_WORDS,
-                                         ENGLISH_WORD_LIST = ENGLISH_WORDS,
-                                         NLP_MAX_LENGTH=1500000)
+#                 for tag in tqdm(POS, desc=f"POS: {POS}", leave=False):
+#                     POS_path = f"{citypair_dir}/lemmatisation/{tag}.pickle"
+#                     lemmatise_paragraphs(df=df, 
+#                                          OUTPUT_PATH=POS_path,
+#                                          POS=tag,
+#                                          OVERWRITE=OVERWRITE,
+#                                          ONLY_ENGLISH_WORDS=ONLY_ENGLISH_WORDS,
+#                                          ENGLISH_WORD_LIST = ENGLISH_WORDS,
+#                                          NLP_MAX_LENGTH=1500000)
 
 
 
-def import_lemmatised_paragraphs(INPUT_DIR, POS, BATCHES=[], ONLY_ENGLISH_WORDS=False):
-    BATCHES = [int(x) for x in BATCHES]
-    reg_str = 'biggest_cities_([0-9]+)'
+# def import_lemmatised_paragraphs(INPUT_DIR, POS, BATCHES=[], ONLY_ENGLISH_WORDS=False):
+#     BATCHES = [int(x) for x in BATCHES]
+#     reg_str = 'biggest_cities_([0-9]+)'
     
-    batch_dirs = [batch for batch in os.listdir(INPUT_DIR) if not BATCHES or int(re.findall(reg_str, batch)[0]) in BATCHES]
+#     batch_dirs = [batch for batch in os.listdir(INPUT_DIR) if not BATCHES or int(re.findall(reg_str, batch)[0]) in BATCHES]
     
-    data_dict = {}
-    for batch_name in tqdm(batch_dirs, desc=f"BATCHES: {BATCHES}"):
-        batch_dir = os.path.join(INPUT_DIR, batch_name)
+#     data_dict = {}
+#     for batch_name in tqdm(batch_dirs, desc=f"BATCHES: {BATCHES}"):
+#         batch_dir = os.path.join(INPUT_DIR, batch_name)
         
-        for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
-            citypair_dir = os.path.join(batch_dir, citypair)
-            CITY_PAIR = citypair.split('___')[1]
+#         for citypair in tqdm(os.listdir(batch_dir), desc="City Pair", leave=False):
+#             citypair_dir = os.path.join(batch_dir, citypair)
+#             CITY_PAIR = citypair.split('___')[1]
             
-            paragraphs_count = len(pd.read_csv(f"{citypair_dir}/{CITY_PAIR}.csv"))
-            data_dict[CITY_PAIR] = {'batch': batch_name, 'original_paragraphs': paragraphs_count, 'english_words': ONLY_ENGLISH_WORDS}
+#             paragraphs_count = len(pd.read_csv(f"{citypair_dir}/{CITY_PAIR}.csv"))
+#             data_dict[CITY_PAIR] = {'batch': batch_name, 'original_paragraphs': paragraphs_count, 'english_words': ONLY_ENGLISH_WORDS}
             
             
             
-            for tag in POS:
-                if ONLY_ENGLISH_WORDS:
-                    file_path = f"{citypair_dir}/lemmatisation/{tag}_CLEAN.pickle"
-                else:
-                    file_path = f"{citypair_dir}/lemmatisation/{tag}_CLEAN.pickle"
+#             for tag in POS:
+#                 if ONLY_ENGLISH_WORDS:
+#                     file_path = f"{citypair_dir}/lemmatisation/{tag}_CLEAN.pickle"
+#                 else:
+#                     file_path = f"{citypair_dir}/lemmatisation/{tag}_CLEAN.pickle"
                 
-                if os.path.exists(file_path):
-                    with open(file_path, 'rb') as fp:
-                        lemmatised_paragraphs = pickle.load(fp)
+#                 if os.path.exists(file_path):
+#                     with open(file_path, 'rb') as fp:
+#                         lemmatised_paragraphs = pickle.load(fp)
 
-                        data_dict[CITY_PAIR][tag] = lemmatised_paragraphs
+#                         data_dict[CITY_PAIR][tag] = lemmatised_paragraphs
     
-    # Check if all lemmatisation files were present
-    missing = {k: [] for k in POS} 
-    for citypair in data_dict.keys():
-        for tag in POS:
-            if tag not in data_dict[citypair]:
-                missing[tag].append(citypair)
+#     # Check if all lemmatisation files were present
+#     missing = {k: [] for k in POS} 
+#     for citypair in data_dict.keys():
+#         for tag in POS:
+#             if tag not in data_dict[citypair]:
+#                 missing[tag].append(citypair)
     
-    for k in missing:
-        if len(missing[k]):
-            print(f"The following city pairs have missing '{k}' files: \n--> {missing[k]}\n")
+#     for k in missing:
+#         if len(missing[k]):
+#             print(f"The following city pairs have missing '{k}' files: \n--> {missing[k]}\n")
             
-    print(f'\n Getting lemmatised paragraphs for {len(data_dict.keys())} city pairs...')
+#     print(f'\n Getting lemmatised paragraphs for {len(data_dict.keys())} city pairs...')
     
-    return data_dict
+#     return data_dict
 
 
 # def lemmatise_multiple_files(INPUT_DIR, POS,  OUTPUT_DIR='', OVERWRITE_PROTECTION=True, NLP_MAX_LENGTH=1500000):
