@@ -19,6 +19,9 @@ library(glmnet)
 # library(readr)
 library(magrittr)
 library(ggplot2)
+library(firatheme)
+library(stargazer)
+
 ```
 
 ```{r}
@@ -30,47 +33,273 @@ getwd()
 ```
 
 
-```{r load data}
+```{r load edges}
 setwd("/Users/brecht/Documents/citynet_2")
-gravity_df <- read_delim("citynet/src/output/gravity_df_DUM.csv",
+edges <- read_delim("citynet/src/output/gravity_df_DUM.csv",
                          ";", escape_double = FALSE, 
                          col_types = 
                            cols(border_DUM = col_factor(levels = c("0", "1")), 
-                                FR_DUM = col_factor(levels = c("0", "1")), 
+                                FR_con = col_factor(levels = c("0", "1")), 
                                 FR_int = col_factor(levels = c("0", "1")), 
-                                EN_DUM = col_factor(levels = c("0", "1")), 
+                                EN_con = col_factor(levels = c("0", "1")), 
                                 EN_int = col_factor(levels = c("0", "1"))), 
                          trim_ws = TRUE)
 
+edges <- tibble(edges)
+head(edges)
+```
 
-head(gravity_df)
+
+```{r}
+setwd("/Users/brecht/Documents/citynet_2")
+nodes <- read_delim("citynet/src/input/nodes.csv",
+                         ";", escape_double = FALSE, 
+                         col_types = 
+                           cols(FR_DUM = col_factor(levels = c("0", "1")), 
+                                EN_DUM = col_factor(levels = c("0", "1"))), 
+                         trim_ws = TRUE)
+
+nodes <- tibble(nodes)
+nodes <- select(nodes, -c(X1, Mua, Mua_en, Mua_fr))
+head(nodes)
+```
+
+## Nodes
+```{r create variable FR_EN}
+nodes <- mutate(nodes,
+       lang = ifelse(EN_DUM == 1, "EN", ifelse(FR_DUM == 1, "FR", "OTHER")))
+```
+
+```{r}
+nodes
+```
+```{r}
+ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  geom_point(aes(col=CC)) +
+  geom_abline()
+```
+
+```{r}
+ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  geom_point(aes(col=lang)) +
+  scale_colour_grey(start = 0.2, end = 0.6) +
+  geom_abline() +
+  theme_light() 
+```
+
+
+```{r, fig.dim=}
+degree_cor <-
+  ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  geom_abline(slope = 1, intercept = 0, alpha = .5) +
+  geom_point(aes(col=lang)) +
+  xlim(-5, 3.5) +
+  ylim(-5, 3.5) +
+  xlab("Proportional degree centrality in the English network (log)")+
+  ylab("Proportional degree centrality in the French network (log)")+
+  scale_colour_brewer(palette = "Set2", labels=c('English', 'French', 'Other'))+
+  scale_shape(labels=c('English', 'French', 'Other')) + 
+  labs(col="Language Sphere", shape="Language Sphere") +
+  theme_classic() +
+  theme(text = element_text(size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+degree_cor
+
+```
+cooc_scatter2 <-
+  ggplot(edges_nz, aes(log(col_prop_en), log(col_prop_fr), fill=lang_int, shape=lang_int)) +
+  geom_point(size = 2.5) +
+  xlim(-10, 1) +
+  ylim(-10, 1) +
+  geom_abline(alpha = .5) +
+  scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other')) +
+  scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  # scale_shape(labels=c('Both','English', 'French', 'Other')) +
+  labs(fill="Language Sphere", shape="Language Sphere") +
+  xlab("Proportional city-pair co-occurence in the English network (log)")+
+  ylab("Proportional city-pair co-occurence in the French network (log)") +
+  theme_classic() +
+  # theme(text = element_text(family = 'serif', size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+cooc_scatter2
+```{r}
+degree_cor2 <-
+  ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  geom_abline(slope = 1, intercept = 0, alpha = .5) +
+  geom_point(aes(fill=lang), size = 2.5) +
+  xlim(-5, 3.5) +
+  ylim(-5, 3.5) +
+  xlab("Proportional degree centrality in the English network (log)")+
+  ylab("Proportional degree centrality in the French network (log)")+
+  scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other'))+
+  scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  labs(fill="Language Sphere", shape="Language Sphere") +
+  theme_classic() +
+  theme(text = element_text(family='serif', size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+degree_cor2
+```
+
+
+```{r}
+ggsave("degreefigure.png", height = 4, width = 5)
+```
+
+
+## Edges
+
+```{r}
+head(edges)
+```
+
+```{r}
+# edges <- mutate(edges,
+#        lang = ifelse(EN_con == 1, "EN", ifelse(FR_con == 1, "FR", "OTHER")))
+
+edges <- mutate(edges,
+       lang = ifelse((EN_con == 1 & FR_con == 0), "EN", ifelse((EN_con == 0 & FR_con == 1) , "FR", ifelse((EN_con == 1 & FR_con == 1), "BOTH", "OTHER"))))
+
+edges <- mutate(edges,
+       lang_int = ifelse(EN_int == 1, "EN", ifelse(FR_int == 1, "FR", "OTHER")))
+```
+
+```{r}
+# subset without 0s
+edges_nz <- subset(edges, col_en > 0)
+edges_nz <- subset(edges_nz, col_fr > 0)
+
+```
+
+```{r}
+# cooc_scatter <-
+#   ggplot(edges_nz, aes(log(col_prop_en), log(col_prop_fr), fill=lang, shape=lang)) +
+#   geom_point(size = 2.5) +
+#   xlim(-10, 1) +
+#   ylim(-10, 1) +
+#   geom_abline(alpha = .5) +
+#   scale_fill_brewer(palette = "BrBG", labels=c('Both','English', 'French', 'Other')) +
+#   scale_shape_manual(values = c(21, 22, 23, 24), labels=c('Both','English', 'French', 'Other')) +
+#   # scale_shape(labels=c('Both','English', 'French', 'Other')) +
+#   labs(fill="Language Sphere", shape="Language Sphere") +
+#   xlab("Proportional city-pair co-occurence in the English network (log)")+
+#   ylab("Proportional city-pair co-occurence in the French network (log)") +
+#   theme_classic() +
+#   # theme(text = element_text(family = 'serif', size = 9)) +
+#   theme(legend.position = c(.9, .2)) +
+#   theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+#         panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+#         legend.background = element_blank(),
+#         legend.box.background = element_rect(colour = "black"))
+# 
+# cooc_scatter
+```
+
+
+```{r}
+cooc_scatter2 <-
+  ggplot(edges_nz, aes(log(col_prop_en), log(col_prop_fr), fill=lang_int, shape=lang_int)) +
+  geom_point(size = 2.5) +
+  xlim(-10, 1) +
+  ylim(-10, 1) +
+  geom_abline(alpha = .5) +
+  scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other')) +
+  scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  # scale_shape(labels=c('Both','English', 'French', 'Other')) +
+  labs(fill="Language Sphere", shape="Language Sphere") +
+  xlab("Proportional city-pair co-occurence in the English network (log)")+
+  ylab("Proportional city-pair co-occurence in the French network (log)") +
+  theme_classic() +
+  theme(text = element_text(family = 'serif', size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+cooc_scatter2
+```
+
+```{r}
+ggsave("coocfigure.png", height = 4, width = 5)
 ```
 
 
 
+```{r}
+
+# subset without 0s
+edges_nz_en <- subset(edges, col_en > 0)
+edges_nz_fr <- subset(edges, col_fr > 0)
+
+```
+
 
 ```{r}
-ggplot(gravity_df) +
-  geom_histogram(aes(gravity_df$collocation_en)) +
-  geom_histogram(aes(gravity_df$collocation_fr))
-```
-```{r}
-lm.fit <- lm(collocation_en ~ POP_A + POP_B + distance, gravity_df)
+lm.fit <- lm(col_en ~ POP_A + POP_B + distance, edges_nz)
 summary(lm.fit)
 ```
 
 ```{r}
+lm.fit1 <- lm(log(col_fr) ~ POP_A + POP_B + distance + border_DUM, edges_nz)
+summary(lm.fit1)
+```
+
+```{r}
+plot(lm.fit1)
+```
+
+```{r}
+nooutliers_df <-
+  edges_nz[-1,]
+
+dim(nooutliers_df)
+```
+
+
+```{r}
+plot(lm.fit1)
+```
+
+```{r}
+glm.fit <- glm(log(col_fr) ~ POP_A + POP_B + distance, 
+               data   = nooutliers_df, 
+               family = poisson)
+```
+
+```{r}
+plot(glm.fit)
+```
+
+
+```{r}
 # subset only cities larger than 1mil
 smaller_df <-
-  gravity_df %>% 
+  edges_nz %>% 
   filter(POP_A > 999 & POP_B > 999)
 
 head(smaller_df)
 ```
+
 ```{r}
-lm.fit2 <- lm(collocation_en ~ POP_A + POP_B + distance, smaller_df)
+lm.fit2 <- lm(col_fr ~ POP_A + POP_B + distance, smaller_df)
 summary(lm.fit2)
 ```
+
 ```{r}
 # french model
 lm.fit3 <- lm(collocation_fr ~ POP_A + POP_B + distance, gravity_df)
