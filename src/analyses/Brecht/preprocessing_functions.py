@@ -161,55 +161,11 @@ def process_dump2(dump, key_words, message = True):
             pass
 
     if message:
-        print(f"{round(((len(articles)/len(dump))*100), 2)}% of articles contain 2 toponyms")
+        # print(f"{round(((len(articles)/len(dump))*100), 2)}% of articles contain 2 toponyms")
+        print(f"{len(articles)} articles out of {len(dump)} contain 2 toponyms")
 
-              # f"After processing {len(articles)} articles remain, "
-              # f"that is {round(((len(articles)/len(dump))*100), 2)}% "
-              # f"of the total number of articles ({len(dump)}) in this dump."
     return articles
 
-
-# def write_outputcsv(df, outputfp, overwrite_protection = True):
-#     """
-#     function that writes a dataframe to a csv file. With added overwrite protection
-#     """
-#     # if the overwrite_protection variable is True a warning message will be displayed
-#     # and give the user the option to abort
-#     if overwrite_protection:
-#         if os.path.exists(outputfp):
-#             print(f"File {outputfp} already exists.")
-#             print("Are you sure you want to continue and overwrite the file?")
-#             decision = input('Continue? [y/n]')
-#             if decision == 'y':
-#                 df.to_csv(outputfp, index = False)
-#                 print(f"file has been written to: {outputfp}")
-#
-#                 if loop:
-#                     print("Do you want to perform the same action for the other files in the directory?")
-#                     loop_decision = input('Overwrite subsequent files? [y/n]')
-#                     if loop_decision == 'y':
-#                         print("Overwrite protection has been turned off.")
-#                         overwrite_protection = False
-#                     else:
-#                         print("Overwrite protection remains on.")
-#                 return overwrite_protection
-#
-#             elif decision == 'n':
-#                 print("The process has been halted.")
-#                 return
-#             else:
-#                 print("You did not enter a valid option.")
-#                 return
-#         else:
-#             df.to_csv(outputfp, index = False)
-#             print(f"file has been written to: {outputfp}")
-#             return
-#
-#     else:
-#         df.to_csv(outputfp, index = False)
-#         print(f"file has been written to: {outputfp}")
-#
-#     return
 
 def write_outputcsv(df, outputfp, overwrite_protection = True):
     # if the overwrite_protection variable is True a warning message will be displayed
@@ -420,13 +376,13 @@ def process_corpus(corpus, city_list):
 
 
 def create_citylink(matrix):
-    """function that creates a dictionary of city pairs and their co-occurence value
-    based on code by Tongjing Wang"""
+    """function that creates a list of tuples containing citypairs and their
+    cooccurences"""
 
-    city_link = {}
+    city_link = []
     for i in range(len(matrix)):
         for j in range(i+1, len(matrix)):
-            city_link[(matrix.index[i], matrix.columns[j])] = matrix.iloc[i,j]
+            city_link.append((matrix.index[i], matrix.columns[j], matrix.iloc[i,j]))
     return city_link
 
 def write_matrix(matrix, outdir, filename):
