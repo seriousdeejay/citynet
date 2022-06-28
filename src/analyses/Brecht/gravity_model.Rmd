@@ -52,7 +52,7 @@ head(edges)
 
 ```{r}
 setwd("/Users/brecht/Documents/citynet_2")
-nodes <- read_delim("citynet/src/input/nodes.csv",
+nodes <- read_delim("citynet/src/output/nodes.csv",
                          ";", escape_double = FALSE, 
                          col_types = 
                            cols(FR_DUM = col_factor(levels = c("0", "1")), 
@@ -60,7 +60,7 @@ nodes <- read_delim("citynet/src/input/nodes.csv",
                          trim_ws = TRUE)
 
 nodes <- tibble(nodes)
-nodes <- select(nodes, -c(X1, Mua, Mua_en, Mua_fr))
+#nodes <- select(nodes, -c(X1))
 head(nodes)
 ```
 
@@ -74,13 +74,13 @@ nodes <- mutate(nodes,
 nodes
 ```
 ```{r}
-ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop), shape=lang)) +
   geom_point(aes(col=CC)) +
   geom_abline()
 ```
 
 ```{r}
-ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop), shape=lang)) +
   geom_point(aes(col=lang)) +
   scale_colour_grey(start = 0.2, end = 0.6) +
   geom_abline() +
@@ -90,13 +90,13 @@ ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
 
 ```{r, fig.dim=}
 degree_cor <-
-  ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop), shape=lang)) +
   geom_abline(slope = 1, intercept = 0, alpha = .5) +
   geom_point(aes(col=lang)) +
   xlim(-5, 3.5) +
   ylim(-5, 3.5) +
-  xlab("Proportional degree centrality in the English network (log)")+
-  ylab("Proportional degree centrality in the French network (log)")+
+  xlab("Proportional degree centrality in the English network (ln)")+
+  ylab("Proportional degree centrality in the French network (ln)")+
   scale_colour_brewer(palette = "Set2", labels=c('English', 'French', 'Other'))+
   scale_shape(labels=c('English', 'French', 'Other')) + 
   labs(col="Language Sphere", shape="Language Sphere") +
@@ -134,13 +134,13 @@ cooc_scatter2 <-
 cooc_scatter2
 ```{r}
 degree_cor2 <-
-  ggplot(nodes, aes(x=log(en_degree_prop), y=log(fr_degree_prop), shape=lang)) +
+  ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop), shape=lang)) +
   geom_abline(slope = 1, intercept = 0, alpha = .5) +
   geom_point(aes(fill=lang), size = 2.5) +
   xlim(-5, 3.5) +
   ylim(-5, 3.5) +
-  xlab("Proportional degree centrality in the English network (log)")+
-  ylab("Proportional degree centrality in the French network (log)")+
+  xlab("Proportional degree centrality in the English network (ln)")+
+  ylab("Proportional degree centrality in the French network (ln)")+
   scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other'))+
   scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
   labs(fill="Language Sphere", shape="Language Sphere") +
@@ -221,8 +221,8 @@ cooc_scatter2 <-
   scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
   # scale_shape(labels=c('Both','English', 'French', 'Other')) +
   labs(fill="Language Sphere", shape="Language Sphere") +
-  xlab("Proportional city-pair co-occurence in the English network (log)")+
-  ylab("Proportional city-pair co-occurence in the French network (log)") +
+  xlab("Proportional city-pair co-occurence in the English network (ln)")+
+  ylab("Proportional city-pair co-occurence in the French network (ln)") +
   theme_classic() +
   theme(text = element_text(family = 'serif', size = 9)) +
   theme(legend.position = c(.9, .2)) +
@@ -250,7 +250,7 @@ edges_nz_fr <- subset(edges, col_fr > 0)
 
 
 ```{r}
-lm.fit <- lm(col_en ~ POP_A + POP_B + distance, edges_nz)
+lm.fit <- lm(log(col_en) ~ log(POP_A) + log(POP_B) + log(distance), edges_nz)
 summary(lm.fit)
 ```
 
@@ -275,15 +275,6 @@ dim(nooutliers_df)
 plot(lm.fit1)
 ```
 
-```{r}
-glm.fit <- glm(log(col_fr) ~ POP_A + POP_B + distance, 
-               data   = nooutliers_df, 
-               family = poisson)
-```
-
-```{r}
-plot(glm.fit)
-```
 
 
 ```{r}
