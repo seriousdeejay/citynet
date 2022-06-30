@@ -111,7 +111,7 @@ def train_lda_model(lemmatized_text, dictionary=[], corpus=[], MIN_DF = 0.05, MA
 
 
 
-def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=None, CORPUS=None, TEXTS=None, VIS=None, SAVE_VIS=True, SAVE_DICT=True, SAVE_TEXTS=True):
+def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=None, CORPUS=None, TEXTS=None, VIS=None, SAVE_VIS=True, SAVE_DICT=True, SAVE_TEXTS=True, SAVE_COHERENCE_SCORE=True):
     """
     --> function that saves an LDA model.
 
@@ -130,27 +130,41 @@ def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=No
 
     """
     directory = os.path.join(OUTPUT_DIR, NAME)
-    os.makedirs(directory, exist_ok=True)
-
-    if SAVE_VIS:
-        if not VIS:
-            if not isinstance(CORPUS, list) and not isinstance(DICTIONARY, gensim.corpora.dictionary.Dictionary):
-                raise Exception("Creating and saving the visualisation requires CORPUS and DICTIONARY as parameters.")
-
-            lda_conv = gensim.models.wrappers.ldamallet.malletmodel2ldamodel(MODEL) # my_models[0]['lda_model__2']['model']
-            VIS = gensimvis.prepare(lda_conv, CORPUS, DICTIONARY)
-        pyLDAvis.save_html(VIS, os.path.join(directory, f"{NAME}_visualisation.html"))
+    os.makedirs(directory, exist_ok=False)
     
-    if SAVE_DICT:
-        if not isinstance(DICTIONARY, gensim.corpora.dictionary.Dictionary):
+    # Type checks
+    valid_model = isinstance(MODEL, gensim.models.wrappers.ldamallet.LdaMallet)
+    valid_corpus = isinstance(CORPUS, list)
+    valid_dictionary = isinstance(DICTIONARY, gensim.corpora.dictionary.Dictionary)
+    valid_texts = isinstance(TEXTS,  (pd.Series, list))
+    
+    
+    if not valid_model:
+        raise Exception("The model you provided is not a valid LdaMallet model.")
+    
+    if SAVE_VIS and not VIS and not (valid_corpus and valid_dictionary):
+        raise Exception("Creating and saving the visualisation requires CORPUS and DICTIONARY as parameters.")
+    
+    if SAVE_DICT and not valid_dictionary:
                 raise Exception("Dictionary parameter is not of type gensim.corpora.dictionary.Dictionary.")
 
-        DICTIONARY.save(os.path.join(directory, f"{NAME}_dictionary.dict"))
-
-    if SAVE_TEXTS:
-        if not isinstance(TEXTS,  (pd.Series, list)):
+    if SAVE_TEXTS and not valid_texts:
             raise Exception("TEXTS parameter is not a valid list type.")
-
+    
+    # Actual Saving
+    print('Saving lda model...')
+    
+    if SAVE_VIS:
+        if not VIS:
+            lda_conv = gensim.models.wrappers.ldamallet.malletmodel2ldamodel(MODEL) # my_models[0]['lda_model__2']['model']
+            VIS = gensimvis.prepare(lda_conv, CORPUS, DICTIONARY)
+            
+        pyLDAvis.save_html(VIS, os.path.join(directory, f"{NAME}_visualisation.html"))        
+    
+    if SAVE_DICT:
+        DICTIONARY.save(os.path.join(directory, f"{NAME}_dictionary.dict"))
+    
+    if SAVE_TEXTS:
         if isinstance(TEXTS, list):
             with open(os.path.join(directory, f"{NAME}_texts.pickle"), 'wb') as fp:
                 pickle.dump(TEXTS, fp)
@@ -159,13 +173,22 @@ def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=No
 
     MODEL.save(os.path.join(directory, f"{NAME}_model.model"))
 
-    if COHERENCE_SCORE is not None:
+    if SAVE_COHERENCE_SCORE:
+        if not isinstance(COHERENCE_SCORE, float):
+            if not (valid_dict and valid_texts):
+                raise Exception("Creating and saving the coherence score requires valid DICTIONARY and TEXTS parameters.")
+                
+            print("Calculating coherence score...")
+            COHERENCE_SCORE = calculate_coherence_score(MODEL=MODEL, LEMMATIZED_TEXT=TEXTS, DICTIONARY=DICTIONARY, COHERENCE='c_v')
+
         with open(os.path.join(directory, f"{COHERENCE_SCORE}.txt"), 'w') as fp:
             pass
 
     print(f'Model has been saved to the following location: {directory}.')
 
     return MODEL
+
+
 
 def compare_lda_models(OUTPUT_DIR, TOPIC_SELECTION, LEMMATIZED_TEXT, DICTIONARY=[], CORPUS=[], MIN_DF=0.05, MAX_DF=0.9, N_ITERATIONS=1000, PATH_TO_MALLET=r'C:/mallet/bin/mallet.bat', GET_COHERENCE_SCORE=True, COHERENCE='c_v'):
     """
@@ -204,7 +227,7 @@ def compare_lda_models(OUTPUT_DIR, TOPIC_SELECTION, LEMMATIZED_TEXT, DICTIONARY=
         # keyname = f'lda_model__{n_topics}'
         # model.save(f'../../../../lda_models/{keyname}.model')
 
-        my_models.append({'name': NAME, 'model': output['lda_model'], 'N_TOPICS': N_TOPICS, 'coherence_score': output['coherence_score']})
+        my_models.append({'name': NAME, 'lda_model': output['lda_model'], 'N_TOPICS': N_TOPICS, 'coherence_score': output['coherence_score']})
     
     return my_models
 
@@ -225,7 +248,7 @@ def load_lda_model(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_TEXTS=True, LO
     """
 
     name = os.path.basename(INPUT_DIR)
-    output = {'model': None, 'coherence_score': None, 'visualisation': None, 'texts': None, 'dictionary': None}
+    output = {'lda_model': None, 'coherence_score': None, 'visualisation': None, 'texts': None, 'dictionary': None}
 
     if os.path.exists(INPUT_DIR):
         files = os.listdir(INPUT_DIR)
@@ -234,7 +257,7 @@ def load_lda_model(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_TEXTS=True, LO
             path = os.path.abspath(os.path.join(INPUT_DIR, file))
 
             if file.endswith('.model'):
-                output['model'] = gensim.models.LdaModel.load(path)
+                output['lda_model'] = gensim.models.LdaModel.load(path)
             elif file.endswith('.html') and LOAD_VIS:
                 output['visualisation'] = HTML(filename=path)
             elif file.endswith('.dict') and LOAD_DICT:
@@ -251,7 +274,7 @@ def load_lda_model(INPUT_DIR, LOAD_VIS=True, LOAD_DICT=True, LOAD_TEXTS=True, LO
         if output['dictionary'] is None:
             raise Exception("LOAD_DICT=True Parameter and .pickle file is required to calculate the coherence score.")
 
-        output['coherence_score'] = calculate_coherence_score(MODEL=output['model'], LEMMATIZED_TEXT=output['texts'], DICTIONARY=output['dictionary'], COHERENCE='c_v')
+        output['coherence_score'] = calculate_coherence_score(MODEL=output['lda_model'], LEMMATIZED_TEXT=output['texts'], DICTIONARY=output['dictionary'], COHERENCE='c_v')
 
     return(output)
 
