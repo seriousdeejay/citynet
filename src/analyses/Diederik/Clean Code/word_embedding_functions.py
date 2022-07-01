@@ -19,7 +19,7 @@ def load_glove_word_embeddings(GLOVE_PATH='.../.../.../.../../glove.42B.300d.txt
     
     
     embeddings_dict = {}
-
+    discarded_dict = {}
     print('This will take approximately ~ 4 minutes...')
 
     num_lines = sum(1 for line in open(GLOVE_PATH,'r', encoding="utf-8"))
@@ -30,11 +30,14 @@ def load_glove_word_embeddings(GLOVE_PATH='.../.../.../.../../glove.42B.300d.txt
             token = values[0]
             try:
                 vector = np.asarray(values[1:], "float32")
-                embeddings_dict[token] = vector
+                if vector.shape[0] == 300:
+                    embeddings_dict[token] = vector
+                else:
+                    discarded_dict[token] = vector
             except:
-                print(token, values[1:5])
+                discarded_dict[token] = None
     
-    return embeddings_dict
+    return embeddings_dict, discarded_dict
 
 
 

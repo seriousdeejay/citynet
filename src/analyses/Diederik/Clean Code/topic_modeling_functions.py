@@ -111,6 +111,16 @@ def train_lda_model(lemmatized_text, dictionary=[], corpus=[], MIN_DF = 0.05, MA
 
 
 
+def visualise_topics(lda_model, corpus, dictionary, sort_topics=False):
+    lda_conv = gensim.models.wrappers.ldamallet.malletmodel2ldamodel(lda_model)
+    vis = gensimvis.prepare(lda_conv, corpus, dictionary, sort_topics=False)
+    
+    print(vis.topic_order)
+    
+    return vis
+
+
+
 def save_lda_model(MODEL,  OUTPUT_DIR, NAME, COHERENCE_SCORE=None, DICTIONARY=None, CORPUS=None, TEXTS=None, VIS=None, SAVE_VIS=True, SAVE_DICT=True, SAVE_TEXTS=True, SAVE_COHERENCE_SCORE=True):
     """
     --> function that saves an LDA model.
