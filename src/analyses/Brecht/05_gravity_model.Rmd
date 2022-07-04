@@ -208,8 +208,8 @@ edges_nz$res_fr2 <- lm.fr2$residuals
 ```{r}
 edges_nz$pred_en2 <- lm.en2$fitted.values
 edges_nz$pred_fr2 <- lm.fr2$fitted.values
-edges_nz$pred_en2_exp <- exp(lm.en2$fitted.values)
-edges_nz$pred_fr2_exp <- exp(lm.fr2$fitted.values)
+# edges_nz$pred_en2_exp <- exp(lm.en2$fitted.values)
+# edges_nz$pred_fr2_exp <- exp(lm.fr2$fitted.values)
 ```
 
 
