@@ -1,0 +1,180 @@
+---
+title: "CITYNET Visualisaitons"
+author: "Brecht Nijman"
+date: "7/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Data & Packages
+
+```{r libraries}
+library(tidyverse)
+library(ggplot2)
+library(stargazer)
+library(magrittr)
+```
+
+```{r load edges}
+setwd("/Users/brecht/Documents/citynet_2")
+edges <- read_delim("citynet/src/output/edges.csv",
+                         ";", escape_double = FALSE, 
+                         col_types = 
+                           cols(border_DUM = col_factor(levels = c("0", "1")), 
+                                FR_con = col_factor(levels = c("0", "1")), 
+                                FR_int = col_factor(levels = c("0", "1")), 
+                                EN_con = col_factor(levels = c("0", "1")), 
+                                EN_int = col_factor(levels = c("0", "1")),
+                                CEAST = col_factor(levels = c("0", "1")), 
+                                WEST = col_factor(levels = c("0", "1")), 
+                                NORTH = col_factor(levels = c("0", "1")), 
+                                SOUTH = col_factor(levels = c("0", "1"))), 
+                         trim_ws = TRUE)
+
+edges <- tibble(edges)
+
+
+edges_nz <- read_delim("citynet/src/output/edges_nz.csv",
+                         ";", escape_double = FALSE, 
+                         col_types = 
+                           cols(border_DUM = col_factor(levels = c("0", "1")), 
+                                FR_con = col_factor(levels = c("0", "1")), 
+                                FR_int = col_factor(levels = c("0", "1")), 
+                                EN_con = col_factor(levels = c("0", "1")), 
+                                EN_int = col_factor(levels = c("0", "1")),
+                                CEAST = col_factor(levels = c("0", "1")), 
+                                WEST = col_factor(levels = c("0", "1")), 
+                                NORTH = col_factor(levels = c("0", "1")), 
+                                SOUTH = col_factor(levels = c("0", "1"))), 
+                         trim_ws = TRUE)
+
+edges <- tibble(edges)
+head(edges_nz)
+```
+
+```{r}
+setwd("/Users/brecht/Documents/citynet_2")
+nodes <- read_delim("citynet/src/output/nodes.csv",
+                         ";", escape_double = FALSE, 
+                         col_types = 
+                           cols(FR_DUM = col_factor(levels = c("0", "1")), 
+                                EN_DUM = col_factor(levels = c("0", "1"))), 
+                         trim_ws = TRUE)
+
+nodes <- tibble(nodes)
+#nodes <- select(nodes, -c(X1))
+head(nodes)
+```
+
+## Visualisation
+```{r create variable FR_EN}
+nodes <- mutate(nodes,
+       lang = ifelse(EN_DUM == 1, "EN", ifelse(FR_DUM == 1, "FR", "OTHER")))
+```
+
+```{r}
+head(nodes)
+```
+
+### Nodes
+```{r}
+ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop))) +
+  geom_abline(slope = 1, intercept = 0, alpha = .5) +
+  geom_point(aes(fill=REGION, size=POP), shape = 21) +
+  # scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  scale_fill_brewer(palette = "Set2", labels=c('central east', 'north', 'south', 'west'))+
+  xlim(-5, 3.5) +
+  ylim(-5, 3.5) +
+  xlab("Proportional degree centrality in the English network (ln)")+
+  ylab("Proportional degree centrality in the French network (ln)")+
+  labs(fill="Region", size="Pop (x 1000)") +
+  theme_classic() +
+  # theme(legend.position = c(.9, .2)) +
+  theme(text = element_text(size = 9)) + 
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+
+```
+
+```{r}
+degree_cor2 <-
+  ggplot(nodes, aes(x=log(en_deg_prop), y=log(fr_deg_prop), shape=lang)) +
+  geom_abline(slope = 1, intercept = 0, alpha = .5) +
+  geom_point(aes(fill=lang), size = 2.5) +
+  xlim(-5, 3.5) +
+  ylim(-5, 3.5) +
+  xlab("Proportional degree centrality in the English network (ln)")+
+  ylab("Proportional degree centrality in the French network (ln)")+
+  scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other'))+
+  scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  labs(fill="Language Sphere", shape="Language Sphere") +
+  theme_classic() +
+  # theme(text = element_text(family='serif', size = 9)) +
+  theme(text = element_text(size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+degree_cor2
+```
+
+
+```{r}
+# ggsave("degreefigure.png", height = 4, width = 5)
+```
+
+
+### Edges
+
+```{r}
+head(edges)
+```
+
+```{r}
+# edges <- mutate(edges,
+#        lang = ifelse(EN_con == 1, "EN", ifelse(FR_con == 1, "FR", "OTHER")))
+
+edges_nz <- mutate(edges_nz,
+       lang = ifelse((EN_con == 1 & FR_con == 0), "EN", ifelse((EN_con == 0 & FR_con == 1) , "FR", ifelse((EN_con == 1 & FR_con == 1), "BOTH", "OTHER"))))
+
+edges_nz <- mutate(edges_nz,
+       lang_int = ifelse(EN_int == 1, "EN", ifelse(FR_int == 1, "FR", "OTHER")))
+```
+
+
+```{r}
+cooc_scatter2 <-
+  ggplot(edges_nz, aes(log(col_prop_en), log(col_prop_fr), fill=lang_int, shape=lang_int)) +
+  geom_point(size = 2.5) +
+  xlim(-10, 1) +
+  ylim(-10, 1) +
+  geom_abline(alpha = .5) +
+  scale_fill_brewer(palette = "Set2", labels=c('English', 'French', 'Other')) +
+  scale_shape_manual(values = c(21, 22, 23), labels=c('English', 'French', 'Other')) +
+  # scale_shape(labels=c('Both','English', 'French', 'Other')) +
+  labs(fill="Language Sphere", shape="Language Sphere") +
+  xlab("Proportional city-pair co-occurence in the English network (ln)")+
+  ylab("Proportional city-pair co-occurence in the French network (ln)") +
+  theme_classic() +
+  # theme(text = element_text(family = 'serif', size = 9)) +
+  theme(text = element_text(size = 9)) +
+  theme(legend.position = c(.9, .2)) +
+  theme(panel.grid.major = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        panel.grid.minor = element_line(linetype = 'dashed', colour = "grey50", size = .05),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black"))
+
+cooc_scatter2
+```
+
+```{r}
+# ggsave("coocfigure.png", height = 4, width = 5)
+```
