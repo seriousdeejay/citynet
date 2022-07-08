@@ -208,10 +208,7 @@ edges_nz$res_fr2 <- lm.fr2$residuals
 ```{r}
 edges_nz$pred_en2 <- lm.en2$fitted.values
 edges_nz$pred_fr2 <- lm.fr2$fitted.values
-# edges_nz$pred_en2_exp <- exp(lm.en2$fitted.values)
-# edges_nz$pred_fr2_exp <- exp(lm.fr2$fitted.values)
 ```
-
 
 
 ```{r}
@@ -219,52 +216,4 @@ edges_nz$pred_fr2 <- lm.fr2$fitted.values
 setwd("/Users/brecht/Documents/citynet_2")
 
 write_delim(edges_nz,"citynet/src/output/edges_nz.csv", delim = ';')
-```
-
-
-## Self-Focus Bias
-```{r}
-setwd("/Users/brecht/Documents/citynet_2")
-nodes <- read_delim("citynet/src/output/nodes.csv",
-                         ";", escape_double = FALSE, 
-                         col_types = 
-                           cols(FR_DUM = col_factor(levels = c("0", "1")), 
-                                EN_DUM = col_factor(levels = c("0", "1"))), 
-                         trim_ws = TRUE)
-
-nodes <- tibble(nodes)
-#nodes <- select(nodes, -c(X1))
-head(nodes)
-```
-
-```{r}
-# self focus ratio
-CL1 <- subset(nodes, lang == "FR", c("fr_degree")) %>% 
-  max()
-
-CLn1 <-subset(nodes, lang != "FR", c("fr_degree")) %>% 
-  max()
-  
-
-SFR_french <- CL1 / CLn1
-```
-
-```{r}
-SFR_french 
-```
-
-```{r}
-# self focus ratio
-CL1 <- subset(nodes, lang == "EN", c("en_degree")) %>% 
-  max()
-
-CLn1 <-subset(nodes, lang != "EN", c("en_degree")) %>% 
-  max()
-  
-
-SFR_english <- CL1 / CLn1
-```
-
-```{r}
-SFR_english
 ```
