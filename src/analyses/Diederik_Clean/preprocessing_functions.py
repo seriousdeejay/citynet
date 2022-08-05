@@ -10,7 +10,7 @@ import pandas as pd
 nlp = spacy.load("en_core_web_lg")
 nlp.disable_pipes('ner', 'parser')
 
-## from general_functions import check_path
+# from general_functions import check_path
 
 
 
