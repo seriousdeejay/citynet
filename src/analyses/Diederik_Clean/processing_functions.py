@@ -78,3 +78,10 @@ def preprocess(base_dir, outdir, language, key_words, remove_referral=True, over
     print(f"----------\nFiles in {base_dir} have been processed\n----------")
 
     return
+
+
+# def safe_literal_eval(node) -> Optional[str]:
+#      try:
+#         return ast.literal_eval(node)
+#      except ValueError:
+#         return None
